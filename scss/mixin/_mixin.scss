@@ -1,0 +1,62 @@
+@mixin flexcolumn{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexrow{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin bg-fixed {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@mixin bg-cover {
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+@mixin menuStyle{
+    @include flexrow;
+    @include bg-fixed;
+    justify-content: center;
+    width: $w100;
+    height: $h100;
+}
+
+@mixin menuLinkStyle{
+    color: $bgAndFont;
+    text-align: center;
+    font-weight: 100;
+    font-size: 7vw;
+    padding: 1vh 2vw;
+    letter-spacing: 5px;
+}
+
+@mixin menuLineStyle{
+    height: 3px;
+    width: $w50 - $w5;
+    vertical-align: middle; 
+    background-color: $bgAndFont;
+    border: 1px solid $bgAndFont;
+    margin: 5px 0;
+}
+
+@mixin iconsFooter{
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    border: 1px solid whitesmoke;
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}

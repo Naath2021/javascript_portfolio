@@ -1,0 +1,27 @@
+@import "./scss/_prueba.scss";
+// base
+@import "./scss/base/base.scss"; 
+
+// variables
+@import "./scss/vars/_colors.scss", "./scss/vars/_sizes.scss";
+
+// mixins
+@import "./scss/mixin/mixin.scss";
+
+// utils
+@import "./scss/utils/_buttons.scss", "./scss/utils/_extend.scss";
+
+// components 
+@import "./scss/components/footer", "./scss/components/navbar", "./components/extend";
+
+// albums
+@import "./scss/albums/_album-ba.scss", "./scss/albums/_album-delta.scss", "./scss/albums/_album-nature.scss";
+
+// pages
+@import "./scss/pages/_about.scss", "./scss/pages/_contact.scss", "./scss/pages/_home.scss", "./scss/pages/_portfolio.scss", "./scss/pages/_projects.scss";
+
+// portfolio
+@import "./scss/portfolio/_buenosaires.scss", "./scss/portfolio/_deltarioparana.scss", "./scss/portfolio/_naturaleza.scss";
+
+// G fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand:wght@500;600&display=swap');
