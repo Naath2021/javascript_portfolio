@@ -1,0 +1,153 @@
+#bodyHome{
+    @include flexcolumn;
+    width: $w100;
+    padding-bottom: $h30;
+    .home{
+        @include flexcolumn;
+        justify-content: center;
+        width: $w100;
+        height: $h100;
+        background-image: url(/images/home-red-flower.png);
+        @include bg-fixed;
+    }
+    .border{
+        @include flexcolumn;
+        justify-content: center;
+        width: $w50 - $w5;
+        height: 45vh;
+        border: 5px solid $bgAndFont;
+        border-radius: 5px;
+        padding: 50px;
+        h1{
+            font-family: 'Nunito', sans-serif;
+            font-size: $w5;
+            color: $bgAndFont;
+            text-align: center;
+            font-weight: 200;
+            letter-spacing: 2px;
+        }
+        h2{
+            font-family: 'Quicksand', sans-serif;
+            color: $bgAndFont;
+            font-size: $w3;
+            text-align: center;
+            font-weight: 200;
+            padding: 3vh;
+            kerning:auto;
+        }
+        .btn-down{
+            @include flexcolumn;
+            justify-content: center;
+            color: $bgAndFont;
+            font-size: $w5;
+            font-weight: 100;
+            padding: 1vh;
+        }
+    }
+    #menu{
+        @include flexcolumn;
+        align-items: stretch;
+        width: 100%;
+        .card-portfolio{
+            @include menuStyle;
+            background-image: url(/images/menu-portfolio.png);
+            a{
+                @include menuLinkStyle;
+                .solid{
+                    @include menuLineStyle
+                }
+            }
+        }
+        .card-projects{
+            @include menuStyle;
+            background-image: url(/images/menu-projects.png);
+            a{
+                @include menuLinkStyle;
+                .solid{
+                    @include menuLineStyle
+                }
+            }
+        }
+        .card-about{
+            @include menuStyle;
+            background-image: url(/images/menu-about.png);
+            a{
+                @include menuLinkStyle;
+                .solid{
+                    @include menuLineStyle
+                }
+            }
+        }
+        .card-contact{
+            @include menuStyle;
+            background-image: url(/images/menu-contact.png);
+            a{
+                @include menuLinkStyle;
+                .solid{
+                    @include menuLineStyle
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        .border{
+            width: $w50 - $w20;
+            height: $h50;
+            h1{
+                font-size: $w3;
+                font-weight: 100;
+            }
+            h2{
+                font-size: $w1*2;
+                font-weight: 100;
+            }
+            .btn-down{
+                font-size: $w1 + $w1;
+            }
+        }
+        #menu{
+            flex-flow: column wrap;
+            .card-portfolio{
+                background-position: bottom;
+                a{
+                    font-size: $w3 + $w1;
+                    .solid{
+                        width: $w20 + $w10;
+                    }
+                }
+            }
+            .card-projects{
+                background-position: bottom;
+                background-size: cover;
+                a{
+                    font-size: $w3 + $w1;
+                    .solid{
+                        width: $w20 + $w10;
+                    }
+                }
+            }
+            .card-about{
+                background-image: url(/images/ba-si-bird.png);
+                background-position: bottom;
+                background-size: cover;
+                a{
+                    font-size: $w3 + $w1;
+                    .solid{
+                        width: $w20 + $w10;
+                    }
+                }
+            }
+            .card-contact{
+                background-position: center;
+                background-size: cover;
+                a{
+                    font-size: $w3 + $w1;
+                    .solid{
+                        width: $w20 + $w10;
+                    }
+                }
+            }
+        }
+    }
+}

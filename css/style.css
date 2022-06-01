@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand:wght@500;600&display=swap");
+#bodyPrueba .logo, #bodyPrueba .menu {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  #bodyPrueba header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/home-red-flower.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; }
+    #bodyPrueba header nav {
+      width: 100%;
+      height: 10vh;
+      background-color: rgba(93, 138, 102, 0.6);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1vw; }
+      #bodyPrueba header nav img {
+        width: 5.5vw;
+        height: auto;
+        padding: 0 1vw; }
+      #bodyPrueba header nav .menu {
+        display: flex; }
+        #bodyPrueba header nav .menu li {
+          list-style: none;
+          text-decoration: none;
+          margin: 1vw; }
+          #bodyPrueba header nav .menu li a {
+            color: #f4efe8; }
+            #bodyPrueba header nav .menu li a:hover {
+              color: #c9a803; }
+      #bodyPrueba header nav .iconsContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; }
+        #bodyPrueba header nav .iconsContainer .icons {
+          margin: 0 10px; }
+          #bodyPrueba header nav .iconsContainer .icons a {
+            font-size: 1.2vw;
+            color: #f4efe8; }
+            #bodyPrueba header nav .iconsContainer .icons a:hover {
+              color: #c9a803; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  font-family: 'Quicksand', sans-serif;
+  box-sizing: border-box;
+  transition: 0.5s; }
+
+#bodyHome {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw; }
+  #bodyHome footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    height: 30vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #2e2b2b; }
+    #bodyHome footer .logo-nl {
+      height: 10vh;
+      padding-bottom: 1vw; }
+    #bodyHome footer .icons-rrss-container {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      align-items: center;
+      padding: 1vw 1vw;
+      width: 50vw; }
+      #bodyHome footer .icons-rrss-container a {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        height: 25px;
+        width: 25px;
+        border-radius: 50px;
+        border: 1px solid whitesmoke;
+        background-position: center;
+        background-size: 40%;
+        background-repeat: no-repeat;
+        margin: 0 0.5vw; }
+        #bodyHome footer .icons-rrss-container a img {
+          height: 20px;
+          width: 20px; }
+        #bodyHome footer .icons-rrss-container a :hover {
+          transition: 500ms ease-in-out;
+          fill: #201f1f;
+          filter: invert(1); }
+  #bodyHome .copyright {
+    color: #d6d3d3;
+    font-size: 2vw; }
+
+#bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact {
+  width: 100%; }
+  #bodyHome .menu, #bodyHome .logo, #bodyPortfolio .menu, #bodyPortfolio .logo, #bodyProjects .menu, #bodyProjects .logo, #bodyAbout .menu, #bodyAbout .logo, #bodyContact .menu, #bodyContact .logo {
+    display: none; }
+  #bodyHome nav, #bodyPortfolio nav, #bodyProjects nav, #bodyAbout nav, #bodyContact nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: auto;
+    padding: 3vh 0;
+    position: fixed;
+    right: 0;
+    top: 3vh; }
+    #bodyHome nav .iconsContainer, #bodyPortfolio nav .iconsContainer, #bodyProjects nav .iconsContainer, #bodyAbout nav .iconsContainer, #bodyContact nav .iconsContainer {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      #bodyHome nav .iconsContainer .icons, #bodyPortfolio nav .iconsContainer .icons, #bodyProjects nav .iconsContainer .icons, #bodyAbout nav .iconsContainer .icons, #bodyContact nav .iconsContainer .icons {
+        font-size: 3vw;
+        padding: 5px 0;
+        color: #f4efe8; }
+        #bodyHome nav .iconsContainer .icons a, #bodyPortfolio nav .iconsContainer .icons a, #bodyProjects nav .iconsContainer .icons a, #bodyAbout nav .iconsContainer .icons a, #bodyContact nav .iconsContainer .icons a {
+          color: #f4efe8; }
+    #bodyHome nav .mobileMenubtn, #bodyPortfolio nav .mobileMenubtn, #bodyProjects nav .mobileMenubtn, #bodyAbout nav .mobileMenubtn, #bodyContact nav .mobileMenubtn {
+      color: #f4efe8;
+      font-size: 3vw; }
+  @media screen and (min-width: 768px) {
+    #bodyHome header .logo, #bodyHome header .menu, #bodyPortfolio header .logo, #bodyPortfolio header .menu, #bodyProjects header .logo, #bodyProjects header .menu, #bodyAbout header .logo, #bodyAbout header .menu, #bodyContact header .logo, #bodyContact header .menu {
+      display: block; }
+    #bodyHome header nav, #bodyPortfolio header nav, #bodyProjects header nav, #bodyAbout header nav, #bodyContact header nav {
+      position: fixed;
+      left: 0;
+      top: 0;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 10vh;
+      background: rgba(93, 138, 102, 0.5);
+      padding: 0 1vw; }
+      #bodyHome header nav img, #bodyPortfolio header nav img, #bodyProjects header nav img, #bodyAbout header nav img, #bodyContact header nav img {
+        width: 6vw;
+        height: auto;
+        padding: 0 1vw; }
+      #bodyHome header nav .menu, #bodyPortfolio header nav .menu, #bodyProjects header nav .menu, #bodyAbout header nav .menu, #bodyContact header nav .menu {
+        display: flex; }
+        #bodyHome header nav .menu li, #bodyPortfolio header nav .menu li, #bodyProjects header nav .menu li, #bodyAbout header nav .menu li, #bodyContact header nav .menu li {
+          list-style: none;
+          text-decoration: none;
+          margin: 1vw; }
+          #bodyHome header nav .menu li a, #bodyPortfolio header nav .menu li a, #bodyProjects header nav .menu li a, #bodyAbout header nav .menu li a, #bodyContact header nav .menu li a {
+            color: #f4efe8; }
+            #bodyHome header nav .menu li a:hover, #bodyPortfolio header nav .menu li a:hover, #bodyProjects header nav .menu li a:hover, #bodyAbout header nav .menu li a:hover, #bodyContact header nav .menu li a:hover {
+              color: #c9a803; }
+      #bodyHome header nav .iconsContainer, #bodyPortfolio header nav .iconsContainer, #bodyProjects header nav .iconsContainer, #bodyAbout header nav .iconsContainer, #bodyContact header nav .iconsContainer {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; }
+        #bodyHome header nav .iconsContainer .icons, #bodyPortfolio header nav .iconsContainer .icons, #bodyProjects header nav .iconsContainer .icons, #bodyAbout header nav .iconsContainer .icons, #bodyContact header nav .iconsContainer .icons {
+          margin: 0 10px; }
+          #bodyHome header nav .iconsContainer .icons a, #bodyPortfolio header nav .iconsContainer .icons a, #bodyProjects header nav .iconsContainer .icons a, #bodyAbout header nav .iconsContainer .icons a, #bodyContact header nav .iconsContainer .icons a {
+            font-size: 1.2vw;
+            color: #f4efe8; }
+            #bodyHome header nav .iconsContainer .icons a:hover, #bodyPortfolio header nav .iconsContainer .icons a:hover, #bodyProjects header nav .iconsContainer .icons a:hover, #bodyAbout header nav .iconsContainer .icons a:hover, #bodyContact header nav .iconsContainer .icons a:hover {
+              color: #c9a803; }
+      #bodyHome header nav .mobileMenubtn, #bodyPortfolio header nav .mobileMenubtn, #bodyProjects header nav .mobileMenubtn, #bodyAbout header nav .mobileMenubtn, #bodyContact header nav .mobileMenubtn {
+        display: none; } }
+
+#bodyHome {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding-bottom: 30vh; }
+  #bodyHome .home {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/home-red-flower.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+  #bodyHome .border {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 45vw;
+    height: 45vh;
+    border: 5px solid #f4efe8;
+    border-radius: 5px;
+    padding: 50px; }
+    #bodyHome .border h1 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 5vw;
+      color: #f4efe8;
+      text-align: center;
+      font-weight: 200;
+      letter-spacing: 2px; }
+    #bodyHome .border h2 {
+      font-family: 'Quicksand', sans-serif;
+      color: #f4efe8;
+      font-size: 3vw;
+      text-align: center;
+      font-weight: 200;
+      padding: 3vh;
+      kerning: auto; }
+    #bodyHome .border .btn-down {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      justify-content: center;
+      color: #f4efe8;
+      font-size: 5vw;
+      font-weight: 100;
+      padding: 1vh; }
+  #bodyHome #menu {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: stretch;
+    width: 100%; }
+    #bodyHome #menu .card-portfolio {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      background-image: url(/images/menu-portfolio.png); }
+      #bodyHome #menu .card-portfolio a {
+        color: #f4efe8;
+        text-align: center;
+        font-weight: 100;
+        font-size: 7vw;
+        padding: 1vh 2vw;
+        letter-spacing: 5px; }
+        #bodyHome #menu .card-portfolio a .solid {
+          height: 3px;
+          width: 45vw;
+          vertical-align: middle;
+          background-color: #f4efe8;
+          border: 1px solid #f4efe8;
+          margin: 5px 0; }
+    #bodyHome #menu .card-projects {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      background-image: url(/images/menu-projects.png); }
+      #bodyHome #menu .card-projects a {
+        color: #f4efe8;
+        text-align: center;
+        font-weight: 100;
+        font-size: 7vw;
+        padding: 1vh 2vw;
+        letter-spacing: 5px; }
+        #bodyHome #menu .card-projects a .solid {
+          height: 3px;
+          width: 45vw;
+          vertical-align: middle;
+          background-color: #f4efe8;
+          border: 1px solid #f4efe8;
+          margin: 5px 0; }
+    #bodyHome #menu .card-about {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      background-image: url(/images/menu-about.png); }
+      #bodyHome #menu .card-about a {
+        color: #f4efe8;
+        text-align: center;
+        font-weight: 100;
+        font-size: 7vw;
+        padding: 1vh 2vw;
+        letter-spacing: 5px; }
+        #bodyHome #menu .card-about a .solid {
+          height: 3px;
+          width: 45vw;
+          vertical-align: middle;
+          background-color: #f4efe8;
+          border: 1px solid #f4efe8;
+          margin: 5px 0; }
+    #bodyHome #menu .card-contact {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      background-image: url(/images/menu-contact.png); }
+      #bodyHome #menu .card-contact a {
+        color: #f4efe8;
+        text-align: center;
+        font-weight: 100;
+        font-size: 7vw;
+        padding: 1vh 2vw;
+        letter-spacing: 5px; }
+        #bodyHome #menu .card-contact a .solid {
+          height: 3px;
+          width: 45vw;
+          vertical-align: middle;
+          background-color: #f4efe8;
+          border: 1px solid #f4efe8;
+          margin: 5px 0; }
+  @media screen and (min-width: 768px) {
+    #bodyHome .border {
+      width: 30vw;
+      height: 50vh; }
+      #bodyHome .border h1 {
+        font-size: 3vw;
+        font-weight: 100; }
+      #bodyHome .border h2 {
+        font-size: 2vw;
+        font-weight: 100; }
+      #bodyHome .border .btn-down {
+        font-size: 2vw; }
+    #bodyHome #menu {
+      flex-flow: column wrap; }
+      #bodyHome #menu .card-portfolio {
+        background-position: bottom; }
+        #bodyHome #menu .card-portfolio a {
+          font-size: 4vw; }
+          #bodyHome #menu .card-portfolio a .solid {
+            width: 30vw; }
+      #bodyHome #menu .card-projects {
+        background-position: bottom;
+        background-size: cover; }
+        #bodyHome #menu .card-projects a {
+          font-size: 4vw; }
+          #bodyHome #menu .card-projects a .solid {
+            width: 30vw; }
+      #bodyHome #menu .card-about {
+        background-image: url(/images/ba-si-bird.png);
+        background-position: bottom;
+        background-size: cover; }
+        #bodyHome #menu .card-about a {
+          font-size: 4vw; }
+          #bodyHome #menu .card-about a .solid {
+            width: 30vw; }
+      #bodyHome #menu .card-contact {
+        background-position: center;
+        background-size: cover; }
+        #bodyHome #menu .card-contact a {
+          font-size: 4vw; }
+          #bodyHome #menu .card-contact a .solid {
+            width: 30vw; } }
