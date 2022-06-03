@@ -1,7 +1,6 @@
 #bodyHome{
     @include flexcolumn;
     width: $w100;
-    padding-bottom: $h30;
     .home{
         @include flexcolumn;
         justify-content: center;
@@ -12,9 +11,9 @@
     }
     .border{
         @include flexcolumn;
-        justify-content: center;
+        justify-content: space-evenly;
         width: $w50 - $w5;
-        height: 45vh;
+        height: 40vh;
         border: 5px solid $bgAndFont;
         border-radius: 5px;
         padding: 50px;
@@ -128,7 +127,7 @@
                 }
             }
             .card-about{
-                background-image: url(/images/ba-si-bird.png);
+                background-image: url(/images/nature-leaves.png);
                 background-position: bottom;
                 background-size: cover;
                 a{

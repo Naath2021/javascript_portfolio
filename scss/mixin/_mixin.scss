@@ -3,14 +3,14 @@
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    place-items: center;
 }
 
 @mixin flexrow{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    align-items: center;
+    place-items: center;
 }
 
 @mixin bg-fixed {
@@ -49,14 +49,4 @@
     background-color: $bgAndFont;
     border: 1px solid $bgAndFont;
     margin: 5px 0;
-}
-
-@mixin iconsFooter{
-    height: 25px;
-    width: 25px;
-    border-radius: 50px;
-    border: 1px solid whitesmoke;
-    background-position: center;
-    background-size: 40%;
-    background-repeat: no-repeat;
 }

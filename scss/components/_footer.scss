@@ -1,46 +1,56 @@
 #bodyHome{
-position: relative;
 min-height: $h100; 
 width: $w100;
   footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
+    @include flexcolumn;
+    justify-content: space-evenly;
     height: $h30;
     width: $w100;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(46, 43, 43);
+    background-color: $footerBg;
     .logo-nl{
-      height: 10vh;
-      padding-bottom: $w1;
+      width: $w10;
+      padding: $w1 0;
     }
     .icons-rrss-container{
       @include flexrow;
-      padding: $w1 $w1;
-      width: $w50;
-      a{
-        @include flexrow;
-        @include iconsFooter;
-        margin: 0 ($w1 - 0.5vw);
-        img{
-          height: 20px;
-          width: 20px;
-        }
-        :hover{
-          transition: 500ms ease-in-out;
-            fill: #201f1f;
-            filter: invert(1);
+      justify-content: space-between;
+      width: $w20 + $w5;
+        a{
+          font-size: $w3;
+          color: $bgAndFont;
+          &:hover{
+            color: $highlightColor;
+            transition: all 0.01s ease;
           }
         }
       }
     }
     .copyright{
-      color: rgb(214, 211, 211);
-      font-size: $w1 + $w1;
+      color: $bgAndFont;
+      font-size: $w3 - $w1;
+    }
+
+    @media screen and (min-width: 768px){
+      footer{
+        .logo-nl{
+          width: $w5;
+        }
+        .icons-rrss-container{
+          @include flexrow;
+          justify-content: space-between;
+          width: $w10 + $w3;
+          .footer-icon{
+            font-size: $w1*1.5;
+            transition: all 0.01s ease;
+            &:hover{
+              color: $highlightColor;
+              transition: all 0.01s ease;
+            }
+          }
+        }
+        .copyright{
+          font-size: $w1;
+        }
+      }
     }
   }
