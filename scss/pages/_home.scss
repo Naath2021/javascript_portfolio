@@ -53,7 +53,7 @@
             a{
                 @include menuLinkStyle;
                 .solid{
-                    @include menuLineStyle
+                    @include sectionNameLineStyle
                 }
             }
         }
@@ -63,7 +63,7 @@
             a{
                 @include menuLinkStyle;
                 .solid{
-                    @include menuLineStyle
+                    @include sectionNameLineStyle
                 }
             }
         }
@@ -73,7 +73,7 @@
             a{
                 @include menuLinkStyle;
                 .solid{
-                    @include menuLineStyle
+                    @include sectionNameLineStyle;
                 }
             }
         }
@@ -83,7 +83,7 @@
             a{
                 @include menuLinkStyle;
                 .solid{
-                    @include menuLineStyle
+                    @include sectionNameLineStyle;
                 }
             }
         }

@@ -42,9 +42,9 @@
     letter-spacing: 5px;
 }
 
-@mixin menuLineStyle{
+@mixin sectionNameLineStyle{
     height: 3px;
-    width: $w50 - $w5;
+    width: $w50;
     vertical-align: middle; 
     background-color: $bgAndFont;
     border: 1px solid $bgAndFont;

@@ -57,10 +57,10 @@
   box-sizing: border-box;
   transition: all 0.3s ease; }
 
-#bodyHome {
+#bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact {
   min-height: 100vh;
   width: 100%; }
-  #bodyHome footer {
+  #bodyHome footer, #bodyPortfolio footer, #bodyProjects footer, #bodyAbout footer, #bodyContact footer {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -70,42 +70,42 @@
     height: 30vh;
     width: 100%;
     background-color: #4b2830; }
-    #bodyHome footer .logo-nl {
+    #bodyHome footer .logo-nl, #bodyPortfolio footer .logo-nl, #bodyProjects footer .logo-nl, #bodyAbout footer .logo-nl, #bodyContact footer .logo-nl {
       width: 10vw;
       padding: 1vw 0; }
-    #bodyHome footer .icons-rrss-container {
+    #bodyHome footer .icons-rrss-container, #bodyPortfolio footer .icons-rrss-container, #bodyProjects footer .icons-rrss-container, #bodyAbout footer .icons-rrss-container, #bodyContact footer .icons-rrss-container {
       display: flex;
       flex-wrap: nowrap;
       flex-direction: row;
       place-items: center;
       justify-content: space-between;
       width: 25vw; }
-      #bodyHome footer .icons-rrss-container a {
+      #bodyHome footer .icons-rrss-container a, #bodyPortfolio footer .icons-rrss-container a, #bodyProjects footer .icons-rrss-container a, #bodyAbout footer .icons-rrss-container a, #bodyContact footer .icons-rrss-container a {
         font-size: 3vw;
         color: #f4efe8; }
-        #bodyHome footer .icons-rrss-container a:hover {
+        #bodyHome footer .icons-rrss-container a:hover, #bodyPortfolio footer .icons-rrss-container a:hover, #bodyProjects footer .icons-rrss-container a:hover, #bodyAbout footer .icons-rrss-container a:hover, #bodyContact footer .icons-rrss-container a:hover {
           color: #c9a803;
           transition: all 0.01s ease; }
-  #bodyHome .copyright {
+  #bodyHome .copyright, #bodyPortfolio .copyright, #bodyProjects .copyright, #bodyAbout .copyright, #bodyContact .copyright {
     color: #f4efe8;
     font-size: 2vw; }
   @media screen and (min-width: 768px) {
-    #bodyHome footer .logo-nl {
+    #bodyHome footer .logo-nl, #bodyPortfolio footer .logo-nl, #bodyProjects footer .logo-nl, #bodyAbout footer .logo-nl, #bodyContact footer .logo-nl {
       width: 5vw; }
-    #bodyHome footer .icons-rrss-container {
+    #bodyHome footer .icons-rrss-container, #bodyPortfolio footer .icons-rrss-container, #bodyProjects footer .icons-rrss-container, #bodyAbout footer .icons-rrss-container, #bodyContact footer .icons-rrss-container {
       display: flex;
       flex-wrap: nowrap;
       flex-direction: row;
       place-items: center;
       justify-content: space-between;
       width: 13vw; }
-      #bodyHome footer .icons-rrss-container .footer-icon {
+      #bodyHome footer .icons-rrss-container .footer-icon, #bodyPortfolio footer .icons-rrss-container .footer-icon, #bodyProjects footer .icons-rrss-container .footer-icon, #bodyAbout footer .icons-rrss-container .footer-icon, #bodyContact footer .icons-rrss-container .footer-icon {
         font-size: 1.5vw;
         transition: all 0.01s ease; }
-        #bodyHome footer .icons-rrss-container .footer-icon:hover {
+        #bodyHome footer .icons-rrss-container .footer-icon:hover, #bodyPortfolio footer .icons-rrss-container .footer-icon:hover, #bodyProjects footer .icons-rrss-container .footer-icon:hover, #bodyAbout footer .icons-rrss-container .footer-icon:hover, #bodyContact footer .icons-rrss-container .footer-icon:hover {
           color: #c9a803;
           transition: all 0.01s ease; }
-    #bodyHome footer .copyright {
+    #bodyHome footer .copyright, #bodyPortfolio footer .copyright, #bodyProjects footer .copyright, #bodyAbout footer .copyright, #bodyContact footer .copyright {
       font-size: 1vw; } }
 
 #bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact {
@@ -185,7 +185,7 @@
           margin: 0 10px;
           padding-bottom: 20px; }
           #bodyHome header nav .iconsContainer .icons a, #bodyPortfolio header nav .iconsContainer .icons a, #bodyProjects header nav .iconsContainer .icons a, #bodyAbout header nav .iconsContainer .icons a, #bodyContact header nav .iconsContainer .icons a {
-            font-size: 1.2vw;
+            font-size: 1.5vw;
             color: #f4efe8; }
             #bodyHome header nav .iconsContainer .icons a:hover, #bodyPortfolio header nav .iconsContainer .icons a:hover, #bodyProjects header nav .iconsContainer .icons a:hover, #bodyAbout header nav .iconsContainer .icons a:hover, #bodyContact header nav .iconsContainer .icons a:hover {
               color: #c9a803;
@@ -280,7 +280,7 @@
         letter-spacing: 5px; }
         #bodyHome #menu .card-portfolio a .solid {
           height: 3px;
-          width: 45vw;
+          width: 50vw;
           vertical-align: middle;
           background-color: #f4efe8;
           border: 1px solid #f4efe8;
@@ -306,7 +306,7 @@
         letter-spacing: 5px; }
         #bodyHome #menu .card-projects a .solid {
           height: 3px;
-          width: 45vw;
+          width: 50vw;
           vertical-align: middle;
           background-color: #f4efe8;
           border: 1px solid #f4efe8;
@@ -332,7 +332,7 @@
         letter-spacing: 5px; }
         #bodyHome #menu .card-about a .solid {
           height: 3px;
-          width: 45vw;
+          width: 50vw;
           vertical-align: middle;
           background-color: #f4efe8;
           border: 1px solid #f4efe8;
@@ -358,7 +358,7 @@
         letter-spacing: 5px; }
         #bodyHome #menu .card-contact a .solid {
           height: 3px;
-          width: 45vw;
+          width: 50vw;
           vertical-align: middle;
           background-color: #f4efe8;
           border: 1px solid #f4efe8;
@@ -405,3 +405,116 @@
           font-size: 4vw; }
           #bodyHome #menu .card-contact a .solid {
             width: 30vw; } }
+
+#bodyPortfolio {
+  width: 100%;
+  min-height: 100vh; }
+  #bodyPortfolio .head-portfolio {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    justify-content: center;
+    background-image: url(/images/head-portfolio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #f4efe8; }
+    #bodyPortfolio .head-portfolio h1 {
+      color: #f4efe8;
+      text-align: center;
+      font-weight: 100;
+      font-size: 7vw;
+      padding: 1vh 2vw;
+      letter-spacing: 5px; }
+    #bodyPortfolio .head-portfolio .solid {
+      height: 3px;
+      width: 50vw;
+      vertical-align: middle;
+      background-color: #f4efe8;
+      border: 1px solid #f4efe8;
+      margin: 5px 0; }
+  #bodyPortfolio main .img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(26, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; }
+    #bodyPortfolio main .img-container .div1 {
+      grid-area: 1 / 1 / 2 / 2; }
+    #bodyPortfolio main .img-container .div2 {
+      grid-area: 1 / 2 / 2 / 3; }
+    #bodyPortfolio main .img-container .div3 {
+      grid-area: 2 / 1 / 4 / 2; }
+    #bodyPortfolio main .img-container .div4 {
+      grid-area: 2 / 2 / 3 / 3; }
+    #bodyPortfolio main .img-container .div5 {
+      grid-area: 3 / 2 / 4 / 3; }
+    #bodyPortfolio main .img-container .div6 {
+      grid-area: 4 / 1 / 5 / 3; }
+    #bodyPortfolio main .img-container .div7 {
+      grid-area: 5 / 1 / 6 / 3; }
+    #bodyPortfolio main .img-container .div8 {
+      grid-area: 6 / 1 / 7 / 2; }
+    #bodyPortfolio main .img-container .div9 {
+      grid-area: 7 / 1 / 8 / 2; }
+    #bodyPortfolio main .img-container .div10 {
+      grid-area: 6 / 2 / 8 / 3; }
+    #bodyPortfolio main .img-container .div11 {
+      grid-area: 8 / 1 / 9 / 3; }
+    #bodyPortfolio main .img-container .div12 {
+      grid-area: 9 / 1 / 10 / 3; }
+    #bodyPortfolio main .img-container .div13 {
+      grid-area: 10 / 1 / 11 / 2; }
+    #bodyPortfolio main .img-container .div14 {
+      grid-area: 10 / 2 / 11 / 3; }
+    #bodyPortfolio main .img-container .div15 {
+      grid-area: 11 / 1 / 12 / 2; }
+    #bodyPortfolio main .img-container .div16 {
+      grid-area: 11 / 2 / 12 / 3; }
+    #bodyPortfolio main .img-container .div17 {
+      grid-area: 12 / 1 / 13 / 3; }
+    #bodyPortfolio main .img-container .div18 {
+      grid-area: 13 / 1 / 14 / 3; }
+    #bodyPortfolio main .img-container .div19 {
+      grid-area: 14 / 1 / 15 / 2; }
+    #bodyPortfolio main .img-container .div20 {
+      grid-area: 14 / 2 / 15 / 3; }
+    #bodyPortfolio main .img-container .div21 {
+      grid-area: 15 / 1 / 16 / 2; }
+    #bodyPortfolio main .img-container .div22 {
+      grid-area: 15 / 2 / 16 / 3; }
+    #bodyPortfolio main .img-container .div23 {
+      grid-area: 16 / 1 / 17 / 2; }
+    #bodyPortfolio main .img-container .div24 {
+      grid-area: 16 / 2 / 17 / 3; }
+    #bodyPortfolio main .img-container .div25 {
+      grid-area: 17 / 1 / 18 / 3; }
+    #bodyPortfolio main .img-container .div26 {
+      grid-area: 18 / 1 / 19 / 3; }
+    #bodyPortfolio main .img-container .div27 {
+      grid-area: 19 / 1 / 20 / 3; }
+    #bodyPortfolio main .img-container .div28 {
+      grid-area: 20 / 1 / 21 / 3; }
+    #bodyPortfolio main .img-container .div29 {
+      grid-area: 21 / 1 / 22 / 2; }
+    #bodyPortfolio main .img-container .div30 {
+      grid-area: 21 / 2 / 22 / 3; }
+    #bodyPortfolio main .img-container .div31 {
+      grid-area: 22 / 1 / 23 / 2; }
+    #bodyPortfolio main .img-container .div32 {
+      grid-area: 22 / 2 / 23 / 3; }
+    #bodyPortfolio main .img-container .div33 {
+      grid-area: 23 / 1 / 24 / 3; }
+    #bodyPortfolio main .img-container .div34 {
+      grid-area: 24 / 1 / 25 / 2; }
+    #bodyPortfolio main .img-container .div35 {
+      grid-area: 25 / 1 / 26 / 2; }
+    #bodyPortfolio main .img-container .div36 {
+      grid-area: 24 / 2 / 26 / 3; }
+    #bodyPortfolio main .img-container .div37 {
+      grid-area: 26 / 1 / 27 / 3; }
