@@ -49,7 +49,7 @@
                 }
             }
         }
-        .row-container3-4{
+        .row-container3{
             @extend .column-w100-container-extended;
             .ba-flores{
                 @extend .horizontal-image-portfolio-extended;
@@ -57,10 +57,10 @@
             }
             .ba-recoleta{
                 @extend .horizontal-image-portfolio-extended;
-                background-image: url(/images/ba-recoleta.png);
+                background-image: url(/images/nature-dragonfly.png);
             }
         }
-        .row-container5{
+        .row-container4{
             @extend .row-w100-container-extended;
             .mid-row-container2{
                 @extend .vertical-image-portfolio-extended;
@@ -76,6 +76,17 @@
             .delta-model{
                 @extend .vertical-image-portfolio-extended;
                 background-image: url(/images/delta-model.png);
+            }
+        }
+        .row-container5{
+            @extend .row-w100-container-extended;
+            .ba-fac{
+                @extend .horizontal-image-portfolio-extended;
+                background-image: url(/images/ba-recoleta.png)
+            }
+            .ba-memory-fadu{
+                @extend .horizontal-image-portfolio-extended;
+                background-image: url(/images/ba-memory-fadu.png) 
             }
         }
         .row-container6{
@@ -99,6 +110,103 @@
                 @extend .tiny-image-portfolio-extended;
                 background-image: url(/images/delta-purple.png);
             }
+        }
+        .row-container8{
+            @extend .column-w100-container-extended;
+            .pink-sunset{
+                @extend .horizontal-image-portfolio-extended;
+                background-image: url(/images/ba-pink-sunset.png);
+            }
+            .delta-little-bridge{
+                @extend .horizontal-image-portfolio-extended;
+                background-image: url(/images/delta-little-bridge.png);
+            }
+        }
+        .row-container9{
+            @extend .row-w100-container-extended;
+            .delta-cheiru{
+                @extend .vertical-image-portfolio-extended;
+                background-image: url(/images/delta-cheiru.png)
+            }
+            .nature-costanera-flower{
+                @extend .vertical-image-portfolio-extended;
+                background-image: url(/images/nature-costanera-flower.png);
+            }
+        }
+        .row-container10{
+            @extend .row-w100-container-extended;
+            .nature-si-orange-flower{
+                @extend .vertical-image-portfolio-extended;
+                background-image: url(/images/nature-si-orange-flower.png)
+            }
+            .nature-si-purple-white{
+                @extend .vertical-image-portfolio-extended;
+                background-image: url(/images/nature-si-purple-white.png);
+            }
+        }
+        .row-container11{
+            @extend .column-w100-container-extended;
+            .nature-delta-pink-flower{
+                @extend .horizontal-image-portfolio-extended;
+                background-image: url(/images/nature-delta-pink-flower.png);
+            }
+            .delta-hidden-house{
+                @extend .horizontal-image-portfolio-extended;
+                background-image: url(/images/delta-hidden-house.png);    
+            }
+            .ba-memory{
+                @extend .horizontal-image-portfolio-extended;
+                background-image: url(/images/ba-memory.png);
+            }
+        }
+        .row-container12{
+            @extend .row-w100-container-extended;
+            .nature-yellow-flower2{
+                @extend .vertical-image-portfolio-extended;
+                background-image: url(/images/nature-yellow-flower2.png)
+            }
+            .nature-costanera-fruit{
+                @extend .vertical-image-portfolio-extended;
+                background-image: url(/images/nature-costanera-fruit.png);
+            }
+        }
+        .row-container13{
+            @extend .row-w100-container-extended;
+            .menu-about{
+                @extend .vertical-image-portfolio-extended;
+                background-image: url(/images/menu-about.png)
+            }
+            .delta-tree{
+                @extend .vertical-image-portfolio-extended;
+                background-image: url(/images/delta-tree.png);
+            }
+        }
+        .delta-red-flowers{
+            @extend .horizontal-image-portfolio-extended;
+            background-image: url(/images/delta-red-flowers.png);
+        }
+        .row-container14{
+            @extend .row-w100-container-extended;
+            .mid-row-container2{
+                @include flexcolumn;
+                width: $w50;
+                .menu-contact{
+                    @extend .tiny-image-portfolio-extended;
+                    background-image: url(/images/menu-contact.png);
+                }
+                .menu-portfolio{
+                    @extend .tiny-image-portfolio-extended;
+                    background-image: url(/images/menu-portfolio.png);
+                }
+            }
+            .delta-musgo{
+                @extend .vertical-image-portfolio-extended;
+                background-image: url(/images/delta-musgo.png);
+            }
+        }
+        .nature-leaves{
+            @extend .horizontal-image-portfolio-extended;
+            background-image: url(/images/nature-leaves.png);
         }
     }
 }
