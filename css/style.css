@@ -193,6 +193,42 @@
       #bodyHome header nav .mobileMenubtn, #bodyPortfolio header nav .mobileMenubtn, #bodyProjects header nav .mobileMenubtn, #bodyAbout header nav .mobileMenubtn, #bodyContact header nav .mobileMenubtn {
         display: none; } }
 
+.vertical-image-portfolio-extended, #bodyPortfolio main .row-container1 .img-ba-sky, #bodyPortfolio main .row-container1 .img-costanera-butterfly, #bodyPortfolio main .row-container2 .ba-fac, #bodyPortfolio main .row-container5 .mid-row-container2, #bodyPortfolio main .row-container5 .delta-model {
+  width: 50vw;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.horizontal-image-portfolio-extended, #bodyPortfolio main .row-container3-4 .ba-flores, #bodyPortfolio main .row-container3-4 .ba-recoleta {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.tiny-image-portfolio-extended, #bodyPortfolio main .row-container2 .mid-row-container .delta-cayena, #bodyPortfolio main .row-container2 .mid-row-container .nature-purple-flower, #bodyPortfolio main .row-container5 .mid-row-container2 .delta-ship-inside, #bodyPortfolio main .row-container5 .mid-row-container2 .ba-si-bird, #bodyPortfolio main .row-container6 .delta-away, #bodyPortfolio main .row-container6 .nature-mush, #bodyPortfolio main .row-container7 .ba-day-moon, #bodyPortfolio main .row-container7 .delta-purple {
+  width: 50vw;
+  height: 25vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.row-w100-container-extended, #bodyPortfolio main .row-container1, #bodyPortfolio main .row-container2, #bodyPortfolio main .row-container5, #bodyPortfolio main .row-container6, #bodyPortfolio main .row-container7 {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  place-items: center;
+  width: 100%; }
+
+.column-w100-container-extended, #bodyPortfolio main .row-container3-4 {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  width: 100%; }
+
 #bodyHome {
   display: flex;
   flex-wrap: nowrap;
@@ -438,83 +474,40 @@
       background-color: #f4efe8;
       border: 1px solid #f4efe8;
       margin: 5px 0; }
-  #bodyPortfolio main .img-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(26, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; }
-    #bodyPortfolio main .img-container .div1 {
-      grid-area: 1 / 1 / 2 / 2; }
-    #bodyPortfolio main .img-container .div2 {
-      grid-area: 1 / 2 / 2 / 3; }
-    #bodyPortfolio main .img-container .div3 {
-      grid-area: 2 / 1 / 4 / 2; }
-    #bodyPortfolio main .img-container .div4 {
-      grid-area: 2 / 2 / 3 / 3; }
-    #bodyPortfolio main .img-container .div5 {
-      grid-area: 3 / 2 / 4 / 3; }
-    #bodyPortfolio main .img-container .div6 {
-      grid-area: 4 / 1 / 5 / 3; }
-    #bodyPortfolio main .img-container .div7 {
-      grid-area: 5 / 1 / 6 / 3; }
-    #bodyPortfolio main .img-container .div8 {
-      grid-area: 6 / 1 / 7 / 2; }
-    #bodyPortfolio main .img-container .div9 {
-      grid-area: 7 / 1 / 8 / 2; }
-    #bodyPortfolio main .img-container .div10 {
-      grid-area: 6 / 2 / 8 / 3; }
-    #bodyPortfolio main .img-container .div11 {
-      grid-area: 8 / 1 / 9 / 3; }
-    #bodyPortfolio main .img-container .div12 {
-      grid-area: 9 / 1 / 10 / 3; }
-    #bodyPortfolio main .img-container .div13 {
-      grid-area: 10 / 1 / 11 / 2; }
-    #bodyPortfolio main .img-container .div14 {
-      grid-area: 10 / 2 / 11 / 3; }
-    #bodyPortfolio main .img-container .div15 {
-      grid-area: 11 / 1 / 12 / 2; }
-    #bodyPortfolio main .img-container .div16 {
-      grid-area: 11 / 2 / 12 / 3; }
-    #bodyPortfolio main .img-container .div17 {
-      grid-area: 12 / 1 / 13 / 3; }
-    #bodyPortfolio main .img-container .div18 {
-      grid-area: 13 / 1 / 14 / 3; }
-    #bodyPortfolio main .img-container .div19 {
-      grid-area: 14 / 1 / 15 / 2; }
-    #bodyPortfolio main .img-container .div20 {
-      grid-area: 14 / 2 / 15 / 3; }
-    #bodyPortfolio main .img-container .div21 {
-      grid-area: 15 / 1 / 16 / 2; }
-    #bodyPortfolio main .img-container .div22 {
-      grid-area: 15 / 2 / 16 / 3; }
-    #bodyPortfolio main .img-container .div23 {
-      grid-area: 16 / 1 / 17 / 2; }
-    #bodyPortfolio main .img-container .div24 {
-      grid-area: 16 / 2 / 17 / 3; }
-    #bodyPortfolio main .img-container .div25 {
-      grid-area: 17 / 1 / 18 / 3; }
-    #bodyPortfolio main .img-container .div26 {
-      grid-area: 18 / 1 / 19 / 3; }
-    #bodyPortfolio main .img-container .div27 {
-      grid-area: 19 / 1 / 20 / 3; }
-    #bodyPortfolio main .img-container .div28 {
-      grid-area: 20 / 1 / 21 / 3; }
-    #bodyPortfolio main .img-container .div29 {
-      grid-area: 21 / 1 / 22 / 2; }
-    #bodyPortfolio main .img-container .div30 {
-      grid-area: 21 / 2 / 22 / 3; }
-    #bodyPortfolio main .img-container .div31 {
-      grid-area: 22 / 1 / 23 / 2; }
-    #bodyPortfolio main .img-container .div32 {
-      grid-area: 22 / 2 / 23 / 3; }
-    #bodyPortfolio main .img-container .div33 {
-      grid-area: 23 / 1 / 24 / 3; }
-    #bodyPortfolio main .img-container .div34 {
-      grid-area: 24 / 1 / 25 / 2; }
-    #bodyPortfolio main .img-container .div35 {
-      grid-area: 25 / 1 / 26 / 2; }
-    #bodyPortfolio main .img-container .div36 {
-      grid-area: 24 / 2 / 26 / 3; }
-    #bodyPortfolio main .img-container .div37 {
-      grid-area: 26 / 1 / 27 / 3; }
+  #bodyPortfolio main {
+    width: 100%; }
+    #bodyPortfolio main .row-container1 .img-ba-sky {
+      background-image: url(/images/ba-sky.png); }
+    #bodyPortfolio main .row-container1 .img-costanera-butterfly {
+      background-image: url(/images/nature-costanera-butterfly.png); }
+    #bodyPortfolio main .row-container2 .ba-fac {
+      background-image: url(/images/ba-fac.png); }
+    #bodyPortfolio main .row-container2 .mid-row-container {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: center;
+      place-items: center;
+      width: 50vw; }
+      #bodyPortfolio main .row-container2 .mid-row-container .delta-cayena {
+        background-image: url(/images/delta-cayena.png); }
+      #bodyPortfolio main .row-container2 .mid-row-container .nature-purple-flower {
+        background-image: url(/images/nature-purple-flower.png); }
+    #bodyPortfolio main .row-container3-4 .ba-flores {
+      background-image: url(/images/ba-flores.png); }
+    #bodyPortfolio main .row-container3-4 .ba-recoleta {
+      background-image: url(/images/ba-recoleta.png); }
+    #bodyPortfolio main .row-container5 .mid-row-container2 .delta-ship-inside {
+      background-image: url(/images/delta-ship-inside.png); }
+    #bodyPortfolio main .row-container5 .mid-row-container2 .ba-si-bird {
+      background-image: url(/images/ba-si-bird.png); }
+    #bodyPortfolio main .row-container5 .delta-model {
+      background-image: url(/images/delta-model.png); }
+    #bodyPortfolio main .row-container6 .delta-away {
+      background-image: url(/images/delta-away.png); }
+    #bodyPortfolio main .row-container6 .nature-mush {
+      background-image: url(/images/nature-mush.png); }
+    #bodyPortfolio main .row-container7 .ba-day-moon {
+      background-image: url(/images/ba-day-moon.png); }
+    #bodyPortfolio main .row-container7 .delta-purple {
+      background-image: url(/images/delta-purple.png); }
