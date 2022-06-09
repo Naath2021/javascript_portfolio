@@ -1,0 +1,26 @@
+.vertical-image-portfolio-extended{
+    width: $w50;
+    height: $h50;
+    @include bg-cover;
+}
+.horizontal-image-portfolio-extended{
+    width: $w100;
+    height: $h50;
+    @include bg-cover;
+}
+
+.tiny-image-portfolio-extended{
+    width: $w50;
+    height: $h25;
+    @include bg-cover;
+}
+
+.row-w100-container-extended{
+    @include flexrow;
+    width: $w100;
+}
+
+.column-w100-container-extended{
+    @include flexcolumn;
+    width: $w100;
+}

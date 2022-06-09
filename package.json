@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Naath2021/Ph-JS#readme",
   "dependencies": {
+    "bootstrap": "^5.2.0-beta1",
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.16"
   }
