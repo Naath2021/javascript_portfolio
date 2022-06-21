@@ -1,108 +1,91 @@
-#bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact{
-    width: 100%;
-    .menu, .logo{
+#bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact {
+  width: 100%;
+  .menu, .logo, .desktop-nav {
+    display: none;
+  }
+  .mobile-icons-container{
+    @include flexrow;
+    justify-content: center;
+    .mobile-icons{
+      position: fixed;
+      top: 80px;
+      right: 27px;
+      a{
+        color: $bgAndFont;
+        width: $w3;
+        height: $h3;
+        font-size: $w3;
+      }
+    }
+    #mobileBtn{
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      border: none;
+      font-size: $w3;
+      i{
+        color: $bgAndFont;
+        font-size: $w5;
+      }
+    }
+  }
+
+
+  @media screen and (min-width: 768px) {
+    header {
+      .mobile-icons-container{
         display: none;
-        // position: absolute;
-        // top: 0;
-        // left: 0;
-        // width: 300px;
-        // height: $h100;
-        // background-color: $highlightColor;
-        // @include flexcolumn;
-        // justify-content: center;
-        // transition: all 0.5s ease;
-        // transform: translateX(-100%);
-        // &:active{
-        //     transform: translateX(0);
-        // }
-        // li{
-        //     margin: 15px 0;
-        // }
-    }
-    nav{
-        @include flexcolumn;
-        justify-content: center;
-        width: 8vw;
-        height: auto;
-        padding: $h3 0;
+      }
+      .desktop-nav {
+        @include flexrow;
+        justify-content: space-around;
         position: fixed;
-        right: 0;
-        top: $h3;
-        .iconsContainer{
-            @include flexcolumn;
-            justify-content: center;
-            .icons{
-                text-align: center;
-                font-size: $w3;
-                color: $bgAndFont;
-                padding: 5px 0 ;
-                a{
-                    color: $bgAndFont;
-                }
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 10vh;
+        background: $headerBg;
+        .logo,
+        .menu {
+          display: block;
+        }
+        img {
+          width: $w3 * 2;
+          height: auto;
+          padding: 0 $w1;
+        }
+        .menu {
+          @include flexrow;
+          li {
+            list-style: none;
+            text-decoration: none;
+            a {
+              padding-right: 20px;
+              color: $bgAndFont;
+              &:hover {
+                color: $highlightColor;
+              }
             }
+          }
         }
-        .mobileMenubtn{
-            color: $bgAndFont;
-            font-size: $w3 + $w1;
-            padding-bottom: 20px;
+        .iconsContainer {
+          @include flexrow;
+          justify-content: center;
+          .icons {
+            margin: 0 5px;
+            a {
+              font-size: $w1 + 0.2;
+              color: $bgAndFont;
+              &:hover {
+                color: $highlightColor;
+                transition: all 0.5s ease;
+              }
+            }
+          }
         }
+      }
     }
-
-
-
-    @media screen and (min-width: 768px){
-        header{
-            .logo, .menu{
-                display: block;
-            }
-            nav{
-                @include flexrow;
-                justify-content: space-around;
-                position: fixed;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 10vh;
-                background: $headerBg;
-                img{
-                 width: $w3*2;
-                 height: auto;
-                 padding: 0 $w1;
-                }
-                .menu{
-                    @include flexrow;
-                    li{
-                        list-style: none;
-                        text-decoration: none;
-                        margin: $w1;
-                        a{
-                         color: $bgAndFont;
-                            &:hover{
-                                color: $highlightColor;
-                            }
-                         }
-                    }
-                }
-                .iconsContainer{
-                    @include flexrow;
-                    justify-content: center;
-                    .icons{
-                        margin: 0 10px;
-                        padding-bottom: 20px;
-                        a{
-                            font-size: $w1 + 0.5vw;
-                            color: $bgAndFont;
-                            &:hover{
-                                color: $highlightColor;
-                                transition: all 0.5s ease;
-                            }
-                        }
-                    }
-                }
-                .mobileMenubtn{
-                    display: none;
-                }
-            }
-        }
-    } 
+  }
 }
+
+

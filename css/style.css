@@ -1,52 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand:wght@500;600&display=swap");
-#bodyPrueba .logo, #bodyPrueba .menu {
-  display: none; }
-
-@media screen and (min-width: 768px) {
-  #bodyPrueba header {
-    width: 100%;
-    height: 100vh;
-    background-image: url(/images/home-red-flower.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; }
-    #bodyPrueba header nav {
-      width: 100%;
-      height: 10vh;
-      background-color: rgba(93, 138, 102, 0.6);
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 1vw; }
-      #bodyPrueba header nav img {
-        width: 5.5vw;
-        height: auto;
-        padding: 0 1vw; }
-      #bodyPrueba header nav .menu {
-        display: flex; }
-        #bodyPrueba header nav .menu li {
-          list-style: none;
-          text-decoration: none;
-          margin: 1vw; }
-          #bodyPrueba header nav .menu li a {
-            color: #f4efe8; }
-            #bodyPrueba header nav .menu li a:hover {
-              color: #c9a803; }
-      #bodyPrueba header nav .iconsContainer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between; }
-        #bodyPrueba header nav .iconsContainer .icons {
-          margin: 0 10px; }
-          #bodyPrueba header nav .iconsContainer .icons a {
-            font-size: 1.2vw;
-            color: #f4efe8; }
-            #bodyPrueba header nav .iconsContainer .icons a:hover {
-              color: #c9a803; } }
-
 * {
   margin: 0;
   padding: 0;
@@ -62,7 +14,7 @@
   width: 100%; }
   #bodyHome footer, #bodyPortfolio footer, #bodyProjects footer, #bodyAbout footer, #bodyContact footer {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     place-items: center;
@@ -75,7 +27,7 @@
       padding: 1vw 0; }
     #bodyHome footer .icons-rrss-container, #bodyPortfolio footer .icons-rrss-container, #bodyProjects footer .icons-rrss-container, #bodyAbout footer .icons-rrss-container, #bodyContact footer .icons-rrss-container {
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       flex-direction: row;
       place-items: center;
       justify-content: space-between;
@@ -94,7 +46,7 @@
       width: 5vw; }
     #bodyHome footer .icons-rrss-container, #bodyPortfolio footer .icons-rrss-container, #bodyProjects footer .icons-rrss-container, #bodyAbout footer .icons-rrss-container, #bodyContact footer .icons-rrss-container {
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       flex-direction: row;
       place-items: center;
       justify-content: space-between;
@@ -110,45 +62,38 @@
 
 #bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact {
   width: 100%; }
-  #bodyHome .menu, #bodyHome .logo, #bodyPortfolio .menu, #bodyPortfolio .logo, #bodyProjects .menu, #bodyProjects .logo, #bodyAbout .menu, #bodyAbout .logo, #bodyContact .menu, #bodyContact .logo {
+  #bodyHome .menu, #bodyHome .logo, #bodyHome .desktop-nav, #bodyPortfolio .menu, #bodyPortfolio .logo, #bodyPortfolio .desktop-nav, #bodyProjects .menu, #bodyProjects .logo, #bodyProjects .desktop-nav, #bodyAbout .menu, #bodyAbout .logo, #bodyAbout .desktop-nav, #bodyContact .menu, #bodyContact .logo, #bodyContact .desktop-nav {
     display: none; }
-  #bodyHome nav, #bodyPortfolio nav, #bodyProjects nav, #bodyAbout nav, #bodyContact nav {
+  #bodyHome .mobile-icons-container, #bodyPortfolio .mobile-icons-container, #bodyProjects .mobile-icons-container, #bodyAbout .mobile-icons-container, #bodyContact .mobile-icons-container {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     place-items: center;
-    justify-content: center;
-    width: 8vw;
-    height: auto;
-    padding: 3vh 0;
-    position: fixed;
-    right: 0;
-    top: 3vh; }
-    #bodyHome nav .iconsContainer, #bodyPortfolio nav .iconsContainer, #bodyProjects nav .iconsContainer, #bodyAbout nav .iconsContainer, #bodyContact nav .iconsContainer {
-      display: flex;
-      flex-wrap: nowrap;
-      flex-direction: column;
-      justify-content: center;
-      place-items: center;
-      justify-content: center; }
-      #bodyHome nav .iconsContainer .icons, #bodyPortfolio nav .iconsContainer .icons, #bodyProjects nav .iconsContainer .icons, #bodyAbout nav .iconsContainer .icons, #bodyContact nav .iconsContainer .icons {
-        text-align: center;
-        font-size: 3vw;
+    justify-content: center; }
+    #bodyHome .mobile-icons-container .mobile-icons, #bodyPortfolio .mobile-icons-container .mobile-icons, #bodyProjects .mobile-icons-container .mobile-icons, #bodyAbout .mobile-icons-container .mobile-icons, #bodyContact .mobile-icons-container .mobile-icons {
+      position: fixed;
+      top: 80px;
+      right: 27px; }
+      #bodyHome .mobile-icons-container .mobile-icons a, #bodyPortfolio .mobile-icons-container .mobile-icons a, #bodyProjects .mobile-icons-container .mobile-icons a, #bodyAbout .mobile-icons-container .mobile-icons a, #bodyContact .mobile-icons-container .mobile-icons a {
         color: #f4efe8;
-        padding: 5px 0; }
-        #bodyHome nav .iconsContainer .icons a, #bodyPortfolio nav .iconsContainer .icons a, #bodyProjects nav .iconsContainer .icons a, #bodyAbout nav .iconsContainer .icons a, #bodyContact nav .iconsContainer .icons a {
-          color: #f4efe8; }
-    #bodyHome nav .mobileMenubtn, #bodyPortfolio nav .mobileMenubtn, #bodyProjects nav .mobileMenubtn, #bodyAbout nav .mobileMenubtn, #bodyContact nav .mobileMenubtn {
-      color: #f4efe8;
-      font-size: 4vw;
-      padding-bottom: 20px; }
+        width: 3vw;
+        height: 3vh;
+        font-size: 3vw; }
+    #bodyHome .mobile-icons-container #mobileBtn, #bodyPortfolio .mobile-icons-container #mobileBtn, #bodyProjects .mobile-icons-container #mobileBtn, #bodyAbout .mobile-icons-container #mobileBtn, #bodyContact .mobile-icons-container #mobileBtn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      border: none;
+      font-size: 3vw; }
+      #bodyHome .mobile-icons-container #mobileBtn i, #bodyPortfolio .mobile-icons-container #mobileBtn i, #bodyProjects .mobile-icons-container #mobileBtn i, #bodyAbout .mobile-icons-container #mobileBtn i, #bodyContact .mobile-icons-container #mobileBtn i {
+        color: #f4efe8;
+        font-size: 5vw; }
   @media screen and (min-width: 768px) {
-    #bodyHome header .logo, #bodyHome header .menu, #bodyPortfolio header .logo, #bodyPortfolio header .menu, #bodyProjects header .logo, #bodyProjects header .menu, #bodyAbout header .logo, #bodyAbout header .menu, #bodyContact header .logo, #bodyContact header .menu {
-      display: block; }
-    #bodyHome header nav, #bodyPortfolio header nav, #bodyProjects header nav, #bodyAbout header nav, #bodyContact header nav {
+    #bodyHome header .mobile-icons-container, #bodyPortfolio header .mobile-icons-container, #bodyProjects header .mobile-icons-container, #bodyAbout header .mobile-icons-container, #bodyContact header .mobile-icons-container {
+      display: none; }
+    #bodyHome header .desktop-nav, #bodyPortfolio header .desktop-nav, #bodyProjects header .desktop-nav, #bodyAbout header .desktop-nav, #bodyContact header .desktop-nav {
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       flex-direction: row;
       place-items: center;
       justify-content: space-around;
@@ -158,72 +103,73 @@
       width: 100%;
       height: 10vh;
       background: rgba(93, 138, 102, 0.5); }
-      #bodyHome header nav img, #bodyPortfolio header nav img, #bodyProjects header nav img, #bodyAbout header nav img, #bodyContact header nav img {
+      #bodyHome header .desktop-nav .logo,
+      #bodyHome header .desktop-nav .menu, #bodyPortfolio header .desktop-nav .logo,
+      #bodyPortfolio header .desktop-nav .menu, #bodyProjects header .desktop-nav .logo,
+      #bodyProjects header .desktop-nav .menu, #bodyAbout header .desktop-nav .logo,
+      #bodyAbout header .desktop-nav .menu, #bodyContact header .desktop-nav .logo,
+      #bodyContact header .desktop-nav .menu {
+        display: block; }
+      #bodyHome header .desktop-nav img, #bodyPortfolio header .desktop-nav img, #bodyProjects header .desktop-nav img, #bodyAbout header .desktop-nav img, #bodyContact header .desktop-nav img {
         width: 6vw;
         height: auto;
         padding: 0 1vw; }
-      #bodyHome header nav .menu, #bodyPortfolio header nav .menu, #bodyProjects header nav .menu, #bodyAbout header nav .menu, #bodyContact header nav .menu {
+      #bodyHome header .desktop-nav .menu, #bodyPortfolio header .desktop-nav .menu, #bodyProjects header .desktop-nav .menu, #bodyAbout header .desktop-nav .menu, #bodyContact header .desktop-nav .menu {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         flex-direction: row;
         place-items: center; }
-        #bodyHome header nav .menu li, #bodyPortfolio header nav .menu li, #bodyProjects header nav .menu li, #bodyAbout header nav .menu li, #bodyContact header nav .menu li {
+        #bodyHome header .desktop-nav .menu li, #bodyPortfolio header .desktop-nav .menu li, #bodyProjects header .desktop-nav .menu li, #bodyAbout header .desktop-nav .menu li, #bodyContact header .desktop-nav .menu li {
           list-style: none;
-          text-decoration: none;
-          margin: 1vw; }
-          #bodyHome header nav .menu li a, #bodyPortfolio header nav .menu li a, #bodyProjects header nav .menu li a, #bodyAbout header nav .menu li a, #bodyContact header nav .menu li a {
+          text-decoration: none; }
+          #bodyHome header .desktop-nav .menu li a, #bodyPortfolio header .desktop-nav .menu li a, #bodyProjects header .desktop-nav .menu li a, #bodyAbout header .desktop-nav .menu li a, #bodyContact header .desktop-nav .menu li a {
+            padding-right: 20px;
             color: #f4efe8; }
-            #bodyHome header nav .menu li a:hover, #bodyPortfolio header nav .menu li a:hover, #bodyProjects header nav .menu li a:hover, #bodyAbout header nav .menu li a:hover, #bodyContact header nav .menu li a:hover {
+            #bodyHome header .desktop-nav .menu li a:hover, #bodyPortfolio header .desktop-nav .menu li a:hover, #bodyProjects header .desktop-nav .menu li a:hover, #bodyAbout header .desktop-nav .menu li a:hover, #bodyContact header .desktop-nav .menu li a:hover {
               color: #c9a803; }
-      #bodyHome header nav .iconsContainer, #bodyPortfolio header nav .iconsContainer, #bodyProjects header nav .iconsContainer, #bodyAbout header nav .iconsContainer, #bodyContact header nav .iconsContainer {
+      #bodyHome header .desktop-nav .iconsContainer, #bodyPortfolio header .desktop-nav .iconsContainer, #bodyProjects header .desktop-nav .iconsContainer, #bodyAbout header .desktop-nav .iconsContainer, #bodyContact header .desktop-nav .iconsContainer {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         flex-direction: row;
         place-items: center;
         justify-content: center; }
-        #bodyHome header nav .iconsContainer .icons, #bodyPortfolio header nav .iconsContainer .icons, #bodyProjects header nav .iconsContainer .icons, #bodyAbout header nav .iconsContainer .icons, #bodyContact header nav .iconsContainer .icons {
-          margin: 0 10px;
-          padding-bottom: 20px; }
-          #bodyHome header nav .iconsContainer .icons a, #bodyPortfolio header nav .iconsContainer .icons a, #bodyProjects header nav .iconsContainer .icons a, #bodyAbout header nav .iconsContainer .icons a, #bodyContact header nav .iconsContainer .icons a {
-            font-size: 1.5vw;
+        #bodyHome header .desktop-nav .iconsContainer .icons, #bodyPortfolio header .desktop-nav .iconsContainer .icons, #bodyProjects header .desktop-nav .iconsContainer .icons, #bodyAbout header .desktop-nav .iconsContainer .icons, #bodyContact header .desktop-nav .iconsContainer .icons {
+          margin: 0 5px; }
+          #bodyHome header .desktop-nav .iconsContainer .icons a, #bodyPortfolio header .desktop-nav .iconsContainer .icons a, #bodyProjects header .desktop-nav .iconsContainer .icons a, #bodyAbout header .desktop-nav .iconsContainer .icons a, #bodyContact header .desktop-nav .iconsContainer .icons a {
+            font-size: 1.2vw;
             color: #f4efe8; }
-            #bodyHome header nav .iconsContainer .icons a:hover, #bodyPortfolio header nav .iconsContainer .icons a:hover, #bodyProjects header nav .iconsContainer .icons a:hover, #bodyAbout header nav .iconsContainer .icons a:hover, #bodyContact header nav .iconsContainer .icons a:hover {
+            #bodyHome header .desktop-nav .iconsContainer .icons a:hover, #bodyPortfolio header .desktop-nav .iconsContainer .icons a:hover, #bodyProjects header .desktop-nav .iconsContainer .icons a:hover, #bodyAbout header .desktop-nav .iconsContainer .icons a:hover, #bodyContact header .desktop-nav .iconsContainer .icons a:hover {
               color: #c9a803;
-              transition: all 0.5s ease; }
-      #bodyHome header nav .mobileMenubtn, #bodyPortfolio header nav .mobileMenubtn, #bodyProjects header nav .mobileMenubtn, #bodyAbout header nav .mobileMenubtn, #bodyContact header nav .mobileMenubtn {
-        display: none; } }
+              transition: all 0.5s ease; } }
 
-.vertical-image-portfolio-extended, #bodyPortfolio main .row-container1 .img-ba-sky, #bodyPortfolio main .row-container1 .img-costanera-butterfly, #bodyPortfolio main .row-container2 .ba-fac, #bodyPortfolio main .row-container4 .mid-row-container2, #bodyPortfolio main .row-container4 .delta-model, #bodyPortfolio main .row-container9 .delta-cheiru, #bodyPortfolio main .row-container9 .nature-costanera-flower, #bodyPortfolio main .row-container10 .nature-si-orange-flower, #bodyPortfolio main .row-container10 .nature-si-purple-white, #bodyPortfolio main .row-container12 .nature-yellow-flower2, #bodyPortfolio main .row-container12 .nature-costanera-fruit, #bodyPortfolio main .row-container13 .menu-about, #bodyPortfolio main .row-container13 .delta-tree, #bodyPortfolio main .row-container14 .delta-musgo {
+.vertical-image-portfolio-extended {
   width: 50vw;
-  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
 
-.horizontal-image-portfolio-extended, #bodyPortfolio main .row-container3 .ba-flores, #bodyPortfolio main .row-container3 .ba-recoleta, #bodyPortfolio main .row-container5 .ba-fac, #bodyPortfolio main .row-container5 .ba-memory-fadu, #bodyPortfolio main .row-container8 .pink-sunset, #bodyPortfolio main .row-container8 .delta-little-bridge, #bodyPortfolio main .row-container11 .nature-delta-pink-flower, #bodyPortfolio main .row-container11 .delta-hidden-house, #bodyPortfolio main .row-container11 .ba-memory, #bodyPortfolio main .delta-red-flowers, #bodyPortfolio main .nature-leaves {
+.horizontal-image-portfolio-extended {
   width: 100%;
-  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
 
-.tiny-image-portfolio-extended, #bodyPortfolio main .row-container2 .mid-row-container .delta-cayena, #bodyPortfolio main .row-container2 .mid-row-container .nature-purple-flower, #bodyPortfolio main .row-container4 .mid-row-container2 .delta-ship-inside, #bodyPortfolio main .row-container4 .mid-row-container2 .ba-si-bird, #bodyPortfolio main .row-container6 .delta-away, #bodyPortfolio main .row-container6 .nature-mush, #bodyPortfolio main .row-container7 .ba-day-moon, #bodyPortfolio main .row-container7 .delta-purple, #bodyPortfolio main .row-container14 .mid-row-container2 .menu-contact, #bodyPortfolio main .row-container14 .mid-row-container2 .menu-portfolio {
+.tiny-image-portfolio-extended {
   width: 50vw;
-  height: 25vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
 
-.row-w100-container-extended, #bodyPortfolio main .row-container1, #bodyPortfolio main .row-container2, #bodyPortfolio main .row-container4, #bodyPortfolio main .row-container5, #bodyPortfolio main .row-container6, #bodyPortfolio main .row-container7, #bodyPortfolio main .row-container9, #bodyPortfolio main .row-container10, #bodyPortfolio main .row-container12, #bodyPortfolio main .row-container13, #bodyPortfolio main .row-container14 {
+.row-w100-container-extended {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: row;
   place-items: center;
   width: 100%; }
 
-.column-w100-container-extended, #bodyPortfolio main .row-container3, #bodyPortfolio main .row-container8, #bodyPortfolio main .row-container11 {
+.column-w100-container-extended {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   place-items: center;
@@ -231,14 +177,14 @@
 
 #bodyHome {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   place-items: center;
   width: 100%; }
   #bodyHome .home {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     place-items: center;
@@ -251,7 +197,7 @@
     background-attachment: fixed; }
   #bodyHome .border {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     place-items: center;
@@ -278,7 +224,7 @@
       kerning: auto; }
     #bodyHome .border .btn-down {
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       flex-direction: column;
       justify-content: center;
       place-items: center;
@@ -289,7 +235,7 @@
       padding: 1vh; }
   #bodyHome #menu {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     place-items: center;
@@ -297,7 +243,7 @@
     width: 100%; }
     #bodyHome #menu .card-portfolio {
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       flex-direction: row;
       place-items: center;
       background-repeat: no-repeat;
@@ -323,7 +269,7 @@
           margin: 5px 0; }
     #bodyHome #menu .card-projects {
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       flex-direction: row;
       place-items: center;
       background-repeat: no-repeat;
@@ -349,7 +295,7 @@
           margin: 5px 0; }
     #bodyHome #menu .card-about {
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       flex-direction: row;
       place-items: center;
       background-repeat: no-repeat;
@@ -375,7 +321,7 @@
           margin: 5px 0; }
     #bodyHome #menu .card-contact {
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       flex-direction: row;
       place-items: center;
       background-repeat: no-repeat;
@@ -444,12 +390,13 @@
 
 #bodyPortfolio {
   width: 100%;
-  min-height: 100vh; }
+  min-height: 100vh;
+  /* MEDIA QUERIES DESKTOP VIEW */ }
   #bodyPortfolio .head-portfolio {
     height: 100vh;
     width: 100%;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     place-items: center;
@@ -476,85 +423,44 @@
       margin: 5px 0; }
   #bodyPortfolio main {
     width: 100%; }
-    #bodyPortfolio main .row-container1 .img-ba-sky {
-      background-image: url(/images/ba-sky.png); }
-    #bodyPortfolio main .row-container1 .img-costanera-butterfly {
-      background-image: url(/images/nature-costanera-butterfly.png); }
-    #bodyPortfolio main .row-container2 .ba-fac {
-      background-image: url(/images/ba-fac.png); }
-    #bodyPortfolio main .row-container2 .mid-row-container {
-      display: flex;
-      flex-wrap: nowrap;
-      flex-direction: column;
-      justify-content: center;
-      place-items: center;
-      width: 50vw; }
-      #bodyPortfolio main .row-container2 .mid-row-container .delta-cayena {
-        background-image: url(/images/delta-cayena.png); }
-      #bodyPortfolio main .row-container2 .mid-row-container .nature-purple-flower {
-        background-image: url(/images/nature-purple-flower.png); }
-    #bodyPortfolio main .row-container3 .ba-flores {
-      background-image: url(/images/ba-flores.png); }
-    #bodyPortfolio main .row-container3 .ba-recoleta {
-      background-image: url(/images/nature-dragonfly.png); }
-    #bodyPortfolio main .row-container4 .mid-row-container2 .delta-ship-inside {
-      background-image: url(/images/delta-ship-inside.png); }
-    #bodyPortfolio main .row-container4 .mid-row-container2 .ba-si-bird {
-      background-image: url(/images/ba-si-bird.png); }
-    #bodyPortfolio main .row-container4 .delta-model {
-      background-image: url(/images/delta-model.png); }
-    #bodyPortfolio main .row-container5 .ba-fac {
-      background-image: url(/images/ba-recoleta.png); }
-    #bodyPortfolio main .row-container5 .ba-memory-fadu {
-      background-image: url(/images/ba-memory-fadu.png); }
-    #bodyPortfolio main .row-container6 .delta-away {
-      background-image: url(/images/delta-away.png); }
-    #bodyPortfolio main .row-container6 .nature-mush {
-      background-image: url(/images/nature-mush.png); }
-    #bodyPortfolio main .row-container7 .ba-day-moon {
-      background-image: url(/images/ba-day-moon.png); }
-    #bodyPortfolio main .row-container7 .delta-purple {
-      background-image: url(/images/delta-purple.png); }
-    #bodyPortfolio main .row-container8 .pink-sunset {
-      background-image: url(/images/ba-pink-sunset.png); }
-    #bodyPortfolio main .row-container8 .delta-little-bridge {
-      background-image: url(/images/delta-little-bridge.png); }
-    #bodyPortfolio main .row-container9 .delta-cheiru {
-      background-image: url(/images/delta-cheiru.png); }
-    #bodyPortfolio main .row-container9 .nature-costanera-flower {
-      background-image: url(/images/nature-costanera-flower.png); }
-    #bodyPortfolio main .row-container10 .nature-si-orange-flower {
-      background-image: url(/images/nature-si-orange-flower.png); }
-    #bodyPortfolio main .row-container10 .nature-si-purple-white {
-      background-image: url(/images/nature-si-purple-white.png); }
-    #bodyPortfolio main .row-container11 .nature-delta-pink-flower {
-      background-image: url(/images/nature-delta-pink-flower.png); }
-    #bodyPortfolio main .row-container11 .delta-hidden-house {
-      background-image: url(/images/delta-hidden-house.png); }
-    #bodyPortfolio main .row-container11 .ba-memory {
-      background-image: url(/images/ba-memory.png); }
-    #bodyPortfolio main .row-container12 .nature-yellow-flower2 {
-      background-image: url(/images/nature-yellow-flower2.png); }
-    #bodyPortfolio main .row-container12 .nature-costanera-fruit {
-      background-image: url(/images/nature-costanera-fruit.png); }
-    #bodyPortfolio main .row-container13 .menu-about {
-      background-image: url(/images/menu-about.png); }
-    #bodyPortfolio main .row-container13 .delta-tree {
-      background-image: url(/images/delta-tree.png); }
-    #bodyPortfolio main .delta-red-flowers {
-      background-image: url(/images/delta-red-flowers.png); }
-    #bodyPortfolio main .row-container14 .mid-row-container2 {
-      display: flex;
-      flex-wrap: nowrap;
-      flex-direction: column;
-      justify-content: center;
-      place-items: center;
-      width: 50vw; }
-      #bodyPortfolio main .row-container14 .mid-row-container2 .menu-contact {
-        background-image: url(/images/menu-contact.png); }
-      #bodyPortfolio main .row-container14 .mid-row-container2 .menu-portfolio {
-        background-image: url(/images/menu-portfolio.png); }
-    #bodyPortfolio main .row-container14 .delta-musgo {
-      background-image: url(/images/delta-musgo.png); }
-    #bodyPortfolio main .nature-leaves {
-      background-image: url(/images/nature-leaves.png); }
+  @media screen and (min-width: 768px) {
+    #bodyPortfolio .head-portfolio h1 {
+      font-size: 5vw;
+      letter-spacing: 10px; }
+      #bodyPortfolio .head-portfolio h1 .solid {
+        width: 40vw; }
+    #bodyPortfolio main {
+      max-width: 100%; }
+      #bodyPortfolio main .image-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(9, 40vh);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; }
+        #bodyPortfolio main .image-container .img-portfolio {
+          width: 33.3333vw;
+          height: 40vh; }
+        #bodyPortfolio main .image-container .ba-sky {
+          grid-area: 1 / 1 / 2 / 2;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-image: url(/images/ba-sky.png); }
+        #bodyPortfolio main .image-container .costanera-butterfly {
+          grid-area: 1 / 2 / 2 / 3;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-image: url(/images/nature-costanera-butterfly.png); }
+        #bodyPortfolio main .image-container .ba-fac {
+          grid-area: 1 / 3 / 2 / 4;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-image: url(/images/ba-fac.png); }
+        #bodyPortfolio main .image-container .delta-cayena {
+          grid-area: 1 / 4 / 2 / 5;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-image: url(/images/delta-cayena.png); } }

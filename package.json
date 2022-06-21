@@ -1,5 +1,5 @@
 {
-  "name": "learmonth-portfolio",
+  "name": "portafolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Naath2021/Ph-JS.git"
+    "url": "git+https://github.com/Naath2021/javascript_portfolio.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Naath2021/Ph-JS/issues"
+    "url": "https://github.com/Naath2021/javascript_portfolio/issues"
   },
-  "homepage": "https://github.com/Naath2021/Ph-JS#readme",
+  "homepage": "https://github.com/Naath2021/javascript_portfolio#readme",
   "dependencies": {
     "bootstrap": "^5.2.0-beta1",
     "node-sass": "^7.0.1",

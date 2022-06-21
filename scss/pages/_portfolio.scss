@@ -19,194 +19,76 @@
     }
     main{
         width: $w100;
-        .row-container1{
-            @extend .row-w100-container-extended;
-            .img-ba-sky{
-                @extend .vertical-image-portfolio-extended; 
-                background-image: url(/images/ba-sky.png);
-            }
-            .img-costanera-butterfly{
-                @extend .vertical-image-portfolio-extended;
-                background-image: url(/images/nature-costanera-butterfly.png);
+        
+    }
+
+    /* MEDIA QUERIES DESKTOP VIEW */
+    @media screen and (min-width: 768px){
+        .head-portfolio{
+            h1{
+                font-size: $w5;
+                letter-spacing: 10px;
+                .solid{
+                    width: $w50 - $w10;
+                }
             }
         }
-        .row-container2{
-            @extend .row-w100-container-extended; 
-            .ba-fac{
-                @extend .vertical-image-portfolio-extended;
-                background-image: url(/images/ba-fac.png);
-            }
-            .mid-row-container{
-                @include flexcolumn;
-                width: $w50;
+        main{
+            max-width: $w100;
+            .image-container{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(9, 40vh);
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+                .img-portfolio{
+                    width: $w33;
+                    height: $h40;
+                }
+                .ba-sky{
+                    grid-area: 1 / 1 / 2 / 2;
+                    @include bg-cover;
+                    background-image: url(/images/ba-sky.png);
+                }
+                .costanera-butterfly{
+                    grid-area: 1 / 2 / 2 / 3;
+                    @include bg-cover;
+                    background-image: url(/images/nature-costanera-butterfly.png);
+                }
+                .ba-fac{
+                    grid-area: 1 / 3 / 2 / 4;
+                    @include bg-cover;
+                    background-image: url(/images/ba-fac.png)
+                }
                 .delta-cayena{
-                    @extend .tiny-image-portfolio-extended;
+                    grid-area: 1 / 4 / 2 / 5;
+                    @include bg-cover;
                     background-image: url(/images/delta-cayena.png);
                 }
                 .nature-purple-flower{
-                    @extend .tiny-image-portfolio-extended;
-                    background-image: url(/images/nature-purple-flower.png);
                 }
-            }
-        }
-        .row-container3{
-            @extend .column-w100-container-extended;
-            .ba-flores{
-                @extend .horizontal-image-portfolio-extended;
-                background-image: url(/images/ba-flores.png);
-            }
-            .ba-recoleta{
-                @extend .horizontal-image-portfolio-extended;
-                background-image: url(/images/nature-dragonfly.png);
-            }
-        }
-        .row-container4{
-            @extend .row-w100-container-extended;
-            .mid-row-container2{
-                @extend .vertical-image-portfolio-extended;
+                .ba-flores{
+
+                }
+                .nature-dragonfly{
+
+                }
                 .delta-ship-inside{
-                    @extend .tiny-image-portfolio-extended;
-                    background-image: url(/images/delta-ship-inside.png);
+
                 }
                 .ba-si-bird{
-                    @extend .tiny-image-portfolio-extended;
-                    background-image: url(/images/ba-si-bird.png);
+
+                }
+                .delta.model{
+
+                }
+                .ba-recoleta{
+
+                }
+                .ba-memory-fadu{
+
                 }
             }
-            .delta-model{
-                @extend .vertical-image-portfolio-extended;
-                background-image: url(/images/delta-model.png);
-            }
-        }
-        .row-container5{
-            @extend .row-w100-container-extended;
-            .ba-fac{
-                @extend .horizontal-image-portfolio-extended;
-                background-image: url(/images/ba-recoleta.png)
-            }
-            .ba-memory-fadu{
-                @extend .horizontal-image-portfolio-extended;
-                background-image: url(/images/ba-memory-fadu.png) 
-            }
-        }
-        .row-container6{
-            @extend .row-w100-container-extended;
-            .delta-away{
-                @extend .tiny-image-portfolio-extended;
-                background-image: url(/images/delta-away.png);
-            }
-            .nature-mush{
-                @extend .tiny-image-portfolio-extended;
-                background-image: url(/images/nature-mush.png);
-            }
-        }
-        .row-container7{
-            @extend .row-w100-container-extended;
-            .ba-day-moon{
-                @extend .tiny-image-portfolio-extended;
-                background-image: url(/images/ba-day-moon.png);
-            }
-            .delta-purple{
-                @extend .tiny-image-portfolio-extended;
-                background-image: url(/images/delta-purple.png);
-            }
-        }
-        .row-container8{
-            @extend .column-w100-container-extended;
-            .pink-sunset{
-                @extend .horizontal-image-portfolio-extended;
-                background-image: url(/images/ba-pink-sunset.png);
-            }
-            .delta-little-bridge{
-                @extend .horizontal-image-portfolio-extended;
-                background-image: url(/images/delta-little-bridge.png);
-            }
-        }
-        .row-container9{
-            @extend .row-w100-container-extended;
-            .delta-cheiru{
-                @extend .vertical-image-portfolio-extended;
-                background-image: url(/images/delta-cheiru.png)
-            }
-            .nature-costanera-flower{
-                @extend .vertical-image-portfolio-extended;
-                background-image: url(/images/nature-costanera-flower.png);
-            }
-        }
-        .row-container10{
-            @extend .row-w100-container-extended;
-            .nature-si-orange-flower{
-                @extend .vertical-image-portfolio-extended;
-                background-image: url(/images/nature-si-orange-flower.png)
-            }
-            .nature-si-purple-white{
-                @extend .vertical-image-portfolio-extended;
-                background-image: url(/images/nature-si-purple-white.png);
-            }
-        }
-        .row-container11{
-            @extend .column-w100-container-extended;
-            .nature-delta-pink-flower{
-                @extend .horizontal-image-portfolio-extended;
-                background-image: url(/images/nature-delta-pink-flower.png);
-            }
-            .delta-hidden-house{
-                @extend .horizontal-image-portfolio-extended;
-                background-image: url(/images/delta-hidden-house.png);    
-            }
-            .ba-memory{
-                @extend .horizontal-image-portfolio-extended;
-                background-image: url(/images/ba-memory.png);
-            }
-        }
-        .row-container12{
-            @extend .row-w100-container-extended;
-            .nature-yellow-flower2{
-                @extend .vertical-image-portfolio-extended;
-                background-image: url(/images/nature-yellow-flower2.png)
-            }
-            .nature-costanera-fruit{
-                @extend .vertical-image-portfolio-extended;
-                background-image: url(/images/nature-costanera-fruit.png);
-            }
-        }
-        .row-container13{
-            @extend .row-w100-container-extended;
-            .menu-about{
-                @extend .vertical-image-portfolio-extended;
-                background-image: url(/images/menu-about.png)
-            }
-            .delta-tree{
-                @extend .vertical-image-portfolio-extended;
-                background-image: url(/images/delta-tree.png);
-            }
-        }
-        .delta-red-flowers{
-            @extend .horizontal-image-portfolio-extended;
-            background-image: url(/images/delta-red-flowers.png);
-        }
-        .row-container14{
-            @extend .row-w100-container-extended;
-            .mid-row-container2{
-                @include flexcolumn;
-                width: $w50;
-                .menu-contact{
-                    @extend .tiny-image-portfolio-extended;
-                    background-image: url(/images/menu-contact.png);
-                }
-                .menu-portfolio{
-                    @extend .tiny-image-portfolio-extended;
-                    background-image: url(/images/menu-portfolio.png);
-                }
-            }
-            .delta-musgo{
-                @extend .vertical-image-portfolio-extended;
-                background-image: url(/images/delta-musgo.png);
-            }
-        }
-        .nature-leaves{
-            @extend .horizontal-image-portfolio-extended;
-            background-image: url(/images/nature-leaves.png);
         }
     }
 }
