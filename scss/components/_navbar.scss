@@ -1,6 +1,6 @@
 #bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact {
   width: 100%;
-  .menu, .logo, .desktop-nav {
+  .desktop-nav {
     display: none;
   }
   .mobile-icons-container{
@@ -26,6 +26,15 @@
       i{
         color: $bgAndFont;
         font-size: $w5;
+      }
+    }
+    .offcanvas {
+      .offcanvas-body {
+        a{
+          color: $footerBg;
+          text-decoration: none;
+          list-style-type: none;
+        }
       }
     }
   }
@@ -71,9 +80,8 @@
         .iconsContainer {
           @include flexrow;
           justify-content: center;
-          .icons {
-            margin: 0 5px;
             a {
+              padding: 4px;
               font-size: $w1 + 0.2;
               color: $bgAndFont;
               &:hover {
@@ -81,7 +89,6 @@
                 transition: all 0.5s ease;
               }
             }
-          }
         }
       }
     }

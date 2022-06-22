@@ -62,7 +62,7 @@
 
 #bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact {
   width: 100%; }
-  #bodyHome .menu, #bodyHome .logo, #bodyHome .desktop-nav, #bodyPortfolio .menu, #bodyPortfolio .logo, #bodyPortfolio .desktop-nav, #bodyProjects .menu, #bodyProjects .logo, #bodyProjects .desktop-nav, #bodyAbout .menu, #bodyAbout .logo, #bodyAbout .desktop-nav, #bodyContact .menu, #bodyContact .logo, #bodyContact .desktop-nav {
+  #bodyHome .desktop-nav, #bodyPortfolio .desktop-nav, #bodyProjects .desktop-nav, #bodyAbout .desktop-nav, #bodyContact .desktop-nav {
     display: none; }
   #bodyHome .mobile-icons-container, #bodyPortfolio .mobile-icons-container, #bodyProjects .mobile-icons-container, #bodyAbout .mobile-icons-container, #bodyContact .mobile-icons-container {
     display: flex;
@@ -88,6 +88,10 @@
       #bodyHome .mobile-icons-container #mobileBtn i, #bodyPortfolio .mobile-icons-container #mobileBtn i, #bodyProjects .mobile-icons-container #mobileBtn i, #bodyAbout .mobile-icons-container #mobileBtn i, #bodyContact .mobile-icons-container #mobileBtn i {
         color: #f4efe8;
         font-size: 5vw; }
+    #bodyHome .mobile-icons-container .offcanvas .offcanvas-body a, #bodyPortfolio .mobile-icons-container .offcanvas .offcanvas-body a, #bodyProjects .mobile-icons-container .offcanvas .offcanvas-body a, #bodyAbout .mobile-icons-container .offcanvas .offcanvas-body a, #bodyContact .mobile-icons-container .offcanvas .offcanvas-body a {
+      color: #4b2830;
+      text-decoration: none;
+      list-style-type: none; }
   @media screen and (min-width: 768px) {
     #bodyHome header .mobile-icons-container, #bodyPortfolio header .mobile-icons-container, #bodyProjects header .mobile-icons-container, #bodyAbout header .mobile-icons-container, #bodyContact header .mobile-icons-container {
       display: none; }
@@ -133,14 +137,13 @@
         flex-direction: row;
         place-items: center;
         justify-content: center; }
-        #bodyHome header .desktop-nav .iconsContainer .icons, #bodyPortfolio header .desktop-nav .iconsContainer .icons, #bodyProjects header .desktop-nav .iconsContainer .icons, #bodyAbout header .desktop-nav .iconsContainer .icons, #bodyContact header .desktop-nav .iconsContainer .icons {
-          margin: 0 5px; }
-          #bodyHome header .desktop-nav .iconsContainer .icons a, #bodyPortfolio header .desktop-nav .iconsContainer .icons a, #bodyProjects header .desktop-nav .iconsContainer .icons a, #bodyAbout header .desktop-nav .iconsContainer .icons a, #bodyContact header .desktop-nav .iconsContainer .icons a {
-            font-size: 1.2vw;
-            color: #f4efe8; }
-            #bodyHome header .desktop-nav .iconsContainer .icons a:hover, #bodyPortfolio header .desktop-nav .iconsContainer .icons a:hover, #bodyProjects header .desktop-nav .iconsContainer .icons a:hover, #bodyAbout header .desktop-nav .iconsContainer .icons a:hover, #bodyContact header .desktop-nav .iconsContainer .icons a:hover {
-              color: #c9a803;
-              transition: all 0.5s ease; } }
+        #bodyHome header .desktop-nav .iconsContainer a, #bodyPortfolio header .desktop-nav .iconsContainer a, #bodyProjects header .desktop-nav .iconsContainer a, #bodyAbout header .desktop-nav .iconsContainer a, #bodyContact header .desktop-nav .iconsContainer a {
+          padding: 4px;
+          font-size: 1.2vw;
+          color: #f4efe8; }
+          #bodyHome header .desktop-nav .iconsContainer a:hover, #bodyPortfolio header .desktop-nav .iconsContainer a:hover, #bodyProjects header .desktop-nav .iconsContainer a:hover, #bodyAbout header .desktop-nav .iconsContainer a:hover, #bodyContact header .desktop-nav .iconsContainer a:hover {
+            color: #c9a803;
+            transition: all 0.5s ease; } }
 
 .vertical-image-portfolio-extended {
   width: 50vw;
