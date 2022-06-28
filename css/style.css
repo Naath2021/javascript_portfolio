@@ -77,6 +77,11 @@
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd; }
 
+#bodyHome .t-d-none, #bodyPortfolio .t-d-none, #bodyProjects .t-d-none, #bodyAbout .t-d-none, #bodyContact .t-d-none {
+  text-decoration: none;
+  list-style-type: none;
+  list-style: none; }
+
 #bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact {
   min-height: 100vh;
   width: 100%; }
@@ -331,7 +336,7 @@
         font-size: 7vw;
         padding: 1vh 2vw;
         letter-spacing: 5px; }
-        #bodyHome #menu .card-portfolio a .solid {
+        #bodyHome #menu .card-portfolio a .hr-solid {
           height: 3px;
           width: 50vw;
           vertical-align: middle;
@@ -357,7 +362,7 @@
         font-size: 7vw;
         padding: 1vh 2vw;
         letter-spacing: 5px; }
-        #bodyHome #menu .card-projects a .solid {
+        #bodyHome #menu .card-projects a .hr-solid {
           height: 3px;
           width: 50vw;
           vertical-align: middle;
@@ -383,7 +388,7 @@
         font-size: 7vw;
         padding: 1vh 2vw;
         letter-spacing: 5px; }
-        #bodyHome #menu .card-about a .solid {
+        #bodyHome #menu .card-about a .hr-solid {
           height: 3px;
           width: 50vw;
           vertical-align: middle;
@@ -409,7 +414,7 @@
         font-size: 7vw;
         padding: 1vh 2vw;
         letter-spacing: 5px; }
-        #bodyHome #menu .card-contact a .solid {
+        #bodyHome #menu .card-contact a .hr-solid {
           height: 3px;
           width: 50vw;
           vertical-align: middle;
@@ -509,7 +514,6 @@
         grid-column-gap: 0px;
         grid-row-gap: 0px; }
         #bodyPortfolio main .image-container .img-portfolio {
-          width: 33.3333vw;
           height: 40vh; }
         #bodyPortfolio main .image-container .ba-sky {
           grid-area: 1 / 1 / 2 / 2;
