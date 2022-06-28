@@ -28,14 +28,11 @@
         font-size: $w5;
       }
     }
-    .offcanvas {
-      .offcanvas-body {
-        a{
-          color: $footerBg;
-          text-decoration: none;
-          list-style-type: none;
-        }
-      }
+    .menu-title, .nav-link{
+      color: $fontColor;
+    }
+    .offcanvas-body{
+      background-color: $headerBg;
     }
   }
 
