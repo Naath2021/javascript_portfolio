@@ -9,14 +9,12 @@
     <meta name="keywords" content="">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="/images/logo.png">
-    <title>Document</title>
+    <title>Portafolio</title>
 </head>
 <body id="bodyPortfolio">
-
-    <!-- HEADER / NAV  -->
-
     <header>
-        <nav class="nav">
+        <!-- DESKTOP MENU -->
+        <nav class="desktop-nav">
             <div class="logo">
                 <a href="#bodyHome"><img src="/images/logo.png" alt=""></a>
             </div>
@@ -26,14 +24,40 @@
                 <li><a href="/about.html">Acerca de</a></li>
                 <li><a href="/contact.html">Contacto</a></li>
             </ul>
-            <div class="mobileMenubtn"><i class='bx bx-menu'></i></div>
             <div class="iconsContainer">
                 <div class="icons"><a target="_blank" href="mailto:learmonthpro@gmail.com"><i class='bx bxl-gmail'></i></a></div>
                 <div class="icons"><a target="_blank" href="https://www.instagram.com/learmonth.studio/"><i class='bx bxl-instagram'></i></a></div>
                 <div class="icons"><a target="_blank" href="https://www.linkedin.com/in/nathaly-learmonth-briceno/"><i class='bx bxl-linkedin-square'></i></a></div>
             </div>
         </nav>
-    </header>
+    
+        <!-- MOBILE MENU BOOTSTRAP-->
+        <!-- <nav class="mobile-nav">
+            <div class="iconsContainer">
+                <div class="icons"><a target="_blank" href="mailto:learmonthpro@gmail.com"><i class='bx bxl-gmail'></i></a></div>
+                <div class="icons"><a target="_blank" href="https://www.instagram.com/learmonth.studio/"><i class='bx bxl-instagram'></i></a></div>
+                <div class="icons"><a target="_blank" href="https://www.linkedin.com/in/nathaly-learmonth-briceno/"><i class='bx bxl-linkedin-square'></i></a></div>
+            </div>
+            
+            <button class="btn btn-primary mobileMenubtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class='bx bx-menu'></i></button>
+    
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="Menu">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/portfolio.html">Portafolio</a></li>
+                <li><a href="/projects.html">Proyectos</a></li>
+                <li><a href="/about.html">Acerca de</a></li>
+                <li><a href="/contact.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+        </nav>
+    </header> -->
 
     <!-- BODY START -->
 
@@ -45,78 +69,42 @@
 
     <main>
         <!-- "ALL THE "ROW CONTAINER"S ARE NAMED AFTER EVERY ROW OF 50VH OR 100VH  -->
-    <div class="row-container1"> 
-            <div class="img-ba-sky image-portfolio-extended"></div>
-            <div class="img-costanera-butterfly"></div>
-        </div>
-        <div class="row-container2">
-            <div class="ba-fac"></div>
-            <div class="mid-row-container">
-                <div class="delta-cayena tiny-image-portfolio-extended"></div>
-                <div class="nature-purple-flower"></div>
-            </div>
-        </div>
-        
-        <div class="row-container3">
-            <div class="ba-flores"></div>
-            <div class="nature-dragonfly"></div>
-        </div>
-        
-        <div class="row-container4">
-            <div class="mid-row-container2">
-                <div class="delta-ship-inside"></div>
-                <div class="ba-si-bird"></div>
-            </div>
-            <div class="delta-model"></div>
-        </div>
-        <div class="row-container5">
-            <div class="ba-recoleta"></div>
-            <div class="ba-memory-fadu"></div>
-        </div>
-        <div class="row-container6">
-            <div class="delta-away"></div>
-            <div class="nature-mush"></div>
-        </div>
-        <div class="row-container7">
-            <div class="ba-day-moon"></div>
-            <div class="delta-purple"></div>
-        </div>
-        <div class="row-container8">
-            <div class="pink-sunset"></div>
-            <div class="delta-little-bridge"></div>
-        </div>
-        <div class="row-container9">
-            <div class="delta-cheiru"></div>
-            <div class="nature-costanera-flower"></div>
-        </div>
-        <div class="row-container10">
-            <div class="nature-si-orange-flower"></div>
-            <div class="nature-si-purple-white"></div>
-        </div>
-        <div class="row-container11">
-            <div class="nature-delta-pink-flower"></div>
-            <div class="delta-hidden-house"></div>
-            <div class="ba-memory"></div>
-        </div>
-        <div class="row-container12">
-            <div class="nature-yellow-flower2"></div>
-            <div class="nature-costanera-fruit"></div>
-        </div>
-        <div class="row-container13">
-            <div class="menu-about"></div>
-            <div class="delta-tree"></div>
-        </div>
-
-        <div class="delta-red-flowers"></div>
-
-        <div class="row-container14">
-            <div class="mid-row-container2">
-                <div class="menu-contact"></div>
-                <div class="menu-portfolio"></div>
-            </div>
-            <div class="delta-musgo"></div>
-        </div>
+        <div class="image-container">
+            <div class="img-portfolio ba-sky"></div>
+            <div class="img-portfolio costanera-butterfly"></div>
+            <div class="img-portfolio ba-fac"></div>
+            <div class="img-portfolio delta-cayena"></div>
+            <div class="img-portfolio nature-purple-flower"></div>
+            <div class="img-portfolio ba-flores"></div>
+            <div class="img-portfolio nature-dragonfly"></div>
+            <div class="img-portfolio delta-ship-inside"></div>
+            <div class="img-portfolio ba-si-bird"></div>
+            <div class="img-portfolio delta-model"></div>
+            <div class="img-portfolio ba-recoleta"></div>
+            <div class="img-portfolio ba-memory-fadu"></div>
+            <div class="img-portfolio delta-away"></div>
+            <div class="img-portfolio nature-mush"></div>
+            <div class="img-portfolio ba-day-moon"></div>
+            <div class="img-portfolio delta-purple"></div>
+            <div class="img-portfolio pink-sunset"></div>
+            <div class="img-portfolio delta-little-bridge"></div>
+            <div class="img-portfolio delta-cheiru"></div>
+            <div class="img-portfolio nature-costanera-flower"></div>
+            <div class="img-portfolio nature-si-orange-flower"></div>
+            <div class="img-portfolio nature-si-purple-white"></div>
+            <div class="img-portfolio nature-delta-pink-flower"></div>
+            <div class="img-portfolio delta-hidden-house"></div>
+            <div class="img-portfolio ba-memory"></div>
+            <div class="img-portfolio nature-yellow-flower2"></div>
+            <div class="img-portfolio nature-costanera-fruit"></div>
+            <div class="img-portfolio menu-about"></div>
+            <div class="img-portfolio delta-tree"></div>
+            <div class="img-portfolio delta-red-flowers"></div>
+            <div class="menu-contact"></div>
+            <div class="img-portfolio menu-portfolio"></div>
+            <div class="img-portfolio delta-musgo"></div>
         <div class="nature-leaves"></div>
+    </div>
     </main>
 
     <!-- FOOTER -->

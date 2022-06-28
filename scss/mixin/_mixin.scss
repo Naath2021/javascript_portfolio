@@ -1,6 +1,6 @@
 @mixin flexcolumn{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     place-items: center;
@@ -8,7 +8,7 @@
 
 @mixin flexrow{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     place-items: center;
 }
