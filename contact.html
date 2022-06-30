@@ -13,22 +13,58 @@
 </head>
 <body id="bodyContact">
     <header>
-        <nav class="nav">
+        <!-- DESKTOP MENU -->
+        <nav class="desktop-nav">
             <div class="logo">
-                <a href="#"><img src="/images/logo.png" alt=""></a>
+                <a href="#bodyHome"><img src="/images/logo.png" alt=""></a>
             </div>
             <ul class="menu">
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="/portfolio.html" class="t-d-none">Portafolio</a></li>
+                <li><a href="/projects.html" class="t-d-none">Proyectos</a></li>
+                <li><a href="/about.html" class="t-d-none">Acerca de</a></li>
+                <li><a href="/contact.html" class="t-d-none">Contacto</a></li>
             </ul>
             <div class="iconsContainer">
-                <div class="icons"><a href="#"><i class='bx bxl-gmail' ></i></a></div>
-                <div class="icons"><a href="#"><i class='bx bxl-instagram' ></i></a></div>
-                <div class="icons"><a href="#"><i class='bx bxl-linkedin-square'></i></a></div>
+                <div><a target="_blank" href="mailto:learmonthpro@gmail.com"><i class='bx bxl-gmail'></i></a></div>
+                <div><a target="_blank" href="https://www.instagram.com/learmonth.studio/"><i
+                            class='bx bxl-instagram'></i></a></div>
+                <div><a target="_blank" href="https://www.linkedin.com/in/nathaly-learmonth-briceno/"><i
+                            class='bx bxl-linkedin-square'></i></a></div>
             </div>
         </nav>
+
+        <!-- MOBILE MENU BOOTSTRAP-->
+        <div class="mobile-icons-container">
+            <button id="mobileBtn" class="bg-transparent" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class='bx bx-menu'></i></button>
+            <div class="mobile-icons">
+                <div>
+                    <a target="_blank" href="mailto:learmonthpro@gmail.com"><i class='bx bxl-gmail'></i></a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.instagram.com/learmonth.studio/"><i
+                            class='bx bxl-instagram'></i></a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/in/nathaly-learmonth-briceno/"><i
+                            class='bx bxl-linkedin-square'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title menu-title fw-semibold" id="offcanvasRightLabel">Menú</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column align-items-center my-3">
+                <a href="/index.html" class="py-3 fw-semibold t-d-none nav-link">Home</a>
+                <a href="/portfolio.html" class="py-3 fw-semibold text-decoration-none t-d-none nav-link">Portafolio</a>
+                <a href="/projects.html" class="py-3 fw-semibold text-decoration-none t-d-none nav-link">Proyectos</a>
+                <a href="/about.html" class="py-3 fw-semibold text-decoration-none t-d-none nav-link">Acerca de</a>
+                <a href="/contact.html" class="py-3 fw-semibold text-decoration-none t-d-none nav-link">Contacto</a>
+            </div>
+        </div>
     </header>
 
         <!-- <div class="container">

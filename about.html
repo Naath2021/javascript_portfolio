@@ -15,49 +15,91 @@
 </head>
 <body id="bodyAbout">
     <header>
-        <nav class="nav">
+        <!-- DESKTOP MENU -->
+        <nav class="desktop-nav">
             <div class="logo">
-                <a href="#"><img src="/images/logo.png" alt=""></a>
+                <a href="#bodyHome"><img src="/images/logo.png" alt=""></a>
             </div>
             <ul class="menu">
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="/portfolio.html" class="t-d-none">Portafolio</a></li>
+                <li><a href="/projects.html" class="t-d-none">Proyectos</a></li>
+                <li><a href="/about.html" class="t-d-none">Acerca de</a></li>
+                <li><a href="/contact.html" class="t-d-none">Contacto</a></li>
             </ul>
             <div class="iconsContainer">
-                <div class="icons"><a href="#"><i class='bx bxl-gmail' ></i></a></div>
-                <div class="icons"><a href="#"><i class='bx bxl-instagram' ></i></a></div>
-                <div class="icons"><a href="#"><i class='bx bxl-linkedin-square'></i></a></div>
+                <div><a target="_blank" href="mailto:learmonthpro@gmail.com"><i class='bx bxl-gmail'></i></a></div>
+                <div><a target="_blank" href="https://www.instagram.com/learmonth.studio/"><i
+                            class='bx bxl-instagram'></i></a></div>
+                <div><a target="_blank" href="https://www.linkedin.com/in/nathaly-learmonth-briceno/"><i
+                            class='bx bxl-linkedin-square'></i></a></div>
             </div>
         </nav>
+
+        <!-- MOBILE MENU BOOTSTRAP-->
+        <div class="mobile-icons-container">
+            <button id="mobileBtn" class="bg-transparent" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class='bx bx-menu'></i></button>
+            <div class="mobile-icons">
+                <div>
+                    <a target="_blank" href="mailto:learmonthpro@gmail.com"><i class='bx bxl-gmail'></i></a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.instagram.com/learmonth.studio/"><i
+                            class='bx bxl-instagram'></i></a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/in/nathaly-learmonth-briceno/"><i
+                            class='bx bxl-linkedin-square'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title menu-title fw-semibold" id="offcanvasRightLabel">Menú</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column align-items-center my-3">
+                <a href="/index.html" class="py-3 fw-semibold t-d-none nav-link">Home</a>
+                <a href="/portfolio.html" class="py-3 fw-semibold text-decoration-none t-d-none nav-link">Portafolio</a>
+                <a href="/projects.html" class="py-3 fw-semibold text-decoration-none t-d-none nav-link">Proyectos</a>
+                <a href="/about.html" class="py-3 fw-semibold text-decoration-none t-d-none nav-link">Acerca de</a>
+                <a href="/contact.html" class="py-3 fw-semibold text-decoration-none t-d-none nav-link">Contacto</a>
+            </div>
+        </div>
     </header>
+
+    <!-- BODY START -->
     <section>
         <h1>Conóceme</h1>
     </section>
     <section>
-        <img src="/images/about-me.png" alt="mujer-en-un-parque">
         <div>
             <h2>¡Hola!</h2>
-            <h3>Soy Nathaly Learmonth, aficionada de la fotografía. Siento un amor inmenso por la naturaleza y los seres vivos. Mi deseo es mostrar cómo se ve el mundo a través de mis ojos y poder perpetuar un momento, una fracción de segundo, en algo memorable. </h3>
+            <h3>Soy Nathaly Learmonth</h3>
+            <img src="/images/about-me.png" alt="mujer-en-un-parque">
         </div>
     </section>
+
     <section>
-        <div class="wave">
-        </div>
-        <h2>Un poco más sobre mí</h2>
-        <h3>Mi amor hacia la fotografía empezó en mi país natal, Venezuela, mientras veía programas y documentales de vida salvaje en televisión. De adolescente, participé en un taller donde acompañaba a mujeres mayores a hacer manualidades, y me pagaron por tomarle las fotos a sus piezas, conviertiendose en el primer "trabajo" de mi vida, casi parecía cosa del destino.
-            <br>
-        Cuando me mudé a Buenos Aires en el 2017 tuve la oportunidad de explorar más mis alrededores y de enamorarme por completo de la ciudad, encontrando inspiración en casi todos los rincones de sus calles, edificios, parques y reservas naturales, pero no fue sino hasta un par de años después que tuve mi primera cámara, que pude poner en práctica todas las cosas que imaginaba. 
-        </h3>
+        <h3>Soy desarrolladora web y Front-End Developer en curso, emprendedora y aficionada de la fotografía y la cocina.</h3>
+        <h2>Un poco de historia </h2>
+        <hr class="hr-solid">
+        <h3 class="paragraphs">Mi amor hacia la fotografía empezó en mi país natal, Venezuela, mientras veía programas y documentales de vida salvaje en televisión. Admiraba la valentía y el deseo de aventura y exploración, estar lo más cerca de la tierra y poder presenciar su sabiduría. <hr> En 2017, cuando me mudé a Argentina tuve la oportunidad de explorar más mis alrededores y de enamorarme por completo de la ciudad, estaba sumergida en un contraste perfecto entre modernismo y ecología.</h3>
     </section>
+
     <section>
         <img src="/images/nature-yellow-flower2.png" alt="flores-pequeñas-amarillas">
-        <h2>Mi Trabajo</h2>
-        <h3>Actualmente me siento atraída por los objetos y animales pequeños, esos que tienen una belleza especial pero pasan desapercibidos. Quiero demostrar que, si vemos más allá podemos conseguir cosas maravillosas; Quiero volverme una con mi cámara, salir a explorar el mundo y mantenerme en contacto con la madre tierra mientras me encuentro con el estilo que sea perfecto para mí.</h3>
+        <h2>Sobre mi arte</h2>
+        <hr class="hr-solid">
+        <img src="/images/musa-nath.png" alt="">
+        <h3 class="paragraphs">Mi atracción principal son los objetos, animales y plantas pequeñas, todo eso que está a simple vista y existe sin ser observado. Pero no es algo que me impida explorar todas las opciones que tenga a mi alcance, mi meta es volverme una con mi cámara, salir a explorar el mundo y mantenerme en contacto con la madre tierra mientras encuentro el estilo que sea perfecto para mí. <hr> En este portafolio encontrarás distintos contrastes, que van desde modelaje, naturaleza y arquitectura, hasta fotografía micro. Sólo una probadita del mundo a través de mis ojos y de mi lente.</h3>
+
+        <h2>Espero que disfrutes de lo que ves, y si te gusta, no dudes en contactarme. Me encanta colaborar y trabajar en proyectos.</h2>
+        <h2>¡Es un placer compartir este momento contigo!</h2>
     </section>
     <div>
-        <a href="contact.html">Contáctame</a>
+        <button><a href="contact.html">Contáctame</a></button>
     </div>
 
 

@@ -19,7 +19,178 @@
     }
     main{
         width: $w100;
-        
+        .image-container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(9, 30vh);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            .ba-sky{
+                grid-area: 1 / 1 / 2 / 2;
+                @include bg-cover;
+                background-image: url(/images/ba-sky.png);
+            }
+            .costanera-butterfly{
+                grid-area: 1 / 2 / 2 / 3;
+                @include bg-cover;
+                background-image: url(/images/nature-costanera-butterfly.png);
+            }
+            .ba-fac{
+                grid-area: 1 / 3 / 2 / 4;
+                @include bg-cover;
+                background-image: url(/images/ba-fac.png)
+            }
+            .delta-cayena{
+                grid-area: 1 / 4 / 2 / 5;
+                @include bg-cover;
+                background-image: url(/images/delta-cayena.png);
+            }
+            .nature-purple-flower{
+                grid-area: 2 / 1 / 3 / 2;
+                @include bg-cover;
+                background-image: url(/images/nature-purple-flower.png);
+            }
+            .ba-flores{
+                grid-area: 2 / 2 / 3 / 3;
+                @include bg-cover;
+                background-image: url(/images/ba-flores.png);
+            }
+            .nature-dragonfly{
+                grid-area: 2 / 3 / 3 / 4;
+                @include bg-cover;
+                background-image: url(/images/nature-dragonfly.png);
+            }
+            .delta-ship-inside{
+                grid-area: 2 / 4 / 3 / 5;
+                @include bg-cover;
+                background-image: url(/images/delta-ship-inside.png);
+            }
+            .ba-si-bird{
+                grid-area: 3 / 1 / 4 / 2;
+                @include bg-cover;
+                background-image: url(/images/ba-si-bird.png);
+            }
+            .delta.model{
+                grid-area: 3 / 2 / 4 / 3;
+                @include bg-cover;
+                background-image: url(/images/nature-leaves.png);
+            }
+            .ba-recoleta{
+                grid-area: 3 / 3 / 4 / 4;
+                @include bg-cover;
+                background-image: url(/images/ba-recoleta.png);
+            }
+            .ba-memory-fadu{
+                grid-area: 3 / 4 / 4 / 5;
+                @include bg-cover;
+                background-image: url(/images/ba-memory-fadu.png);
+            }
+            .delta-away{
+                grid-area: 4 / 1 / 5 / 2;
+                @include bg-cover;
+                background-image: url(/images/delta-away.png);
+            }
+            .nature-mush{
+                grid-area: 4 / 2 / 5 / 3;
+                @include bg-cover;
+                background-image: url(/images/nature-mush.png);
+            }
+            .ba-day-moon{
+                grid-area: 4 / 3 / 5 / 4;
+                @include bg-cover;
+                background-image: url(/images/ba-day-moon.png);
+            }
+            .delta-purple{
+                grid-area: 4 / 4 / 5 / 5;
+                @include bg-cover;
+                background-image: url(/images/delta-purple.png);
+            }
+            .pink-sunset{
+                grid-area: 5 / 1 / 6 / 2;
+                @include bg-cover;
+                background-image: url(/images/ba-pink-sunset.png);
+            }
+            .delta-little-bridge{
+                grid-area: 5 / 2 / 6 / 3;
+                @include bg-cover;
+                background-image: url(/images/delta-little-bridge.png);
+            }
+            .delta-cheiru{
+                grid-area: 5 / 3 / 6 / 4;
+                @include bg-cover;
+                background-image: url(/images/delta-cheiru.png);
+            }
+            .nature-costanera-flower{
+                grid-area: 5 / 4 / 6 / 5;
+                @include bg-cover;
+                background-image: url(/images/nature-costanera-flower.png);
+            }
+            .nature-si-orange-flower{
+                grid-area: 6 / 1 / 7 / 2;
+                @include bg-cover;
+                background-image: url(/images/nature-si-orange-flower.png);
+            }
+            .nature-si-purple-white{
+                grid-area: 6 / 2 / 7 / 3;
+                @include bg-cover;
+                background-image: url(/images/nature-si-purple-white.png);
+            }
+            .delta-hidden-house{
+                grid-area: 6 / 3 / 7 / 4;
+                @include bg-cover;
+                background-image: url(/images/delta-hidden-house.png);
+            }
+            .ba-memory{
+                grid-area: 6 / 4 / 7 / 5;
+                @include bg-cover;
+                background-image: url(/images/ba-memory.png);
+            }
+            .nature-yellow-flower2{
+                grid-area: 7 / 1 / 8 / 2;
+                @include bg-cover;
+                background-image: url(/images/nature-yellow-flower2.png);
+            }
+            .nature-costanera-fruit{
+                grid-area: 7 / 2 / 8 / 3;
+                @include bg-cover;
+                background-image: url(/images/nature-costanera-fruit.png);
+            }
+            .menu-about{
+                grid-area: 7 / 3 / 8 / 4;
+                @include bg-cover;
+                background-image: url(/images/menu-about.png);
+            }
+            .delta-tree{
+                grid-area: 7 / 4 / 8 / 5;
+                @include bg-cover;
+                background-image: url(/images/delta-tree.png);
+            }
+            .delta-red-flowers{
+                grid-area: 8 / 1 / 9 / 2;
+                @include bg-cover;
+                background-image: url(/images/delta-red-flowers.png);
+            }
+            .menu-contact{
+                grid-area: 8 / 2 / 9 / 3;
+                @include bg-cover;
+                background-image: url(/images/menu-contact.png);
+            }
+            .menu-portfolio{
+                grid-area: 8 / 3 / 9 / 4;
+                @include bg-cover;
+                background-image: url(/images/menu-portfolio.png);
+            }
+            .delta-musgo{
+                grid-area: 8 / 4 / 9 / 5;
+                @include bg-cover;
+                background-image: url(/images/delta-musgo.png);
+            }
+            .nature-leaves{
+                grid-area: 9 / 1 / 10 / 2;
+                @include bg-cover;
+                background-image: url(/images/nature-leaves.png);
+            }
+        }
     }
 
     /* MEDIA QUERIES DESKTOP VIEW */
@@ -35,59 +206,6 @@
         }
         main{
             max-width: $w100;
-            .image-container{
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: repeat(9, 40vh);
-                grid-column-gap: 0px;
-                grid-row-gap: 0px;
-                .img-portfolio{
-                    height: $h40;
-                }
-                .ba-sky{
-                    grid-area: 1 / 1 / 2 / 2;
-                    @include bg-cover;
-                    background-image: url(/images/ba-sky.png);
-                }
-                .costanera-butterfly{
-                    grid-area: 1 / 2 / 2 / 3;
-                    @include bg-cover;
-                    background-image: url(/images/nature-costanera-butterfly.png);
-                }
-                .ba-fac{
-                    grid-area: 1 / 3 / 2 / 4;
-                    @include bg-cover;
-                    background-image: url(/images/ba-fac.png)
-                }
-                .delta-cayena{
-                    grid-area: 1 / 4 / 2 / 5;
-                    @include bg-cover;
-                    background-image: url(/images/delta-cayena.png);
-                }
-                .nature-purple-flower{
-                }
-                .ba-flores{
-
-                }
-                .nature-dragonfly{
-
-                }
-                .delta-ship-inside{
-
-                }
-                .ba-si-bird{
-
-                }
-                .delta.model{
-
-                }
-                .ba-recoleta{
-
-                }
-                .ba-memory-fadu{
-
-                }
-            }
         }
     }
 }
