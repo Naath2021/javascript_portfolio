@@ -2,16 +2,8 @@
 // base
 @import "./scss/base/_base.scss";  
 
-
 // variables
 @import "./scss/vars/_colors.scss", "./scss/vars/_sizes.scss";
-
-// bootsrap
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/maps";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
 
 // mixins
 @import "./scss/mixin/mixin.scss";

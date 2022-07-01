@@ -52,7 +52,7 @@
             background-image: url(/images/menu-portfolio.png);
             a{
                 @include menuLinkStyle;
-                .solid{
+                .hr-solid{
                     @include sectionNameLineStyle
                 }
             }
@@ -62,7 +62,7 @@
             background-image: url(/images/menu-projects.png);
             a{
                 @include menuLinkStyle;
-                .solid{
+                .hr-solid{
                     @include sectionNameLineStyle
                 }
             }
@@ -72,7 +72,7 @@
             background-image: url(/images/menu-about.png);
             a{
                 @include menuLinkStyle;
-                .solid{
+                .hr-solid{
                     @include sectionNameLineStyle;
                 }
             }
@@ -82,7 +82,7 @@
             background-image: url(/images/menu-contact.png);
             a{
                 @include menuLinkStyle;
-                .solid{
+                .hr-solid{
                     @include sectionNameLineStyle;
                 }
             }

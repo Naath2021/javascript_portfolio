@@ -1,83 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css"><meta name="description"
-    content="">
-    <meta name="keywords" content="">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <meta name="keywords" content="">
     <link rel="icon" href="/images/logo.png">
-    <title>Proyectos</title>
+    <title>Nathaly Learmonth | Fotografía</title>
 </head>
+
 <body id="bodyProjects">
     <!-- NAVBAR -->
     <header>
-        <nav class="nav">
+        <!-- DESKTOP MENU -->
+        <nav class="desktop-nav">
             <div class="logo">
-                <a href="#"><img src="/images/logo.png" alt=""></a>
+                <a href="#bodyHome"><img src="/images/logo.png" alt=""></a>
             </div>
             <ul class="menu">
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="/portfolio.html" class="t-d-none">Portafolio</a></li>
+                <li><a href="/projects.html" class="t-d-none">Proyectos</a></li>
+                <li><a href="/about.html" class="t-d-none">Acerca de</a></li>
+                <li><a href="/contact.html" class="t-d-none">Contacto</a></li>
             </ul>
             <div class="iconsContainer">
-                <div class="icons"><a href="#"><i class='bx bxl-gmail' ></i></a></div>
-                <div class="icons"><a href="#"><i class='bx bxl-instagram' ></i></a></div>
-                <div class="icons"><a href="#"><i class='bx bxl-linkedin-square'></i></a></div>
+                <div><a target="_blank" href="mailto:learmonthpro@gmail.com"><i class='bx bxl-gmail'></i></a></div>
+                <div><a target="_blank" href="https://www.instagram.com/learmonth.studio/"><i
+                            class='bx bxl-instagram'></i></a></div>
+                <div><a target="_blank" href="https://www.linkedin.com/in/nathaly-learmonth-briceno/"><i
+                            class='bx bxl-linkedin-square'></i></a></div>
             </div>
         </nav>
+
+        <!-- MOBILE MENU BOOTSTRAP-->
+        <div class="mobile-icons-container">
+            <button id="mobileBtn" class="bg-transparent" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class='bx bx-menu'></i></button>
+            <div class="mobile-icons">
+                <div>
+                    <a target="_blank" href="mailto:learmonthpro@gmail.com"><i class='bx bxl-gmail'></i></a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.instagram.com/learmonth.studio/"><i
+                            class='bx bxl-instagram'></i></a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/in/nathaly-learmonth-briceno/"><i
+                            class='bx bxl-linkedin-square'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title menu-title fw-semibold" id="offcanvasRightLabel">Menú</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column align-items-center my-3">
+                <a href="/index.html" class="py-3 fw-semibold t-d-none nav-link">Home</a>
+                <a href="/portfolio.html" class="py-3 fw-semibold text-decoration-none t-d-none nav-link">Portafolio</a>
+                <a href="/projects.html" class="py-3 fw-semibold text-decoration-none t-d-none nav-link">Proyectos</a>
+                <a href="/about.html" class="py-3 fw-semibold text-decoration-none t-d-none nav-link">Acerca de</a>
+                <a href="/contact.html" class="py-3 fw-semibold text-decoration-none t-d-none nav-link">Contacto</a>
+            </div>
+        </div>
     </header>
+
     <section>
         <h1>Proyectos</h1>
     </section>
     <section>
         <img src="/images/header-musa-blanco.png" alt="">
-        <h2>Musa Batidos es un emprendimiento de jugos tropicales que busca evocar los placeres del caribe a través de los sabores refrescantes de sus frutas tropicales. Hecho con mucha pulpa de fruta 100% natural y orgánica. Tiene una personalidad sensual, amigable, optimista y veraniega. En este proyecto se intenta expresar la frescura y sabor desde los colores de sus productos, en distintas locaciones y estados de ánimo, queriendo vender una experiencia junto con un alimento saludable y sin T.A.C.C. en contacto con la naturaleza.</h2>
+        <h2 class="regular-text">Musa Batidos es un emprendimiento de jugos tropicales que busca evocar los placeres del
+            caribe a través de los sabores refrescantes de sus frutas tropicales. </h2>
     </section>
     <section>
-        <img src="/images/musa-model-pool.png" alt="modelo-tomando-sol-en-una-piscina" class="img-musa">
-        <img src="/images/musa-bosques-mano.png" alt="sosteniendo-botella-de-jugo" class="img-musa">
-        <img src="/images/musa-mini-chica.png" alt="mujer-sosteniendo-botellita-dejugo" class="img-musa">
-        <img src="/images/musa-cayena-costanera.png" alt="" class="img-musa">
-        <img src="/images/musa-splash.png" alt="botella-de-jugo" class="img-musa">
-        <img src="/images/musa-ella.png" alt="perra-al-lado-de-una-botella-de-jugo" class="img-musa">
-        <img src="/images/musa-model.sky.png" alt="modelo-sosteniendo-botella" class="img-musa">
-        <img src="/images/musa-bosques-tree.png" alt="botellas-de-jugo-sobre-un-árbol" class="img-musa">
-        <img src="/images/musa-model-view.png" alt="closeup-mujer-sosteniendo-botella-con-vista-a-la-ciudad" class="img-musa">
-        <img src="/images/musa-bosques1.png" alt="botella-de-jugo-sobre-cesped" class="img-musa">
-        <img src="/images/musa-model-3.png" alt="chica-tomando-jungo-mientra-toma-una-selfie" class="img-musa">
-        <img src="/images/musa-bosques-closeup.png" alt="closeup-logo" class="img-musa">
-        <img src="images/musa-mini-chico1.png" alt="chico-sosteniendo.botella-y-riendo" class="img-musa">
-        <img src="/images/musa-costanera-rio.png" alt="botellas-de-jugo-con.fondo-al-rio" class="img-musa">
-        <img src="/images/musa-mini-chico2.png" alt="chico-sosteniendo-botella" class="img-musa">
-        <img src="images/musa-mini-costanera.png" alt="botella-pequeña-de-jugo" class="img-musa">
+        <div class="paragrah1-with-first3-images">
+            <img src="/images/musa-costanera-rio.png" alt="">
+            <img src="/images/musa-bosques-closeup.png" alt="">
+            <img src="/images/musa-bosques1.png" alt="">
+        </div>
     </section>
 
-    
+    <section>
+        <div class="paragraph2-with-mini musa">
+            <img src="/images/musa-mini.png" alt="">
+            <h2 class="highlighted-text">Hecho con mucha pulpa de fruta 100% natural y orgánica.</h2>
+            <h2 class="regular-text">Tiene una personalidad sensual, amigable, optimista y veraniega. </h2>
+        </div>
+    </section>
+    <section>
+        <div class="2img-row-container">
+            <img src="/images/musa-model-3.png" alt="">
+            <img src="/images/musa-ella.png" alt="">
+        </div>
+    </section>
+    <section>
+        <div class="2img-column-container">
+            <img src="/images/musa-araya.JPG" alt="">
+            <img src="/images/musa-mini-chica.png" alt="">
+        </div>
+    </section>
+    <section>
+        <div class="paragraph-3-10img-column-container">
+            <h2 class="regular-text">En este proyecto se intenta expresar la frescura y sabor partiendo desde los
+                colores de sus productos, en distintas locaciones y estados de ánimo, queriendo vender una experiencia,
+                junto con un alimento saludable y en contacto con la naturaleza.</h2>
+            <img src="/images/musa-model-pool.png" alt="">
+            <img src="/images/musa-memory.JPG" alt="">
+            <img src="/images/musa-mini-chico1.png" alt="">
+            <img src="/images/musa-model-view.png" alt="">
+            <img src="/images/musa-splash.png" alt="">
+            <img src="/images/musa-model.sky.png" alt="">
+            <img src="/images/musa-mini-chico2.png" alt="">
+            <img src="/images/musa-bosques-mano.png" alt="">
+            <img src="/images/musa-bayana-grass.png" alt="">
+            <img src="/images/musa-cayena-model.png" alt="">
+        </div>
+    </section>
+    <section>
+        <div class="final-section-container">
+            <img src="/images/logo.png" alt="">
+            <a target="_blank" href="https://musabatidos.netlify.app/index.html">Ir a página web</a>
+        </div>
+    </section>
     <!-- FOOTER -->
     <footer>
         <img src="/images/logo.png" alt="logo-brand" class="logo-nl">
         <div class="icons-rrss-container">
-            <a class="footer-icon" target="_blank" href="https://www.linkedin.com/in/nathaly-learmonth-briceno/"><i class='bx bxl-linkedin-square' ></i></a>
-            <a class="footer-icon" target="_blank" href="https://github.com/Naath2021"><i class='bx bxl-github' ></i></a>
-            <a class="footer-icon" target="_blank" href="https://www.instagram.com/learmonth.studio/"><i class='bx bxl-instagram' ></i></a>
+            <a class="footer-icon" target="_blank" href="https://www.linkedin.com/in/nathaly-learmonth-briceno/"><i
+                    class='bx bxl-linkedin-square'></i></a>
+            <a class="footer-icon" target="_blank" href="https://github.com/Naath2021"><i class='bx bxl-github'></i></a>
+            <a class="footer-icon" target="_blank" href="https://www.instagram.com/learmonth.studio/"><i
+                    class='bx bxl-instagram'></i></a>
             <a class="footer-icon" target="_blank" href="mailto:learmonthpro@gmail.com"><i class='bx bxl-gmail'></i></a>
-            <a class="footer-icon" target="_blank" href="https://wa.me/5491173635670"><i class='bx bxl-whatsapp' ></i></a>
-            <a class="footer-icon" target="_blank" href="https://twitter.com/learmonth_ph"><i class='bx bxl-twitter' ></i></a>
+            <a class="footer-icon" target="_blank" href="https://wa.me/5491173635670"><i
+                    class='bx bxl-whatsapp'></i></a>
+            <a class="footer-icon" target="_blank" href="https://twitter.com/learmonth_ph"><i
+                    class='bx bxl-twitter'></i></a>
         </div>
         <span class="copyright">&copy; Buenos Aires - Argentina 2022. | Todos los derechos reservados</span>
-    </footer> 
+    </footer>
 
 
-    
+
     <!-- SCRIPTS -->
     <!-- <script src="/js/site.js"></script> -->
     <script src="https://kit.fontawesome.com/10e5852800.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
