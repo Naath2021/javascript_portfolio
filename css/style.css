@@ -96,8 +96,8 @@
     #bodyHome .mobile-icons-container .menu-title, #bodyHome .mobile-icons-container .nav-link, #bodyPortfolio .mobile-icons-container .menu-title, #bodyPortfolio .mobile-icons-container .nav-link, #bodyProjects .mobile-icons-container .menu-title, #bodyProjects .mobile-icons-container .nav-link, #bodyAbout .mobile-icons-container .menu-title, #bodyAbout .mobile-icons-container .nav-link, #bodyContact .mobile-icons-container .menu-title, #bodyContact .mobile-icons-container .nav-link {
       color: #3d4726; }
     #bodyHome .mobile-icons-container .offcanvas-body, #bodyPortfolio .mobile-icons-container .offcanvas-body, #bodyProjects .mobile-icons-container .offcanvas-body, #bodyAbout .mobile-icons-container .offcanvas-body, #bodyContact .mobile-icons-container .offcanvas-body {
-      background-color: rgba(93, 138, 102, 0.5); }
-  @media screen and (min-width: 768px) {
+      background-color: rgba(93, 138, 102, 0.7); }
+  @media (min-width: 768px) {
     #bodyHome header .mobile-icons-container, #bodyPortfolio header .mobile-icons-container, #bodyProjects header .mobile-icons-container, #bodyAbout header .mobile-icons-container, #bodyContact header .mobile-icons-container {
       display: none; }
     #bodyHome header .desktop-nav, #bodyPortfolio header .desktop-nav, #bodyProjects header .desktop-nav, #bodyAbout header .desktop-nav, #bodyContact header .desktop-nav {
@@ -106,33 +106,34 @@
       flex-direction: row;
       place-items: center;
       justify-content: space-around;
+      align-items: center;
       position: fixed;
       left: 0;
       top: 0;
       width: 100%;
       height: 10vh;
-      background: rgba(93, 138, 102, 0.5); }
-      #bodyHome header .desktop-nav .logo,
-      #bodyHome header .desktop-nav .menu, #bodyPortfolio header .desktop-nav .logo,
-      #bodyPortfolio header .desktop-nav .menu, #bodyProjects header .desktop-nav .logo,
-      #bodyProjects header .desktop-nav .menu, #bodyAbout header .desktop-nav .logo,
-      #bodyAbout header .desktop-nav .menu, #bodyContact header .desktop-nav .logo,
-      #bodyContact header .desktop-nav .menu {
-        display: block; }
+      background: rgba(93, 138, 102, 0.7); }
+      #bodyHome header .desktop-nav .logo, #bodyPortfolio header .desktop-nav .logo, #bodyProjects header .desktop-nav .logo, #bodyAbout header .desktop-nav .logo, #bodyContact header .desktop-nav .logo {
+        display: block;
+        width: 4vw; }
       #bodyHome header .desktop-nav img, #bodyPortfolio header .desktop-nav img, #bodyProjects header .desktop-nav img, #bodyAbout header .desktop-nav img, #bodyContact header .desktop-nav img {
         width: 6vw;
         height: auto;
         padding: 0 1vw; }
       #bodyHome header .desktop-nav .menu, #bodyPortfolio header .desktop-nav .menu, #bodyProjects header .desktop-nav .menu, #bodyAbout header .desktop-nav .menu, #bodyContact header .desktop-nav .menu {
+        display: block;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        place-items: center; }
+        place-items: center;
+        align-content: center;
+        padding: 0;
+        margin: 0; }
         #bodyHome header .desktop-nav .menu li, #bodyPortfolio header .desktop-nav .menu li, #bodyProjects header .desktop-nav .menu li, #bodyAbout header .desktop-nav .menu li, #bodyContact header .desktop-nav .menu li {
           list-style: none;
           text-decoration: none; }
           #bodyHome header .desktop-nav .menu li a, #bodyPortfolio header .desktop-nav .menu li a, #bodyProjects header .desktop-nav .menu li a, #bodyAbout header .desktop-nav .menu li a, #bodyContact header .desktop-nav .menu li a {
-            padding-right: 20px;
+            padding: 0 10px;
             color: #f4efe8; }
             #bodyHome header .desktop-nav .menu li a:hover, #bodyPortfolio header .desktop-nav .menu li a:hover, #bodyProjects header .desktop-nav .menu li a:hover, #bodyAbout header .desktop-nav .menu li a:hover, #bodyContact header .desktop-nav .menu li a:hover {
               color: #c9a803; }
@@ -141,10 +142,11 @@
         flex-wrap: wrap;
         flex-direction: row;
         place-items: center;
-        justify-content: center; }
+        padding: 0;
+        margin: 0; }
         #bodyHome header .desktop-nav .iconsContainer a, #bodyPortfolio header .desktop-nav .iconsContainer a, #bodyProjects header .desktop-nav .iconsContainer a, #bodyAbout header .desktop-nav .iconsContainer a, #bodyContact header .desktop-nav .iconsContainer a {
-          padding: 4px;
-          font-size: 1.2vw;
+          padding: 0 4px;
+          font-size: 1.5vw;
           color: #f4efe8; }
           #bodyHome header .desktop-nav .iconsContainer a:hover, #bodyPortfolio header .desktop-nav .iconsContainer a:hover, #bodyProjects header .desktop-nav .iconsContainer a:hover, #bodyAbout header .desktop-nav .iconsContainer a:hover, #bodyContact header .desktop-nav .iconsContainer a:hover {
             color: #c9a803;
@@ -496,12 +498,12 @@
         background-size: cover;
         background-position: center;
         background-image: url(/images/ba-si-bird.png); }
-      #bodyPortfolio main .image-container .delta.model {
+      #bodyPortfolio main .image-container .delta-model {
         grid-area: 3 / 2 / 4 / 3;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        background-image: url(/images/nature-leaves.png); }
+        background-image: url(/images/delta-model.png); }
       #bodyPortfolio main .image-container .ba-recoleta {
         grid-area: 3 / 3 / 4 / 4;
         background-repeat: no-repeat;
