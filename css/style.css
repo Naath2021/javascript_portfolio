@@ -14,6 +14,10 @@
   list-style-type: none;
   list-style: none; }
 
+.body-viewport {
+  min-height: 100vh;
+  max-width: 100%; }
+
 .hr-solid {
   height: 3px;
   width: 50vw;
@@ -61,56 +65,56 @@
   place-items: center;
   align-content: center; }
 
-#bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact {
-  min-height: 100vh;
-  width: 100%; }
-  #bodyHome footer, #bodyPortfolio footer, #bodyProjects footer, #bodyAbout footer, #bodyContact footer {
+#bodyHome footer, #bodyPortfolio footer, #bodyProjects footer, #bodyAbout footer, #bodyContact footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  justify-content: space-evenly;
+  height: 50vh;
+  width: 100%;
+  background-color: #4b2830; }
+  #bodyHome footer .logo-nl, #bodyPortfolio footer .logo-nl, #bodyProjects footer .logo-nl, #bodyAbout footer .logo-nl, #bodyContact footer .logo-nl {
+    margin: 5vh 0 5vh;
+    width: 10vw;
+    padding: 1vw 0; }
+  #bodyHome footer .icons-rrss-container, #bodyPortfolio footer .icons-rrss-container, #bodyProjects footer .icons-rrss-container, #bodyAbout footer .icons-rrss-container, #bodyContact footer .icons-rrss-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     place-items: center;
-    justify-content: space-evenly;
-    height: 30vh;
-    width: 100%;
-    background-color: #4b2830; }
-    #bodyHome footer .logo-nl, #bodyPortfolio footer .logo-nl, #bodyProjects footer .logo-nl, #bodyAbout footer .logo-nl, #bodyContact footer .logo-nl {
-      width: 10vw;
-      padding: 1vw 0; }
-    #bodyHome footer .icons-rrss-container, #bodyPortfolio footer .icons-rrss-container, #bodyProjects footer .icons-rrss-container, #bodyAbout footer .icons-rrss-container, #bodyContact footer .icons-rrss-container {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      place-items: center;
-      justify-content: space-between;
-      width: 25vw; }
-      #bodyHome footer .icons-rrss-container a, #bodyPortfolio footer .icons-rrss-container a, #bodyProjects footer .icons-rrss-container a, #bodyAbout footer .icons-rrss-container a, #bodyContact footer .icons-rrss-container a {
-        font-size: 3vw;
-        color: #f4efe8; }
-        #bodyHome footer .icons-rrss-container a:hover, #bodyPortfolio footer .icons-rrss-container a:hover, #bodyProjects footer .icons-rrss-container a:hover, #bodyAbout footer .icons-rrss-container a:hover, #bodyContact footer .icons-rrss-container a:hover {
-          color: #c9a803;
-          transition: all 0.01s ease; }
-  #bodyHome .copyright, #bodyPortfolio .copyright, #bodyProjects .copyright, #bodyAbout .copyright, #bodyContact .copyright {
-    color: #f4efe8;
-    font-size: 2vw; }
-  @media screen and (min-width: 768px) {
-    #bodyHome footer .logo-nl, #bodyPortfolio footer .logo-nl, #bodyProjects footer .logo-nl, #bodyAbout footer .logo-nl, #bodyContact footer .logo-nl {
-      width: 5vw; }
-    #bodyHome footer .icons-rrss-container, #bodyPortfolio footer .icons-rrss-container, #bodyProjects footer .icons-rrss-container, #bodyAbout footer .icons-rrss-container, #bodyContact footer .icons-rrss-container {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      place-items: center;
-      justify-content: space-between;
-      width: 13vw; }
-      #bodyHome footer .icons-rrss-container .footer-icon, #bodyPortfolio footer .icons-rrss-container .footer-icon, #bodyProjects footer .icons-rrss-container .footer-icon, #bodyAbout footer .icons-rrss-container .footer-icon, #bodyContact footer .icons-rrss-container .footer-icon {
-        font-size: 1.5vw;
+    justify-content: space-between;
+    width: 40vw; }
+    #bodyHome footer .icons-rrss-container a, #bodyPortfolio footer .icons-rrss-container a, #bodyProjects footer .icons-rrss-container a, #bodyAbout footer .icons-rrss-container a, #bodyContact footer .icons-rrss-container a {
+      font-size: 3vw;
+      color: #f4efe8; }
+      #bodyHome footer .icons-rrss-container a:hover, #bodyPortfolio footer .icons-rrss-container a:hover, #bodyProjects footer .icons-rrss-container a:hover, #bodyAbout footer .icons-rrss-container a:hover, #bodyContact footer .icons-rrss-container a:hover {
+        color: #c9a803;
         transition: all 0.01s ease; }
-        #bodyHome footer .icons-rrss-container .footer-icon:hover, #bodyPortfolio footer .icons-rrss-container .footer-icon:hover, #bodyProjects footer .icons-rrss-container .footer-icon:hover, #bodyAbout footer .icons-rrss-container .footer-icon:hover, #bodyContact footer .icons-rrss-container .footer-icon:hover {
-          color: #c9a803;
-          transition: all 0.01s ease; }
-    #bodyHome footer .copyright, #bodyPortfolio footer .copyright, #bodyProjects footer .copyright, #bodyAbout footer .copyright, #bodyContact footer .copyright {
-      font-size: 1vw; } }
+
+#bodyHome .copyright, #bodyPortfolio .copyright, #bodyProjects .copyright, #bodyAbout .copyright, #bodyContact .copyright {
+  color: #f4efe8;
+  font-size: 2vw; }
+
+@media screen and (min-width: 768px) {
+  #bodyHome footer .logo-nl, #bodyPortfolio footer .logo-nl, #bodyProjects footer .logo-nl, #bodyAbout footer .logo-nl, #bodyContact footer .logo-nl {
+    width: 5vw; }
+  #bodyHome footer .icons-rrss-container, #bodyPortfolio footer .icons-rrss-container, #bodyProjects footer .icons-rrss-container, #bodyAbout footer .icons-rrss-container, #bodyContact footer .icons-rrss-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    place-items: center;
+    justify-content: space-between;
+    width: 13vw; }
+    #bodyHome footer .icons-rrss-container .footer-icon, #bodyPortfolio footer .icons-rrss-container .footer-icon, #bodyProjects footer .icons-rrss-container .footer-icon, #bodyAbout footer .icons-rrss-container .footer-icon, #bodyContact footer .icons-rrss-container .footer-icon {
+      font-size: 1.5vw;
+      transition: all 0.01s ease; }
+      #bodyHome footer .icons-rrss-container .footer-icon:hover, #bodyPortfolio footer .icons-rrss-container .footer-icon:hover, #bodyProjects footer .icons-rrss-container .footer-icon:hover, #bodyAbout footer .icons-rrss-container .footer-icon:hover, #bodyContact footer .icons-rrss-container .footer-icon:hover {
+        color: #c9a803;
+        transition: all 0.01s ease; }
+  #bodyHome footer .copyright, #bodyPortfolio footer .copyright, #bodyProjects footer .copyright, #bodyAbout footer .copyright, #bodyContact footer .copyright {
+    font-size: 1vw; } }
 
 #bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact {
   width: 100%; }
