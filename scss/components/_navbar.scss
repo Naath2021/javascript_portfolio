@@ -1,5 +1,5 @@
 #bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact {
-  width: 100%;
+  width: $w100;
   .desktop-nav {
     display: none;
   }
@@ -49,12 +49,12 @@
         position: fixed;
         left: 0;
         top: 0;
-        width: 100%;
-        height: 10vh;
+        width: $w100;
+        height: $h10;
         background: $headerBg;
         .logo {
           display: block;
-          width: $w5 - $w1;
+          width: $w4;
         }
         img {
           width: $w3 * 2;

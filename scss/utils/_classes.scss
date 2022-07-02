@@ -1,0 +1,45 @@
+.hr-solid {
+  height: 3px;
+  width: $w50;
+  vertical-align: middle;
+  background-color: $bgAndFont;
+  border: 1px solid $bgAndFont;
+  margin: 5px 0;
+  opacity: 1;
+}
+.head-pages {
+  color: $bgAndFont;
+  text-align: center;
+  font-size: 7vw;
+  padding: 1vh 2vw;
+  letter-spacing: 5px;
+}
+
+.regular-text {
+  color: $fontColor;
+  font-size: $w3;
+  margin: $w5 0;
+}
+
+.body-bg-color {
+  background-color: $bgAndFont;
+}
+
+.h-img {
+  width: 90vw;
+  margin: 2vh 0;
+}
+.v-img {
+  width: $w40;
+  margin: $h3;
+}
+
+.row-section-align {
+  @include flexrow;
+  align-content: center;
+}
+
+.column-section-align{
+    @include flexcolumn;
+    align-content: center;
+}

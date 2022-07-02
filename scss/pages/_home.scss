@@ -1,8 +1,9 @@
 #bodyHome{
-    @include flexcolumn;
+    background-color: $bgAndFont;
+    @include flexrow;
     width: $w100;
     .home{
-        @include flexcolumn;
+        @include flexrow;
         justify-content: center;
         width: $w100;
         height: $h100;
@@ -10,10 +11,10 @@
         @include bg-fixed;
     }
     .border{
-        @include flexcolumn;
+        @include flexrow;
         justify-content: space-evenly;
-        width: $w50 - $w5;
-        height: 40vh;
+        width: $w40;
+        height: $h40;
         border: 5px solid $bgAndFont;
         border-radius: 5px;
         padding: 50px;
@@ -31,78 +32,44 @@
             font-size: $w3;
             text-align: center;
             font-weight: 200;
-            padding: 3vh;
-            kerning:auto;
-        }
-        .btn-down{
-            @include flexcolumn;
-            justify-content: center;
-            color: $bgAndFont;
-            font-size: $w5;
-            font-weight: 100;
-            padding: 1vh;
         }
     }
     #menu{
         @include flexcolumn;
         align-items: stretch;
-        width: 100%;
+        width: $w100;
         .card-portfolio{
             @include menuStyle;
             background-image: url(/images/menu-portfolio.png);
-            a{
-                @include menuLinkStyle;
-                .hr-solid{
-                    @include sectionNameLineStyle
-                }
-            }
         }
         .card-projects{
             @include menuStyle;
             background-image: url(/images/menu-projects.png);
-            a{
-                @include menuLinkStyle;
-                .hr-solid{
-                    @include sectionNameLineStyle
-                }
-            }
         }
         .card-about{
             @include menuStyle;
             background-image: url(/images/menu-about.png);
-            a{
-                @include menuLinkStyle;
-                .hr-solid{
-                    @include sectionNameLineStyle;
-                }
-            }
         }
         .card-contact{
             @include menuStyle;
             background-image: url(/images/menu-contact.png);
-            a{
-                @include menuLinkStyle;
-                .hr-solid{
-                    @include sectionNameLineStyle;
-                }
-            }
         }
     }
 
     @media screen and (min-width: 768px){
         .border{
-            width: $w50 - $w20;
+            width: $w30;
             height: $h50;
             h1{
                 font-size: $w3;
                 font-weight: 100;
             }
             h2{
-                font-size: $w1*2;
+                font-size: $w2;
                 font-weight: 100;
             }
             .btn-down{
-                font-size: $w1 + $w1;
+                font-size: $w2;
             }
         }
         #menu{
@@ -110,9 +77,9 @@
             .card-portfolio{
                 background-position: bottom;
                 a{
-                    font-size: $w3 + $w1;
+                    font-size: $w4;
                     .solid{
-                        width: $w20 + $w10;
+                        width: $w30;
                     }
                 }
             }
@@ -120,9 +87,9 @@
                 background-position: bottom;
                 background-size: cover;
                 a{
-                    font-size: $w3 + $w1;
+                    font-size: $w4;
                     .solid{
-                        width: $w20 + $w10;
+                        width: $w30;
                     }
                 }
             }
@@ -131,9 +98,9 @@
                 background-position: bottom;
                 background-size: cover;
                 a{
-                    font-size: $w3 + $w1;
+                    font-size: $w4;
                     .solid{
-                        width: $w20 + $w10;
+                        width: $w30;
                     }
                 }
             }
@@ -141,9 +108,9 @@
                 background-position: center;
                 background-size: cover;
                 a{
-                    font-size: $w3 + $w1;
+                    font-size: $w4;
                     .solid{
-                        width: $w20 + $w10;
+                        width: $w30;
                     }
                 }
             }

@@ -1,53 +1,44 @@
-@mixin flexcolumn{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    place-items: center;
+@mixin flexcolumn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
 }
 
-@mixin flexrow{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    place-items: center;
+@mixin flexrow {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  place-items: center;
 }
 
 @mixin bg-fixed {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 @mixin bg-cover {
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-@mixin menuStyle{
-    @include flexrow;
-    @include bg-fixed;
-    justify-content: center;
-    width: $w100;
-    height: $h100;
+@mixin menuStyle {
+  @include flexrow;
+  @include bg-fixed;
+  justify-content: center;
+  width: $w100;
+  height: $h100;
 }
 
-@mixin menuLinkStyle{
-    color: $bgAndFont;
-    text-align: center;
-    font-weight: 100;
-    font-size: 7vw;
-    padding: 1vh 2vw;
-    letter-spacing: 5px;
-}
-
-@mixin sectionNameLineStyle{
-    height: 3px;
-    width: $w50;
-    vertical-align: middle; 
-    background-color: $bgAndFont;
-    border: 1px solid $bgAndFont;
-    margin: 5px 0;
-    opacity: 1;
+@mixin head-page {
+  height: $h100;
+  width: $w100;
+  @include flexcolumn;
+  justify-content: center;
+  @include bg-fixed;
+  background-position: center;
+  color: $bgAndFont;
 }

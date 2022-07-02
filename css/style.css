@@ -14,6 +14,53 @@
   list-style-type: none;
   list-style: none; }
 
+.hr-solid {
+  height: 3px;
+  width: 50vw;
+  vertical-align: middle;
+  background-color: #f4efe8;
+  border: 1px solid #f4efe8;
+  margin: 5px 0;
+  opacity: 1; }
+
+.head-pages {
+  color: #f4efe8;
+  text-align: center;
+  font-size: 7vw;
+  padding: 1vh 2vw;
+  letter-spacing: 5px; }
+
+.regular-text {
+  color: #3d4726;
+  font-size: 3vw;
+  margin: 5vw 0; }
+
+.body-bg-color {
+  background-color: #f4efe8; }
+
+.h-img {
+  width: 90vw;
+  margin: 2vh 0; }
+
+.v-img {
+  width: 40vw;
+  margin: 3vh; }
+
+.row-section-align {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  place-items: center;
+  align-content: center; }
+
+.column-section-align {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  align-content: center; }
+
 #bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact {
   min-height: 100vh;
   width: 100%; }
@@ -186,17 +233,16 @@
   width: 100%; }
 
 #bodyHome {
+  background-color: #f4efe8;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   place-items: center;
   width: 100%; }
   #bodyHome .home {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     place-items: center;
     justify-content: center;
     width: 100%;
@@ -208,11 +254,10 @@
   #bodyHome .border {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     place-items: center;
     justify-content: space-evenly;
-    width: 45vw;
+    width: 40vw;
     height: 40vh;
     border: 5px solid #f4efe8;
     border-radius: 5px;
@@ -229,20 +274,7 @@
       color: #f4efe8;
       font-size: 3vw;
       text-align: center;
-      font-weight: 200;
-      padding: 3vh;
-      kerning: auto; }
-    #bodyHome .border .btn-down {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: center;
-      place-items: center;
-      justify-content: center;
-      color: #f4efe8;
-      font-size: 5vw;
-      font-weight: 100;
-      padding: 1vh; }
+      font-weight: 200; }
   #bodyHome #menu {
     display: flex;
     flex-wrap: wrap;
@@ -263,21 +295,6 @@
       width: 100%;
       height: 100vh;
       background-image: url(/images/menu-portfolio.png); }
-      #bodyHome #menu .card-portfolio a {
-        color: #f4efe8;
-        text-align: center;
-        font-weight: 100;
-        font-size: 7vw;
-        padding: 1vh 2vw;
-        letter-spacing: 5px; }
-        #bodyHome #menu .card-portfolio a .hr-solid {
-          height: 3px;
-          width: 50vw;
-          vertical-align: middle;
-          background-color: #f4efe8;
-          border: 1px solid #f4efe8;
-          margin: 5px 0;
-          opacity: 1; }
     #bodyHome #menu .card-projects {
       display: flex;
       flex-wrap: wrap;
@@ -290,21 +307,6 @@
       width: 100%;
       height: 100vh;
       background-image: url(/images/menu-projects.png); }
-      #bodyHome #menu .card-projects a {
-        color: #f4efe8;
-        text-align: center;
-        font-weight: 100;
-        font-size: 7vw;
-        padding: 1vh 2vw;
-        letter-spacing: 5px; }
-        #bodyHome #menu .card-projects a .hr-solid {
-          height: 3px;
-          width: 50vw;
-          vertical-align: middle;
-          background-color: #f4efe8;
-          border: 1px solid #f4efe8;
-          margin: 5px 0;
-          opacity: 1; }
     #bodyHome #menu .card-about {
       display: flex;
       flex-wrap: wrap;
@@ -317,21 +319,6 @@
       width: 100%;
       height: 100vh;
       background-image: url(/images/menu-about.png); }
-      #bodyHome #menu .card-about a {
-        color: #f4efe8;
-        text-align: center;
-        font-weight: 100;
-        font-size: 7vw;
-        padding: 1vh 2vw;
-        letter-spacing: 5px; }
-        #bodyHome #menu .card-about a .hr-solid {
-          height: 3px;
-          width: 50vw;
-          vertical-align: middle;
-          background-color: #f4efe8;
-          border: 1px solid #f4efe8;
-          margin: 5px 0;
-          opacity: 1; }
     #bodyHome #menu .card-contact {
       display: flex;
       flex-wrap: wrap;
@@ -344,21 +331,6 @@
       width: 100%;
       height: 100vh;
       background-image: url(/images/menu-contact.png); }
-      #bodyHome #menu .card-contact a {
-        color: #f4efe8;
-        text-align: center;
-        font-weight: 100;
-        font-size: 7vw;
-        padding: 1vh 2vw;
-        letter-spacing: 5px; }
-        #bodyHome #menu .card-contact a .hr-solid {
-          height: 3px;
-          width: 50vw;
-          vertical-align: middle;
-          background-color: #f4efe8;
-          border: 1px solid #f4efe8;
-          margin: 5px 0;
-          opacity: 1; }
   @media screen and (min-width: 768px) {
     #bodyHome .border {
       width: 30vw;
@@ -403,6 +375,7 @@
             width: 30vw; } }
 
 #bodyPortfolio {
+  background-color: #f4efe8;
   width: 100%;
   min-height: 100vh;
   /* MEDIA QUERIES DESKTOP VIEW */ }
@@ -415,27 +388,12 @@
     justify-content: center;
     place-items: center;
     justify-content: center;
-    background-image: url(/images/head-portfolio.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    color: #f4efe8; }
-    #bodyPortfolio .head-portfolio h1 {
-      color: #f4efe8;
-      text-align: center;
-      font-weight: 100;
-      font-size: 7vw;
-      padding: 1vh 2vw;
-      letter-spacing: 5px; }
-    #bodyPortfolio .head-portfolio .solid {
-      height: 3px;
-      width: 50vw;
-      vertical-align: middle;
-      background-color: #f4efe8;
-      border: 1px solid #f4efe8;
-      margin: 5px 0;
-      opacity: 1; }
+    color: #f4efe8;
+    background-image: url(/images/head-portfolio.png); }
   #bodyPortfolio main {
     width: 100%; }
     #bodyPortfolio main .image-container {
@@ -650,3 +608,52 @@
         width: 40vw; }
     #bodyPortfolio main {
       max-width: 100%; } }
+
+#bodyProjects {
+  max-width: 100%;
+  background-color: #f4efe8;
+  max-width: 100%; }
+  #bodyProjects .head-projects {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #f4efe8;
+    background-image: url(/images/musa-cayena-model.png); }
+  #bodyProjects .musa-header {
+    width: 100%;
+    margin: 10vh 0; }
+  #bodyProjects .highlighted-text {
+    font-size: 4vw;
+    color: #c9a803;
+    font-weight: 600;
+    text-align: center;
+    width: 40vw;
+    margin: 5vw 0; }
+  #bodyProjects .medium-text {
+    color: #3d4726;
+    width: 50vw;
+    font-size: 4vw;
+    text-align: center; }
+  #bodyProjects .projects-text {
+    margin: 30vh 0;
+    text-align: center;
+    width: 80vw; }
+  #bodyProjects .img-logo {
+    margin: 20vh 0 10vh;
+    width: 15vw; }
+  #bodyProjects .link-to-musa {
+    width: 80vw;
+    background-color: #f4efe8;
+    border: 2px solid #4b2830;
+    margin-bottom: 10vh;
+    color: #4b2830;
+    transition: all ease-in-out 300ms; }
