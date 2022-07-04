@@ -1,0 +1,74 @@
+#bodyAbout {
+  .head-about {
+    @include flexcolumn;
+    height: $h100;
+    width: $w100;
+    background-image: url(/images/nature-yellow-flower2.png);
+    @include bg-fixed;
+  }
+  .img-about {
+    width: $w50;
+    margin: $h10 0;
+    box-shadow: 8px 7px 14px 2px rgba(148,124,124,0.82);
+  }
+  .medium-centered-text {
+    color: $fontColor;
+    text-align: center;
+    width: $w50 - $w5;
+    font-size: $w3;
+  }
+  .titles {
+    color: $fontColor;
+    text-align: center;
+    font-size: $w5 + $w2;
+    margin: $h10 0 $h5;
+  }
+  .subtitles {
+    color: $fontColor;
+    text-align: center;
+    width: $w3;
+    width: $w50 + $w10;
+  }
+  .medium-centered-text{
+    color: $fontColor;
+    margin: $h10 0;
+    text-align: center;
+    width: $w50 + $w20;
+  }
+  .centered-text{
+    margin: $h10 0;
+    color: $fontColor;
+    width: $w50 + $w10;
+    text-align: center;
+    font-size: $w3;
+  }
+  .thin-centered-text{
+    margin: $h5 0 $h10;
+    width: $w40;
+    font-size: $w3;
+    color: $fontColor;
+    text-align: center;
+  }
+  .hr-dark {
+    opacity: 1;
+    color: $fontColor;
+    width: $w50;
+    margin-bottom: $h10;
+  }
+  .paragraphs{
+    color: $fontColor;
+    width: $w50 + $w20;
+    text-align: left;
+    margin-bottom: $h3;
+    font-size: 2.5vw;
+    letter-spacing: 2px;
+  }
+  .shadowed-img{
+    width: $w50 + $w40;
+    height: $h30;
+    background-image: url(/images/musa-nath.png);
+    @include bg-cover;
+    margin-bottom: $h10;
+    box-shadow: 8px 7px 14px 2px rgba(148,124,124,0.82);
+  }
+}

@@ -244,6 +244,86 @@
   place-items: center;
   width: 100%; }
 
+#bodyAbout .head-about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(/images/nature-yellow-flower2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+#bodyAbout .img-about {
+  width: 50vw;
+  margin: 10vh 0;
+  box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82); }
+
+#bodyAbout .medium-centered-text {
+  color: #3d4726;
+  text-align: center;
+  width: 45vw;
+  font-size: 3vw; }
+
+#bodyAbout .titles {
+  color: #3d4726;
+  text-align: center;
+  font-size: 7vw;
+  margin: 10vh 0 5vh; }
+
+#bodyAbout .subtitles {
+  color: #3d4726;
+  text-align: center;
+  width: 3vw;
+  width: 60vw; }
+
+#bodyAbout .medium-centered-text {
+  color: #3d4726;
+  margin: 10vh 0;
+  text-align: center;
+  width: 70vw; }
+
+#bodyAbout .centered-text {
+  margin: 10vh 0;
+  color: #3d4726;
+  width: 60vw;
+  text-align: center;
+  font-size: 3vw; }
+
+#bodyAbout .thin-centered-text {
+  margin: 5vh 0 10vh;
+  width: 40vw;
+  font-size: 3vw;
+  color: #3d4726;
+  text-align: center; }
+
+#bodyAbout .hr-dark {
+  opacity: 1;
+  color: #3d4726;
+  width: 50vw;
+  margin-bottom: 10vh; }
+
+#bodyAbout .paragraphs {
+  color: #3d4726;
+  width: 70vw;
+  text-align: left;
+  margin-bottom: 3vh;
+  font-size: 2.5vw;
+  letter-spacing: 2px; }
+
+#bodyAbout .shadowed-img {
+  width: 90vw;
+  height: 30vh;
+  background-image: url(/images/musa-nath.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10vh;
+  box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82); }
+
 #bodyHome {
   background-color: #f4efe8;
   display: flex;
@@ -657,11 +737,6 @@
     text-align: center;
     width: 40vw;
     margin: 5vw 0; }
-  #bodyProjects .medium-text {
-    color: #3d4726;
-    width: 40vw;
-    font-size: 3vw;
-    text-align: center; }
   #bodyProjects .projects-text {
     margin: 20vh 0;
     text-align: center;
