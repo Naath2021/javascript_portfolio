@@ -1,3 +1,7 @@
+.body-viewport {
+  min-height: $h100;
+  max-width: $w100;
+}
 .hr-solid {
   height: 3px;
   width: $w50;
@@ -31,7 +35,7 @@
 }
 .v-img {
   width: $w40;
-  margin: $h3;
+  margin: $h3 10px $h3 10px;
 }
 
 .row-section-align {
@@ -39,7 +43,7 @@
   align-content: center;
 }
 
-.column-section-align{
-    @include flexcolumn;
-    align-content: center;
+.column-section-align {
+  @include flexcolumn;
+  align-content: center;
 }

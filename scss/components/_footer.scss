@@ -1,20 +1,19 @@
 #bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact{
-min-height: $h100; 
-width: $w100;
   footer{
     @include flexcolumn;
     justify-content: space-evenly;
-    height: $h30;
+    height: $h50;
     width: $w100;
     background-color: $footerBg;
     .logo-nl{
+      margin: $h5 0 $h5;
       width: $w10;
       padding: $w1 0;
     }
     .icons-rrss-container{
       @include flexrow;
       justify-content: space-between;
-      width: $w20 + $w5;
+      width: $w40;
         a{
           font-size: $w3;
           color: $bgAndFont;

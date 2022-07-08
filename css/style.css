@@ -14,6 +14,10 @@
   list-style-type: none;
   list-style: none; }
 
+.body-viewport {
+  min-height: 100vh;
+  max-width: 100%; }
+
 .hr-solid {
   height: 3px;
   width: 50vw;
@@ -44,12 +48,13 @@
 
 .v-img {
   width: 40vw;
-  margin: 3vh; }
+  margin: 3vh 10px 3vh 10px; }
 
 .row-section-align {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
   place-items: center;
   align-content: center; }
 
@@ -61,56 +66,58 @@
   place-items: center;
   align-content: center; }
 
-#bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact {
-  min-height: 100vh;
-  width: 100%; }
-  #bodyHome footer, #bodyPortfolio footer, #bodyProjects footer, #bodyAbout footer, #bodyContact footer {
+#bodyHome footer, #bodyPortfolio footer, #bodyProjects footer, #bodyAbout footer, #bodyContact footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  justify-content: space-evenly;
+  height: 50vh;
+  width: 100%;
+  background-color: #4b2830; }
+  #bodyHome footer .logo-nl, #bodyPortfolio footer .logo-nl, #bodyProjects footer .logo-nl, #bodyAbout footer .logo-nl, #bodyContact footer .logo-nl {
+    margin: 5vh 0 5vh;
+    width: 10vw;
+    padding: 1vw 0; }
+  #bodyHome footer .icons-rrss-container, #bodyPortfolio footer .icons-rrss-container, #bodyProjects footer .icons-rrss-container, #bodyAbout footer .icons-rrss-container, #bodyContact footer .icons-rrss-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     place-items: center;
-    justify-content: space-evenly;
-    height: 30vh;
-    width: 100%;
-    background-color: #4b2830; }
-    #bodyHome footer .logo-nl, #bodyPortfolio footer .logo-nl, #bodyProjects footer .logo-nl, #bodyAbout footer .logo-nl, #bodyContact footer .logo-nl {
-      width: 10vw;
-      padding: 1vw 0; }
-    #bodyHome footer .icons-rrss-container, #bodyPortfolio footer .icons-rrss-container, #bodyProjects footer .icons-rrss-container, #bodyAbout footer .icons-rrss-container, #bodyContact footer .icons-rrss-container {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      place-items: center;
-      justify-content: space-between;
-      width: 25vw; }
-      #bodyHome footer .icons-rrss-container a, #bodyPortfolio footer .icons-rrss-container a, #bodyProjects footer .icons-rrss-container a, #bodyAbout footer .icons-rrss-container a, #bodyContact footer .icons-rrss-container a {
-        font-size: 3vw;
-        color: #f4efe8; }
-        #bodyHome footer .icons-rrss-container a:hover, #bodyPortfolio footer .icons-rrss-container a:hover, #bodyProjects footer .icons-rrss-container a:hover, #bodyAbout footer .icons-rrss-container a:hover, #bodyContact footer .icons-rrss-container a:hover {
-          color: #c9a803;
-          transition: all 0.01s ease; }
-  #bodyHome .copyright, #bodyPortfolio .copyright, #bodyProjects .copyright, #bodyAbout .copyright, #bodyContact .copyright {
-    color: #f4efe8;
-    font-size: 2vw; }
-  @media screen and (min-width: 768px) {
-    #bodyHome footer .logo-nl, #bodyPortfolio footer .logo-nl, #bodyProjects footer .logo-nl, #bodyAbout footer .logo-nl, #bodyContact footer .logo-nl {
-      width: 5vw; }
-    #bodyHome footer .icons-rrss-container, #bodyPortfolio footer .icons-rrss-container, #bodyProjects footer .icons-rrss-container, #bodyAbout footer .icons-rrss-container, #bodyContact footer .icons-rrss-container {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      place-items: center;
-      justify-content: space-between;
-      width: 13vw; }
-      #bodyHome footer .icons-rrss-container .footer-icon, #bodyPortfolio footer .icons-rrss-container .footer-icon, #bodyProjects footer .icons-rrss-container .footer-icon, #bodyAbout footer .icons-rrss-container .footer-icon, #bodyContact footer .icons-rrss-container .footer-icon {
-        font-size: 1.5vw;
+    justify-content: space-between;
+    width: 40vw; }
+    #bodyHome footer .icons-rrss-container a, #bodyPortfolio footer .icons-rrss-container a, #bodyProjects footer .icons-rrss-container a, #bodyAbout footer .icons-rrss-container a, #bodyContact footer .icons-rrss-container a {
+      font-size: 3vw;
+      color: #f4efe8; }
+      #bodyHome footer .icons-rrss-container a:hover, #bodyPortfolio footer .icons-rrss-container a:hover, #bodyProjects footer .icons-rrss-container a:hover, #bodyAbout footer .icons-rrss-container a:hover, #bodyContact footer .icons-rrss-container a:hover {
+        color: #c9a803;
         transition: all 0.01s ease; }
-        #bodyHome footer .icons-rrss-container .footer-icon:hover, #bodyPortfolio footer .icons-rrss-container .footer-icon:hover, #bodyProjects footer .icons-rrss-container .footer-icon:hover, #bodyAbout footer .icons-rrss-container .footer-icon:hover, #bodyContact footer .icons-rrss-container .footer-icon:hover {
-          color: #c9a803;
-          transition: all 0.01s ease; }
-    #bodyHome footer .copyright, #bodyPortfolio footer .copyright, #bodyProjects footer .copyright, #bodyAbout footer .copyright, #bodyContact footer .copyright {
-      font-size: 1vw; } }
+
+#bodyHome .copyright, #bodyPortfolio .copyright, #bodyProjects .copyright, #bodyAbout .copyright, #bodyContact .copyright {
+  color: #f4efe8;
+  font-size: 2vw; }
+
+@media screen and (min-width: 768px) {
+  #bodyHome footer .logo-nl, #bodyPortfolio footer .logo-nl, #bodyProjects footer .logo-nl, #bodyAbout footer .logo-nl, #bodyContact footer .logo-nl {
+    width: 5vw; }
+  #bodyHome footer .icons-rrss-container, #bodyPortfolio footer .icons-rrss-container, #bodyProjects footer .icons-rrss-container, #bodyAbout footer .icons-rrss-container, #bodyContact footer .icons-rrss-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+    justify-content: space-between;
+    width: 13vw; }
+    #bodyHome footer .icons-rrss-container .footer-icon, #bodyPortfolio footer .icons-rrss-container .footer-icon, #bodyProjects footer .icons-rrss-container .footer-icon, #bodyAbout footer .icons-rrss-container .footer-icon, #bodyContact footer .icons-rrss-container .footer-icon {
+      font-size: 1.5vw;
+      transition: all 0.01s ease; }
+      #bodyHome footer .icons-rrss-container .footer-icon:hover, #bodyPortfolio footer .icons-rrss-container .footer-icon:hover, #bodyProjects footer .icons-rrss-container .footer-icon:hover, #bodyAbout footer .icons-rrss-container .footer-icon:hover, #bodyContact footer .icons-rrss-container .footer-icon:hover {
+        color: #c9a803;
+        transition: all 0.01s ease; }
+  #bodyHome footer .copyright, #bodyPortfolio footer .copyright, #bodyProjects footer .copyright, #bodyAbout footer .copyright, #bodyContact footer .copyright {
+    font-size: 1vw; } }
 
 #bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact {
   width: 100%; }
@@ -120,6 +127,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     place-items: center;
     justify-content: center; }
     #bodyHome .mobile-icons-container .mobile-icons, #bodyPortfolio .mobile-icons-container .mobile-icons, #bodyProjects .mobile-icons-container .mobile-icons, #bodyAbout .mobile-icons-container .mobile-icons, #bodyContact .mobile-icons-container .mobile-icons {
@@ -151,6 +159,7 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      justify-content: center;
       place-items: center;
       justify-content: space-around;
       align-items: center;
@@ -172,6 +181,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        justify-content: center;
         place-items: center;
         align-content: center;
         padding: 0;
@@ -188,6 +198,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        justify-content: center;
         place-items: center;
         padding: 0;
         margin: 0; }
@@ -221,6 +232,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
   place-items: center;
   width: 100%; }
 
@@ -232,17 +244,166 @@
   place-items: center;
   width: 100%; }
 
+#bodyAbout .head-about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(/images/nature-yellow-flower2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+#bodyAbout .img-about {
+  width: 50vw;
+  margin: 10vh 0;
+  box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82); }
+
+#bodyAbout .medium-centered-text {
+  color: #3d4726;
+  text-align: center;
+  width: 45vw;
+  font-size: 3vw; }
+
+#bodyAbout .titles {
+  color: #3d4726;
+  text-align: center;
+  font-size: 7vw;
+  margin: 10vh 0 0; }
+
+#bodyAbout .subtitles {
+  color: #3d4726;
+  text-align: center;
+  width: 3vw;
+  width: 60vw;
+  margin: 10vh 0 0; }
+
+#bodyAbout .medium-centered-text {
+  font-size: 4vw;
+  color: #3d4726;
+  margin: 10vh 0 0;
+  text-align: center;
+  width: 70vw; }
+
+#bodyAbout .centered-text {
+  margin: 10vh 0;
+  color: #3d4726;
+  width: 60vw;
+  text-align: center;
+  font-size: 4vw; }
+
+#bodyAbout .thin-centered-text {
+  margin: 0 0 10vh;
+  width: 50vw;
+  font-size: 4vw;
+  color: #3d4726;
+  text-align: center; }
+
+#bodyAbout .hr-dark {
+  opacity: 1;
+  color: #3d4726;
+  width: 50vw;
+  margin-bottom: 10vh; }
+
+#bodyAbout .paragraphs {
+  color: #3d4726;
+  width: 70vw;
+  text-align: left;
+  margin-bottom: 3vh;
+  font-size: 3.5vw;
+  letter-spacing: 1px; }
+
+#bodyAbout .shadowed-img {
+  width: 90vw;
+  height: 40vh;
+  background-image: url(/images/musa-nath.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10vh;
+  box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82); }
+
+#bodyAbout .about-btn {
+  height: 8vh;
+  width: 40vw;
+  background-color: #4b2830;
+  margin-bottom: 10vh; }
+  #bodyAbout .about-btn a {
+    font-size: 3vw;
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+    color: #f4efe8; }
+
+@media screen and (min-width: 768px) {
+  #bodyAbout .titles {
+    margin-top: 40vh;
+    font-size: 4vw;
+    letter-spacing: 5px; }
+  #bodyAbout .img-description-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+    align-content: center;
+    margin-top: 10vh; }
+    #bodyAbout .img-description-container .img-about {
+      width: 40vw; }
+    #bodyAbout .img-description-container .medium-centered-text {
+      width: 30vw;
+      font-size: 1.5vw;
+      text-align: center;
+      margin: 0 0 0 5vw; }
+  #bodyAbout .hr-dark {
+    width: 30vw; }
+  #bodyAbout .subtitles {
+    margin-top: 10vh;
+    font-size: 3vw; }
+  #bodyAbout .paragraphs {
+    width: 50vw;
+    font-size: 1.5vw; }
+  #bodyAbout .shadowed-img {
+    margin: 10vh 0;
+    height: 70vh;
+    width: 70vw; }
+  #bodyAbout .centered-text {
+    font-size: 2vw;
+    width: 40vw;
+    color: #c9a803; }
+  #bodyAbout .thin-centered-text {
+    width: 30vw;
+    font-size: 1.5vw; }
+  #bodyAbout .about-btn {
+    width: 10vw;
+    height: 8vh;
+    transition: all 600ms; }
+    #bodyAbout .about-btn a {
+      font-size: 1vw;
+      padding: 0;
+      margin: 0; }
+    #bodyAbout .about-btn:hover {
+      background-color: #f4efe8;
+      transition: all 600ms; }
+      #bodyAbout .about-btn:hover a {
+        color: #4b2830; } }
+
 #bodyHome {
   background-color: #f4efe8;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
   place-items: center;
   width: 100%; }
   #bodyHome .home {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     place-items: center;
     justify-content: center;
     width: 100%;
@@ -255,6 +416,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     place-items: center;
     justify-content: space-evenly;
     width: 40vw;
@@ -287,6 +449,7 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      justify-content: center;
       place-items: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -299,6 +462,7 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      justify-content: center;
       place-items: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -311,6 +475,7 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      justify-content: center;
       place-items: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -323,6 +488,7 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      justify-content: center;
       place-items: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -636,24 +802,48 @@
     color: #c9a803;
     font-weight: 600;
     text-align: center;
-    width: 40vw;
-    margin: 5vw 0; }
+    width: 40vw; }
   #bodyProjects .medium-text {
-    color: #3d4726;
-    width: 50vw;
-    font-size: 4vw;
-    text-align: center; }
-  #bodyProjects .projects-text {
-    margin: 30vh 0;
+    width: 40vw;
+    font-size: 3.5vw;
     text-align: center;
-    width: 80vw; }
-  #bodyProjects .img-logo {
-    margin: 20vh 0 10vh;
-    width: 15vw; }
+    margin-top: 3vh; }
+  #bodyProjects .projects-text {
+    margin: 10vh 0;
+    text-align: center;
+    width: 80vw;
+    font-size: 4vw; }
+  #bodyProjects .img-logo-musa {
+    margin: 10vh 0;
+    width: 20vw; }
   #bodyProjects .link-to-musa {
     width: 80vw;
     background-color: #f4efe8;
     border: 2px solid #4b2830;
     margin-bottom: 10vh;
-    color: #4b2830;
-    transition: all ease-in-out 300ms; }
+    color: #4b2830; }
+  @media screen and (min-width: 768px) {
+    #bodyProjects .musa-header {
+      width: 70vw; }
+    #bodyProjects .projects-text {
+      font-size: 2vw; }
+    #bodyProjects .highlighted-text {
+      width: 40vw;
+      font-size: 3vw; }
+    #bodyProjects .medium-text {
+      width: 40vw;
+      font-size: 3vw; }
+    #bodyProjects .h-img {
+      width: 50vw; }
+    #bodyProjects .v-img {
+      width: 30vw; }
+    #bodyProjects .img-logo-musa {
+      width: 20vw; }
+    #bodyProjects .link-to-musa {
+      width: 50vw;
+      transition: all ease-in-out 250ms; }
+      #bodyProjects .link-to-musa:hover {
+        color: #f4efe8;
+        background-color: #4b2830;
+        border: 2px solid #f4efe8;
+        transition: all ease-in-out 250ms; } }

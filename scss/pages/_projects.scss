@@ -16,22 +16,22 @@
         font-weight: 600;
         text-align: center;
         width: $w40;
-        margin: $w5 0;
     }
     .medium-text{
-        color: $fontColor;
-        width: $w50;
-        font-size: $w4;
+        width: $w40;
+        font-size: $w3 + 0.5vw;
         text-align: center;
+        margin-top: $h3;
     }
     .projects-text{
-        margin: $h30 0;
+        margin: $h10 0;
         text-align: center;
-        width: $w50 + $w30 ;
+        width: $w50 + $w30;
+        font-size: $w4;
     }
-    .img-logo{
-        margin: $h20 0 $h10;
-        width: $w10 + $w5;
+    .img-logo-musa{
+        margin: $h10 0;
+        width: $w20;
     }
     .link-to-musa{
         width: $w50 + $w30;
@@ -39,12 +39,45 @@
         border: 2px solid $footerBg;
         margin-bottom: $h10;
         color: $footerBg;
-        transition: all ease-in-out 300ms;
-        // &:hover{
-        //     color: $bgAndFont;
-        //     background-color: $footerBg;
-        //     border: 2px solid $bgAndFont;
-        //     transition: all ease-in-out 400ms;
-        // }
+    }
+
+    @media screen and (min-width: 768px){
+        .musa-header{
+            width: $w50 + $w20;
+        }
+        .projects-text{
+            font-size: $w2;
+        }
+        .highlighted-text{
+            width: $w40;
+            font-size: $w3;
+        }
+        .medium-text{
+            width: $w40;
+            font-size: $w3;  
+        }
+        .h-img{
+            width: $w50;
+        }
+        .v-img{
+            width: $w30;
+        }
+        .img-logo-musa{
+            width: $w20;
+        }
+        .link-to-musa{
+            width: $w50;
+            transition: all ease-in-out 250ms;
+            &:hover{
+                color: $bgAndFont;
+                background-color: $footerBg;
+                border: 2px solid $bgAndFont;
+                transition: all ease-in-out 250ms;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        
     }
 }

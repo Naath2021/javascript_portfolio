@@ -1,0 +1,151 @@
+#bodyAbout {
+  .head-about {
+    @include flexcolumn;
+    height: $h100;
+    width: $w100;
+    background-image: url(/images/nature-yellow-flower2.png);
+    @include bg-fixed;
+  }
+  .img-about {
+    width: $w50;
+    margin: $h10 0;
+    box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82);
+  }
+  .medium-centered-text {
+    color: $fontColor;
+    text-align: center;
+    width: $w50 - $w5;
+    font-size: $w3;
+  }
+  .titles {
+    color: $fontColor;
+    text-align: center;
+    font-size: $w5 + $w2;
+    margin: $h10 0 0;
+  }
+  .subtitles {
+    color: $fontColor;
+    text-align: center;
+    width: $w3;
+    width: $w50 + $w10;
+    margin: $h10 0 0;
+  }
+  .medium-centered-text {
+    font-size: $w4;
+    color: $fontColor;
+    margin: $h10 0 0;
+    text-align: center;
+    width: $w50 + $w20;
+  }
+  .centered-text {
+    margin: $h10 0;
+    color: $fontColor;
+    width: $w50 + $w10;
+    text-align: center;
+    font-size: $w4;
+  }
+  .thin-centered-text {
+    margin: 0 0 $h10;
+    width: $w50;
+    font-size: $w4;
+    color: $fontColor;
+    text-align: center;
+  }
+  .hr-dark {
+    opacity: 1;
+    color: $fontColor;
+    width: $w50;
+    margin-bottom: $h10;
+  }
+  .paragraphs {
+    color: $fontColor;
+    width: $w50 + $w20;
+    text-align: left;
+    margin-bottom: $h3;
+    font-size: $w3 + 0.5vw;
+    letter-spacing: 1px;
+  }
+  .shadowed-img {
+    width: $w50 + $w40;
+    height: $h40;
+    background-image: url(/images/musa-nath.png);
+    @include bg-cover;
+    margin-bottom: $h10;
+    box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82);
+  }
+  .about-btn {
+    height: $h5 + $h3;
+    width: $w40;
+    background-color: $footerBg;
+    margin-bottom: $h10;
+    a {
+      font-size: $w3;
+      @include link-decoration;
+      color: $bgAndFont;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .titles{
+      margin-top: $h40;
+      font-size: $w4;
+      letter-spacing: 5px;
+    }
+    .img-description-container {
+      @include flexrow;
+      align-content: center;
+      margin-top: $h10;
+      .img-about {
+        width: $w40;
+      }
+      .medium-centered-text {
+        width: $w30;
+        font-size: 1.5vw;
+        text-align: center;
+        margin: 0 0 0 $w5;
+      }
+    }
+    .hr-dark{
+      width: $w30;
+    }
+    .subtitles {
+      margin-top: $h10;
+      font-size: $w3;
+    }
+    .paragraphs {
+      width: $w50;
+      font-size: 1.5vw;
+    }
+    .shadowed-img {
+      margin: $h10 0;
+      height: $h50 + $h20;
+      width: $w50 + $w20;
+    }
+    .centered-text {
+      font-size: $w2;
+      width: $w40;
+      color: $highlightColor
+    }
+    .thin-centered-text {
+      width: $w30;
+      font-size: 1.5vw;
+    }
+    .about-btn {
+      width: $w10;
+      height: 8vh;
+      transition: all 600ms;
+      a {
+        font-size: $w1;
+        padding: 0;
+        margin: 0;
+      }
+      &:hover {
+        background-color: $bgAndFont;
+        transition: all 600ms;
+        a {
+          color: $footerBg;
+        }
+      }
+    }
+  }
+}
