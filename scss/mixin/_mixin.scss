@@ -43,3 +43,9 @@
   background-position: center;
   color: $bgAndFont;
 }
+
+@mixin link-decoration {
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+}

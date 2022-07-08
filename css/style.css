@@ -48,7 +48,7 @@
 
 .v-img {
   width: 40vw;
-  margin: 3vh; }
+  margin: 3vh 10px 3vh 10px; }
 
 .row-section-align {
   display: flex;
@@ -272,17 +272,19 @@
   color: #3d4726;
   text-align: center;
   font-size: 7vw;
-  margin: 10vh 0 5vh; }
+  margin: 10vh 0 0; }
 
 #bodyAbout .subtitles {
   color: #3d4726;
   text-align: center;
   width: 3vw;
-  width: 60vw; }
+  width: 60vw;
+  margin: 10vh 0 0; }
 
 #bodyAbout .medium-centered-text {
+  font-size: 4vw;
   color: #3d4726;
-  margin: 10vh 0;
+  margin: 10vh 0 0;
   text-align: center;
   width: 70vw; }
 
@@ -291,12 +293,12 @@
   color: #3d4726;
   width: 60vw;
   text-align: center;
-  font-size: 3vw; }
+  font-size: 4vw; }
 
 #bodyAbout .thin-centered-text {
-  margin: 5vh 0 10vh;
-  width: 40vw;
-  font-size: 3vw;
+  margin: 0 0 10vh;
+  width: 50vw;
+  font-size: 4vw;
   color: #3d4726;
   text-align: center; }
 
@@ -311,18 +313,83 @@
   width: 70vw;
   text-align: left;
   margin-bottom: 3vh;
-  font-size: 2.5vw;
-  letter-spacing: 2px; }
+  font-size: 3.5vw;
+  letter-spacing: 1px; }
 
 #bodyAbout .shadowed-img {
   width: 90vw;
-  height: 30vh;
+  height: 40vh;
   background-image: url(/images/musa-nath.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-bottom: 10vh;
   box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82); }
+
+#bodyAbout .about-btn {
+  height: 8vh;
+  width: 40vw;
+  background-color: #4b2830;
+  margin-bottom: 10vh; }
+  #bodyAbout .about-btn a {
+    font-size: 3vw;
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+    color: #f4efe8; }
+
+@media screen and (min-width: 768px) {
+  #bodyAbout .titles {
+    margin-top: 40vh;
+    font-size: 4vw;
+    letter-spacing: 5px; }
+  #bodyAbout .img-description-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+    align-content: center;
+    margin-top: 10vh; }
+    #bodyAbout .img-description-container .img-about {
+      width: 40vw; }
+    #bodyAbout .img-description-container .medium-centered-text {
+      width: 30vw;
+      font-size: 1.5vw;
+      text-align: center;
+      margin: 0 0 0 5vw; }
+  #bodyAbout .hr-dark {
+    width: 30vw; }
+  #bodyAbout .subtitles {
+    margin-top: 10vh;
+    font-size: 3vw; }
+  #bodyAbout .paragraphs {
+    width: 50vw;
+    font-size: 1.5vw; }
+  #bodyAbout .shadowed-img {
+    margin: 10vh 0;
+    height: 70vh;
+    width: 70vw; }
+  #bodyAbout .centered-text {
+    font-size: 2vw;
+    width: 40vw;
+    color: #c9a803; }
+  #bodyAbout .thin-centered-text {
+    width: 30vw;
+    font-size: 1.5vw; }
+  #bodyAbout .about-btn {
+    width: 10vw;
+    height: 8vh;
+    transition: all 600ms; }
+    #bodyAbout .about-btn a {
+      font-size: 1vw;
+      padding: 0;
+      margin: 0; }
+    #bodyAbout .about-btn:hover {
+      background-color: #f4efe8;
+      transition: all 600ms; }
+      #bodyAbout .about-btn:hover a {
+        color: #4b2830; } }
 
 #bodyHome {
   background-color: #f4efe8;
@@ -735,14 +802,19 @@
     color: #c9a803;
     font-weight: 600;
     text-align: center;
+    width: 40vw; }
+  #bodyProjects .medium-text {
     width: 40vw;
-    margin: 5vw 0; }
-  #bodyProjects .projects-text {
-    margin: 20vh 0;
+    font-size: 3.5vw;
     text-align: center;
-    width: 80vw; }
+    margin-top: 3vh; }
+  #bodyProjects .projects-text {
+    margin: 10vh 0;
+    text-align: center;
+    width: 80vw;
+    font-size: 4vw; }
   #bodyProjects .img-logo-musa {
-    margin: 20vh 0 10vh;
+    margin: 10vh 0;
     width: 20vw; }
   #bodyProjects .link-to-musa {
     width: 80vw;
