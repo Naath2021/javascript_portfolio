@@ -1,21 +1,10 @@
 #bodyPortfolio{
+    background-color: $bgAndFont;
     width: $w100;
     min-height: $h100;
     .head-portfolio{
-        height: $h100;
-        width: $w100;
-        @include flexcolumn;
-        justify-content: center;
+        @include head-page;
         background-image: url(/images/head-portfolio.png);
-        @include bg-fixed;
-        background-position: center;
-        color: $bgAndFont;
-        h1{
-            @include menuLinkStyle;
-        }
-        .solid{
-            @include sectionNameLineStyle;
-        }
     }
     main{
         width: $w100;
@@ -200,7 +189,7 @@
                 font-size: $w5;
                 letter-spacing: 10px;
                 .solid{
-                    width: $w50 - $w10;
+                    width: $w40;
                 }
             }
         }
