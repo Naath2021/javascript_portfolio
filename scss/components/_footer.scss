@@ -2,23 +2,20 @@
   footer{
     @include flexcolumn;
     justify-content: space-evenly;
-    height: $h50;
+    height: $h40;
     width: $w100;
     background-color: $footerBg;
     .logo-nl{
-      margin: $h5 0 $h5;
-      width: $w10;
-      padding: $w1 0;
+      width: $w10 + $w5;
     }
     .icons-rrss-container{
       @include flexrow;
       justify-content: space-between;
       width: $w40;
         a{
-          font-size: $w3;
-          color: $bgAndFont;
+          fill: $bgAndFont;
           &:hover{
-            color: $highlightColor;
+            fill: $highlightColor;
             transition: all 0.01s ease;
           }
         }
@@ -26,29 +23,30 @@
     }
     .copyright{
       color: $bgAndFont;
-      font-size: $w3 - $w1;
+      font-size: 2.5vw;
     }
 
     @media screen and (min-width: 768px){
       footer{
+        height: $h50;
         .logo-nl{
-          width: $w5;
+          width: $w10;
         }
         .icons-rrss-container{
           @include flexrow;
           justify-content: space-between;
-          width: $w10 + $w3;
+          width: $w20;
           .footer-icon{
-            font-size: $w1*1.5;
+            fill: $bgAndFont;
             transition: all 0.01s ease;
             &:hover{
-              color: $highlightColor;
+              fill: $highlightColor;
               transition: all 0.01s ease;
             }
           }
         }
         .copyright{
-          font-size: $w1;
+          font-size: 1.5vw;
         }
       }
     }
