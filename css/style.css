@@ -73,13 +73,11 @@
   justify-content: center;
   place-items: center;
   justify-content: space-evenly;
-  height: 50vh;
+  height: 40vh;
   width: 100%;
   background-color: #4b2830; }
   #bodyHome footer .logo-nl, #bodyPortfolio footer .logo-nl, #bodyProjects footer .logo-nl, #bodyAbout footer .logo-nl, #bodyContact footer .logo-nl {
-    margin: 5vh 0 5vh;
-    width: 10vw;
-    padding: 1vw 0; }
+    width: 15vw; }
   #bodyHome footer .icons-rrss-container, #bodyPortfolio footer .icons-rrss-container, #bodyProjects footer .icons-rrss-container, #bodyAbout footer .icons-rrss-container, #bodyContact footer .icons-rrss-container {
     display: flex;
     flex-wrap: wrap;
@@ -89,73 +87,113 @@
     justify-content: space-between;
     width: 40vw; }
     #bodyHome footer .icons-rrss-container a, #bodyPortfolio footer .icons-rrss-container a, #bodyProjects footer .icons-rrss-container a, #bodyAbout footer .icons-rrss-container a, #bodyContact footer .icons-rrss-container a {
-      font-size: 3vw;
-      color: #f4efe8; }
+      fill: #f4efe8; }
       #bodyHome footer .icons-rrss-container a:hover, #bodyPortfolio footer .icons-rrss-container a:hover, #bodyProjects footer .icons-rrss-container a:hover, #bodyAbout footer .icons-rrss-container a:hover, #bodyContact footer .icons-rrss-container a:hover {
-        color: #c9a803;
+        fill: #c9a803;
         transition: all 0.01s ease; }
 
 #bodyHome .copyright, #bodyPortfolio .copyright, #bodyProjects .copyright, #bodyAbout .copyright, #bodyContact .copyright {
   color: #f4efe8;
-  font-size: 2vw; }
+  font-size: 2.5vw; }
 
 @media screen and (min-width: 768px) {
-  #bodyHome footer .logo-nl, #bodyPortfolio footer .logo-nl, #bodyProjects footer .logo-nl, #bodyAbout footer .logo-nl, #bodyContact footer .logo-nl {
-    width: 5vw; }
-  #bodyHome footer .icons-rrss-container, #bodyPortfolio footer .icons-rrss-container, #bodyProjects footer .icons-rrss-container, #bodyAbout footer .icons-rrss-container, #bodyContact footer .icons-rrss-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    place-items: center;
-    justify-content: space-between;
-    width: 13vw; }
-    #bodyHome footer .icons-rrss-container .footer-icon, #bodyPortfolio footer .icons-rrss-container .footer-icon, #bodyProjects footer .icons-rrss-container .footer-icon, #bodyAbout footer .icons-rrss-container .footer-icon, #bodyContact footer .icons-rrss-container .footer-icon {
-      font-size: 1.5vw;
-      transition: all 0.01s ease; }
-      #bodyHome footer .icons-rrss-container .footer-icon:hover, #bodyPortfolio footer .icons-rrss-container .footer-icon:hover, #bodyProjects footer .icons-rrss-container .footer-icon:hover, #bodyAbout footer .icons-rrss-container .footer-icon:hover, #bodyContact footer .icons-rrss-container .footer-icon:hover {
-        color: #c9a803;
+  #bodyHome footer, #bodyPortfolio footer, #bodyProjects footer, #bodyAbout footer, #bodyContact footer {
+    height: 50vh; }
+    #bodyHome footer .logo-nl, #bodyPortfolio footer .logo-nl, #bodyProjects footer .logo-nl, #bodyAbout footer .logo-nl, #bodyContact footer .logo-nl {
+      width: 10vw; }
+    #bodyHome footer .icons-rrss-container, #bodyPortfolio footer .icons-rrss-container, #bodyProjects footer .icons-rrss-container, #bodyAbout footer .icons-rrss-container, #bodyContact footer .icons-rrss-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      place-items: center;
+      justify-content: space-between;
+      width: 20vw; }
+      #bodyHome footer .icons-rrss-container .footer-icon, #bodyPortfolio footer .icons-rrss-container .footer-icon, #bodyProjects footer .icons-rrss-container .footer-icon, #bodyAbout footer .icons-rrss-container .footer-icon, #bodyContact footer .icons-rrss-container .footer-icon {
+        fill: #f4efe8;
         transition: all 0.01s ease; }
-  #bodyHome footer .copyright, #bodyPortfolio footer .copyright, #bodyProjects footer .copyright, #bodyAbout footer .copyright, #bodyContact footer .copyright {
-    font-size: 1vw; } }
+        #bodyHome footer .icons-rrss-container .footer-icon:hover, #bodyPortfolio footer .icons-rrss-container .footer-icon:hover, #bodyProjects footer .icons-rrss-container .footer-icon:hover, #bodyAbout footer .icons-rrss-container .footer-icon:hover, #bodyContact footer .icons-rrss-container .footer-icon:hover {
+          fill: #c9a803;
+          transition: all 0.01s ease; }
+    #bodyHome footer .copyright, #bodyPortfolio footer .copyright, #bodyProjects footer .copyright, #bodyAbout footer .copyright, #bodyContact footer .copyright {
+      font-size: 1.5vw; } }
 
-#bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact {
+#bodyHome,
+#bodyPortfolio,
+#bodyProjects,
+#bodyAbout,
+#bodyContact {
   width: 100%; }
-  #bodyHome .desktop-nav, #bodyPortfolio .desktop-nav, #bodyProjects .desktop-nav, #bodyAbout .desktop-nav, #bodyContact .desktop-nav {
+  #bodyHome .desktop-nav,
+  #bodyPortfolio .desktop-nav,
+  #bodyProjects .desktop-nav,
+  #bodyAbout .desktop-nav,
+  #bodyContact .desktop-nav {
     display: none; }
-  #bodyHome .mobile-icons-container, #bodyPortfolio .mobile-icons-container, #bodyProjects .mobile-icons-container, #bodyAbout .mobile-icons-container, #bodyContact .mobile-icons-container {
+  #bodyHome .mobile-icons-container,
+  #bodyPortfolio .mobile-icons-container,
+  #bodyProjects .mobile-icons-container,
+  #bodyAbout .mobile-icons-container,
+  #bodyContact .mobile-icons-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     place-items: center;
     justify-content: center; }
-    #bodyHome .mobile-icons-container .mobile-icons, #bodyPortfolio .mobile-icons-container .mobile-icons, #bodyProjects .mobile-icons-container .mobile-icons, #bodyAbout .mobile-icons-container .mobile-icons, #bodyContact .mobile-icons-container .mobile-icons {
+    #bodyHome .mobile-icons-container .mobile-icons,
+    #bodyPortfolio .mobile-icons-container .mobile-icons,
+    #bodyProjects .mobile-icons-container .mobile-icons,
+    #bodyAbout .mobile-icons-container .mobile-icons,
+    #bodyContact .mobile-icons-container .mobile-icons {
       position: fixed;
       top: 80px;
-      right: 27px; }
-      #bodyHome .mobile-icons-container .mobile-icons a, #bodyPortfolio .mobile-icons-container .mobile-icons a, #bodyProjects .mobile-icons-container .mobile-icons a, #bodyAbout .mobile-icons-container .mobile-icons a, #bodyContact .mobile-icons-container .mobile-icons a {
-        color: #f4efe8;
-        width: 3vw;
-        height: 3vh;
-        font-size: 3vw; }
-    #bodyHome .mobile-icons-container #mobileBtn, #bodyPortfolio .mobile-icons-container #mobileBtn, #bodyProjects .mobile-icons-container #mobileBtn, #bodyAbout .mobile-icons-container #mobileBtn, #bodyContact .mobile-icons-container #mobileBtn {
+      right: 30px; }
+      #bodyHome .mobile-icons-container .mobile-icons a,
+      #bodyPortfolio .mobile-icons-container .mobile-icons a,
+      #bodyProjects .mobile-icons-container .mobile-icons a,
+      #bodyAbout .mobile-icons-container .mobile-icons a,
+      #bodyContact .mobile-icons-container .mobile-icons a {
+        fill: #f4efe8; }
+    #bodyHome .mobile-icons-container #mobileBtn,
+    #bodyPortfolio .mobile-icons-container #mobileBtn,
+    #bodyProjects .mobile-icons-container #mobileBtn,
+    #bodyAbout .mobile-icons-container #mobileBtn,
+    #bodyContact .mobile-icons-container #mobileBtn {
       position: fixed;
       top: 20px;
-      right: 20px;
+      right: 30px;
       border: none;
-      font-size: 3vw; }
-      #bodyHome .mobile-icons-container #mobileBtn i, #bodyPortfolio .mobile-icons-container #mobileBtn i, #bodyProjects .mobile-icons-container #mobileBtn i, #bodyAbout .mobile-icons-container #mobileBtn i, #bodyContact .mobile-icons-container #mobileBtn i {
-        color: #f4efe8;
-        font-size: 5vw; }
-    #bodyHome .mobile-icons-container .menu-title, #bodyHome .mobile-icons-container .nav-link, #bodyPortfolio .mobile-icons-container .menu-title, #bodyPortfolio .mobile-icons-container .nav-link, #bodyProjects .mobile-icons-container .menu-title, #bodyProjects .mobile-icons-container .nav-link, #bodyAbout .mobile-icons-container .menu-title, #bodyAbout .mobile-icons-container .nav-link, #bodyContact .mobile-icons-container .menu-title, #bodyContact .mobile-icons-container .nav-link {
+      fill: #f4efe8; }
+    #bodyHome .mobile-icons-container .menu-title,
+    #bodyHome .mobile-icons-container .nav-link,
+    #bodyPortfolio .mobile-icons-container .menu-title,
+    #bodyPortfolio .mobile-icons-container .nav-link,
+    #bodyProjects .mobile-icons-container .menu-title,
+    #bodyProjects .mobile-icons-container .nav-link,
+    #bodyAbout .mobile-icons-container .menu-title,
+    #bodyAbout .mobile-icons-container .nav-link,
+    #bodyContact .mobile-icons-container .menu-title,
+    #bodyContact .mobile-icons-container .nav-link {
       color: #3d4726; }
-    #bodyHome .mobile-icons-container .offcanvas-body, #bodyPortfolio .mobile-icons-container .offcanvas-body, #bodyProjects .mobile-icons-container .offcanvas-body, #bodyAbout .mobile-icons-container .offcanvas-body, #bodyContact .mobile-icons-container .offcanvas-body {
+    #bodyHome .mobile-icons-container .offcanvas-body,
+    #bodyPortfolio .mobile-icons-container .offcanvas-body,
+    #bodyProjects .mobile-icons-container .offcanvas-body,
+    #bodyAbout .mobile-icons-container .offcanvas-body,
+    #bodyContact .mobile-icons-container .offcanvas-body {
       background-color: rgba(93, 138, 102, 0.7); }
   @media (min-width: 768px) {
-    #bodyHome header .mobile-icons-container, #bodyPortfolio header .mobile-icons-container, #bodyProjects header .mobile-icons-container, #bodyAbout header .mobile-icons-container, #bodyContact header .mobile-icons-container {
+    #bodyHome header .mobile-icons-container,
+    #bodyPortfolio header .mobile-icons-container,
+    #bodyProjects header .mobile-icons-container,
+    #bodyAbout header .mobile-icons-container,
+    #bodyContact header .mobile-icons-container {
       display: none; }
-    #bodyHome header .desktop-nav, #bodyPortfolio header .desktop-nav, #bodyProjects header .desktop-nav, #bodyAbout header .desktop-nav, #bodyContact header .desktop-nav {
+    #bodyHome header .desktop-nav,
+    #bodyPortfolio header .desktop-nav,
+    #bodyProjects header .desktop-nav,
+    #bodyAbout header .desktop-nav,
+    #bodyContact header .desktop-nav {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
@@ -169,14 +207,26 @@
       width: 100%;
       height: 10vh;
       background: rgba(93, 138, 102, 0.7); }
-      #bodyHome header .desktop-nav .logo, #bodyPortfolio header .desktop-nav .logo, #bodyProjects header .desktop-nav .logo, #bodyAbout header .desktop-nav .logo, #bodyContact header .desktop-nav .logo {
+      #bodyHome header .desktop-nav .logo,
+      #bodyPortfolio header .desktop-nav .logo,
+      #bodyProjects header .desktop-nav .logo,
+      #bodyAbout header .desktop-nav .logo,
+      #bodyContact header .desktop-nav .logo {
         display: block;
         width: 4vw; }
-      #bodyHome header .desktop-nav img, #bodyPortfolio header .desktop-nav img, #bodyProjects header .desktop-nav img, #bodyAbout header .desktop-nav img, #bodyContact header .desktop-nav img {
+      #bodyHome header .desktop-nav img,
+      #bodyPortfolio header .desktop-nav img,
+      #bodyProjects header .desktop-nav img,
+      #bodyAbout header .desktop-nav img,
+      #bodyContact header .desktop-nav img {
         width: 6vw;
         height: auto;
         padding: 0 1vw; }
-      #bodyHome header .desktop-nav .menu, #bodyPortfolio header .desktop-nav .menu, #bodyProjects header .desktop-nav .menu, #bodyAbout header .desktop-nav .menu, #bodyContact header .desktop-nav .menu {
+      #bodyHome header .desktop-nav .menu,
+      #bodyPortfolio header .desktop-nav .menu,
+      #bodyProjects header .desktop-nav .menu,
+      #bodyAbout header .desktop-nav .menu,
+      #bodyContact header .desktop-nav .menu {
         display: block;
         display: flex;
         flex-wrap: wrap;
@@ -186,15 +236,31 @@
         align-content: center;
         padding: 0;
         margin: 0; }
-        #bodyHome header .desktop-nav .menu li, #bodyPortfolio header .desktop-nav .menu li, #bodyProjects header .desktop-nav .menu li, #bodyAbout header .desktop-nav .menu li, #bodyContact header .desktop-nav .menu li {
+        #bodyHome header .desktop-nav .menu li,
+        #bodyPortfolio header .desktop-nav .menu li,
+        #bodyProjects header .desktop-nav .menu li,
+        #bodyAbout header .desktop-nav .menu li,
+        #bodyContact header .desktop-nav .menu li {
           list-style: none;
           text-decoration: none; }
-          #bodyHome header .desktop-nav .menu li a, #bodyPortfolio header .desktop-nav .menu li a, #bodyProjects header .desktop-nav .menu li a, #bodyAbout header .desktop-nav .menu li a, #bodyContact header .desktop-nav .menu li a {
+          #bodyHome header .desktop-nav .menu li a,
+          #bodyPortfolio header .desktop-nav .menu li a,
+          #bodyProjects header .desktop-nav .menu li a,
+          #bodyAbout header .desktop-nav .menu li a,
+          #bodyContact header .desktop-nav .menu li a {
             padding: 0 10px;
             color: #f4efe8; }
-            #bodyHome header .desktop-nav .menu li a:hover, #bodyPortfolio header .desktop-nav .menu li a:hover, #bodyProjects header .desktop-nav .menu li a:hover, #bodyAbout header .desktop-nav .menu li a:hover, #bodyContact header .desktop-nav .menu li a:hover {
+            #bodyHome header .desktop-nav .menu li a:hover,
+            #bodyPortfolio header .desktop-nav .menu li a:hover,
+            #bodyProjects header .desktop-nav .menu li a:hover,
+            #bodyAbout header .desktop-nav .menu li a:hover,
+            #bodyContact header .desktop-nav .menu li a:hover {
               color: #c9a803; }
-      #bodyHome header .desktop-nav .iconsContainer, #bodyPortfolio header .desktop-nav .iconsContainer, #bodyProjects header .desktop-nav .iconsContainer, #bodyAbout header .desktop-nav .iconsContainer, #bodyContact header .desktop-nav .iconsContainer {
+      #bodyHome header .desktop-nav .iconsContainer,
+      #bodyPortfolio header .desktop-nav .iconsContainer,
+      #bodyProjects header .desktop-nav .iconsContainer,
+      #bodyAbout header .desktop-nav .iconsContainer,
+      #bodyContact header .desktop-nav .iconsContainer {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -202,13 +268,14 @@
         place-items: center;
         padding: 0;
         margin: 0; }
-        #bodyHome header .desktop-nav .iconsContainer a, #bodyPortfolio header .desktop-nav .iconsContainer a, #bodyProjects header .desktop-nav .iconsContainer a, #bodyAbout header .desktop-nav .iconsContainer a, #bodyContact header .desktop-nav .iconsContainer a {
+        #bodyHome header .desktop-nav .iconsContainer a,
+        #bodyPortfolio header .desktop-nav .iconsContainer a,
+        #bodyProjects header .desktop-nav .iconsContainer a,
+        #bodyAbout header .desktop-nav .iconsContainer a,
+        #bodyContact header .desktop-nav .iconsContainer a {
           padding: 0 4px;
-          font-size: 1.5vw;
-          color: #f4efe8; }
-          #bodyHome header .desktop-nav .iconsContainer a:hover, #bodyPortfolio header .desktop-nav .iconsContainer a:hover, #bodyProjects header .desktop-nav .iconsContainer a:hover, #bodyAbout header .desktop-nav .iconsContainer a:hover, #bodyContact header .desktop-nav .iconsContainer a:hover {
-            color: #c9a803;
-            transition: all 0.5s ease; } }
+          font-size: 1vw;
+          fill: #f4efe8; } }
 
 .vertical-image-portfolio-extended {
   width: 50vw;

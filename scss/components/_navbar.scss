@@ -1,45 +1,42 @@
-#bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact {
+#bodyHome,
+#bodyPortfolio,
+#bodyProjects,
+#bodyAbout,
+#bodyContact {
   width: $w100;
   .desktop-nav {
     display: none;
   }
-  .mobile-icons-container{
+  .mobile-icons-container {
     @include flexrow;
     justify-content: center;
-    .mobile-icons{
+    .mobile-icons {
       position: fixed;
       top: 80px;
-      right: 27px;
-      a{
-        color: $bgAndFont;
-        width: $w3;
-        height: $h3;
-        font-size: $w3;
+      right: 30px;
+      a {
+        fill: $bgAndFont;
       }
     }
-    #mobileBtn{
+    #mobileBtn {
       position: fixed;
       top: 20px;
-      right: 20px;
+      right: 30px;
       border: none;
-      font-size: $w3;
-      i{
-        color: $bgAndFont;
-        font-size: $w5;
-      }
+      fill: $bgAndFont;
     }
-    .menu-title, .nav-link{
+    .menu-title,
+    .nav-link {
       color: $fontColor;
     }
-    .offcanvas-body{
+    .offcanvas-body {
       background-color: $headerBg;
     }
   }
 
-
   @media (min-width: 768px) {
     header {
-      .mobile-icons-container{
+      .mobile-icons-container {
         display: none;
       }
       .desktop-nav {
@@ -83,19 +80,13 @@
           @include flexrow;
           padding: 0;
           margin: 0;
-            a {
-              padding: 0 4px;
-              font-size: $w1 + 0.5;
-              color: $bgAndFont;
-              &:hover {
-                color: $highlightColor;
-                transition: all 0.5s ease;
-              }
-            }
+          a {
+            padding: 0 4px;
+            font-size: $w1;
+            fill: $bgAndFont;
+          }
         }
       }
     }
   }
 }
-
-
