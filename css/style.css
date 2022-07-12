@@ -562,8 +562,8 @@
     flex-wrap: wrap;
     padding: 10px 10px; }
   #bodyPortfolio .column {
-    flex: 100%;
-    max-width: 100%;
+    flex: 25%;
+    max-width: 25%;
     padding: 0 3px; }
     #bodyPortfolio .column img {
       margin-top: 8px;
@@ -631,15 +631,15 @@
         left: 20px; }
       #bodyPortfolio .overlay .slideshow .next {
         right: 20px; }
-  @media (min-width: 768px) {
+  @media (max-width: 900px) {
     #bodyPortfolio .head-portfolio h1 {
       font-size: 3vw;
       letter-spacing: 10px; }
       #bodyPortfolio .head-portfolio h1 .solid {
         width: 40vw; }
     #bodyPortfolio .column {
-      flex: 25%;
-      max-width: 25%; }
+      flex: 50%;
+      max-width: 50%; }
     #bodyPortfolio .overlay-buttons {
       font-size: 55px; }
     #bodyPortfolio .previous {
@@ -648,6 +648,10 @@
       right: 5px; }
     #bodyPortfolio .slideshow {
       width: 95%; } }
+  @media (max-width: 600px) {
+    #bodyPortfolio .column {
+      flex: 100%;
+      max-width: 100%; } }
 
 #bodyProjects {
   max-width: 100%;
@@ -721,94 +725,3 @@
         background-color: #4b2830;
         border: 2px solid #f4efe8;
         transition: all ease-in-out 250ms; } }
-
-#bodyPortfolio {
-  background-color: #f4efe8; }
-  #bodyPortfolio .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px 10px; }
-  #bodyPortfolio .column {
-    flex: 100%;
-    max-width: 100%;
-    padding: 0 3px; }
-    #bodyPortfolio .column img {
-      margin-top: 8px;
-      vertical-align: middle;
-      width: 100%; }
-      #bodyPortfolio .column img:hover {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        transform: scale(1.1); }
-  #bodyPortfolio .overlay {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(93, 138, 102, 0.7);
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.7s ease;
-    visibility: hidden;
-    opacity: 0; }
-    #bodyPortfolio .overlay .slideshow {
-      width: 90%;
-      height: 90%;
-      background-color: rgba(244, 239, 232, 0.7);
-      color: #000000;
-      position: relative;
-      display: flex;
-      justify-content: center; }
-      #bodyPortfolio .overlay .slideshow img {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-        opacity: 1; }
-      #bodyPortfolio .overlay .slideshow .btn_close {
-        position: absolute;
-        top: -15px;
-        right: -15px;
-        font-size: 15px;
-        background-color: #4b2830;
-        color: #f4efe8;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 1;
-        padding: 5px;
-        transition: all 0.2s ease; }
-        #bodyPortfolio .overlay .slideshow .btn_close:hover {
-          transform: scale(1.2);
-          cursor: pointer; }
-      #bodyPortfolio .overlay .slideshow .overlay-buttons {
-        width: 50px;
-        height: 50px;
-        color: #f4efe8;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 100px;
-        position: absolute;
-        top: 50%;
-        cursor: pointer; }
-      #bodyPortfolio .overlay .slideshow .previous {
-        left: 20px; }
-      #bodyPortfolio .overlay .slideshow .next {
-        right: 20px; }
-  @media (min-width: 768px) {
-    #bodyPortfolio .column {
-      flex: 25%;
-      max-width: 25%; }
-    #bodyPortfolio .overlay-buttons {
-      font-size: 55px; }
-    #bodyPortfolio .previous {
-      left: 50px; }
-    #bodyPortfolio .next {
-      right: 5px; }
-    #bodyPortfolio .slideshow {
-      width: 95%; } }

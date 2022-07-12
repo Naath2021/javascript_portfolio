@@ -10,8 +10,8 @@
     padding: 10px 10px;
   }
   .column {
-    flex: 100%;
-    max-width: 100%;
+    flex: 25%;
+    max-width: 25%;
     padding: 0 3px;
     img {
       margin-top: 8px;
@@ -91,7 +91,7 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @media (max-width: 900px) {
     .head-portfolio {
       h1 {
         font-size: $w3;
@@ -102,8 +102,8 @@
       }
     }
     .column {
-      flex: 25%;
-      max-width: 25%;
+      flex: 50%;
+      max-width: 50%;
     }
     .overlay-buttons {
       font-size: 55px;
@@ -117,5 +117,12 @@
     .slideshow {
       width: 95%;
     }
+  }
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+
   }
 }
