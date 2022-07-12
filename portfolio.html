@@ -75,51 +75,75 @@
 
     <section>
         <div class="head-portfolio">
-            <h1 class="head-pages">Portafolio
+            <h1 class="head-pages">
+                Portafolio
                 <hr class="hr-solid">
             </h1>
         </div>
     </section>
 
-    <main>
+    <div class="overlay">
+        <div class="slideshow">
+            <span class="btn-close">&InvisibleTimes;</span>
+            <div class="overlay-buttons previous">
+                <box-icon type='solid' name='chevrons-left' style="pointer-events: none;"></box-icon>
+            </div>
 
-        <div class="image-container">
-            <div class="img-portfolio ba-sky"></div>
-            <div class="img-portfolio costanera-butterfly"></div>
-            <div class="img-portfolio ba-fac"></div>
-            <div class="img-portfolio delta-cayena"></div>
-            <div class="img-portfolio nature-purple-flower"></div>
-            <div class="img-portfolio ba-flores"></div>
-            <div class="img-portfolio nature-dragonfly"></div>
-            <div class="img-portfolio delta-ship-inside"></div>
-            <div class="img-portfolio ba-si-bird"></div>
-            <div class="img-portfolio delta-model"></div>
-            <div class="img-portfolio ba-recoleta"></div>
-            <div class="img-portfolio ba-memory-fadu"></div>
-            <div class="img-portfolio delta-away"></div>
-            <div class="img-portfolio nature-mush"></div>
-            <div class="img-portfolio ba-day-moon"></div>
-            <div class="img-portfolio delta-purple"></div>
-            <div class="img-portfolio pink-sunset"></div>
-            <div class="img-portfolio delta-little-bridge"></div>
-            <div class="img-portfolio delta-cheiru"></div>
-            <div class="img-portfolio nature-costanera-flower"></div>
-            <div class="img-portfolio nature-si-orange-flower"></div>
-            <div class="img-portfolio nature-si-purple-white"></div>
-            <div class="img-portfolio nature-delta-pink-flower"></div>
-            <div class="img-portfolio delta-hidden-house"></div>
-            <div class="img-portfolio ba-memory"></div>
-            <div class="img-portfolio nature-yellow-flower2"></div>
-            <div class="img-portfolio nature-costanera-fruit"></div>
-            <div class="img-portfolio menu-about"></div>
-            <div class="img-portfolio delta-tree"></div>
-            <div class="img-portfolio delta-red-flowers"></div>
-            <div class="menu-contact"></div>
-            <div class="img-portfolio menu-portfolio"></div>
-            <div class="img-portfolio delta-musgo"></div>
-            <div class="nature-leaves"></div>
+            <div class="overlay-buttons next">
+                <box-icon type='solid' name='chevrons-right' style="pointer-events: none;"></box-icon>
+            </div>
+            <img src="" alt="" id="imgSlideshow">
         </div>
-    </main>
+    </div>
+    <section class="gallery">
+        <div class="column">
+            <img src="images/nature-costanera-butterfly.png" alt="" data-img-show="0">
+            <img src="images/ba-recoleta.png" alt="" data-img-show="1">
+            <img src="images/ba-fac.png" alt="" data-img-show="2">
+            <img src="images/delta-cayena.png" alt="" data-img-show="3">
+            <img src="images/nature-yellow-flower3.png" alt="" data-img-show="4">
+            <img src="images/ba-sky.png" alt="" data-img-show="5">
+            <img src="images/nature-purple-flower.png" alt="" data-img-show="6">
+            <img src="images/nature-mush.png" alt="" data-img-show="7">
+        </div>
+        <div class="column">
+            <img src="images/nature-si-orange-flower.png" alt="" data-img-show="8">
+            <img src="/images/ba-flores.png" alt="" data-img-show="9">
+            <img src="images/ba-memory-fadu.png" alt="" data-img-show="10">
+            <img src="images/delta-purple.png" alt="" data-img-show="11">
+            <img src="images/delta-ship-inside.png" alt="" data-img-show="12">
+            <img src="images/nature-si-purple-white.png" alt="" data-img-show="13">
+            <img src="images/ba-day-moon.png" alt="" data-img-show="14">
+            <img src="/images/ba-pink-sunset.png" alt="" data-img-show="15">
+            <img src="images/delta-little-bridge.png" alt="" data-img-show="16">
+            <img src="images/delta-cheiru.png" alt="" data-img-show="17">
+            <img src="images/delta-red-flowers.png" alt="" data-img-show="18">
+        </div>
+        <div class="column">
+            <img src="images/nature-dragonfly.png" alt="" data-img-show="19">
+            <img src="images/nature-leaves.png" alt="" data-img-show="20">
+            <img src="images/delta-hidden-house.png" alt="" data-img-show="21">
+            <img src="images/ba-memory.png" alt="" data-img-show="22">
+            <img src="images/delta-ship-window.png" alt="" data-img-show="23">
+            <img src="images/nature-costanera-flower.png" alt="" data-img-show="24">
+            <img src="images/menu-about.png" alt="" data-img-show="25">
+            <img src="images/home-red-flower.png" alt="" data-img-show="26">
+            <img src="images/nature-costanera-fruit.png" alt="" data-img-show="27">
+            <img src="images/menu-contact.png" alt="" data-img-show="28">
+        </div>
+        <div class="column">
+            <img src="images/menu-portfolio.png" alt="" data-img-show="29">
+            <img src="images/delta-musgo.png" alt="" data-img-show="30">
+            <img src="images/nature-delta-pink-flower.png" alt="" data-img-show="31">
+            <img src="images/nature-yellow-flower2.png" alt="" data-img-show="32">
+            <img src="images/ba-si-bird.png" alt="" data-img-show="33">
+            <img src="images/ba-day-moon2.png" alt="" data-img-show="34">
+            <img src="images/head-portfolio.png" alt="" data-img-show="35">
+            <img src="images/delta-tree.png" alt="" data-img-show="36">
+            <img src="images/delta-purple.png" alt="" data-img-show="37">
+            <img src="images/delta-tiny-flowers.png" alt="" data-img-show="38">
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer>
@@ -147,9 +171,7 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-        crossorigin="anonymous"></script>
+    <script src="javascripts/gallery.js"></script>
 </body>
 
 </html>
