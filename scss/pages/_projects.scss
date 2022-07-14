@@ -78,6 +78,12 @@
     }
 
     @media screen and (min-width: 768px){
-        
+    h1 {
+        font-size: $w5;
+        letter-spacing: 10px;
+        .solid {
+          width: $w50;
+        }
+      }
     }
 }

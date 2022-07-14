@@ -91,6 +91,13 @@
   @media screen and (min-width: 768px) {
     .head-pages{
       font-size: $w5;
+      h1 {
+        font-size: $w5;
+        letter-spacing: 10px;
+        .solid {
+          width: $w50;
+        }
+      }
     }
     .titles{
       margin-top: $h40;

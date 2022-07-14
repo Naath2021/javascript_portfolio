@@ -3,6 +3,13 @@
   .head-portfolio {
     @include head-page;
     background-image: url(/images/head-portfolio.png);
+    h1 {
+      font-size: $w5 - $w1;
+      letter-spacing: 10px;
+      .solid {
+        width: $w50;
+      }
+    }
   }
   .gallery {
     display: flex;
@@ -90,14 +97,36 @@
       }
     }
   }
+  .btn-open-modal {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    background-color: #f4efe8;
+    border: 1px solid $footerBg;
+    color: $footerBg;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: all 0.2s ease;
+    z-index: 10000;
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+  }
 
   @media (max-width: 900px) {
     .head-portfolio {
       h1 {
-        font-size: $w3;
+        font-size: $w5;
         letter-spacing: 10px;
         .solid {
-          width: $w40;
+          width: $w50;
         }
       }
     }
@@ -117,12 +146,27 @@
     .slideshow {
       width: 95%;
     }
+    .btn-open-modal {
+      position: fixed;
+      bottom: 69px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+      font-size: 30px;
+    }
   }
   @media (max-width: 600px) {
     .column {
       flex: 100%;
       max-width: 100%;
     }
-
+    .btn-open-modal {
+      position: fixed;
+      bottom: 69px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+      font-size: 30px;
+    }
   }
 }

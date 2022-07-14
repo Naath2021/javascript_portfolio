@@ -413,6 +413,11 @@
 @media screen and (min-width: 768px) {
   #bodyAbout .head-pages {
     font-size: 5vw; }
+    #bodyAbout .head-pages h1 {
+      font-size: 5vw;
+      letter-spacing: 10px; }
+      #bodyAbout .head-pages h1 .solid {
+        width: 50vw; }
   #bodyAbout .titles {
     margin-top: 40vh;
     font-size: 4vw;
@@ -640,6 +645,11 @@
     background-position: center;
     color: #f4efe8;
     background-image: url(/images/head-portfolio.png); }
+    #bodyPortfolio .head-portfolio h1 {
+      font-size: 4vw;
+      letter-spacing: 10px; }
+      #bodyPortfolio .head-portfolio h1 .solid {
+        width: 50vw; }
   #bodyPortfolio .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -714,12 +724,32 @@
         left: 20px; }
       #bodyPortfolio .overlay .slideshow .next {
         right: 20px; }
+  #bodyPortfolio .btn-open-modal {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    background-color: #f4efe8;
+    border: 1px solid #4b2830;
+    color: #4b2830;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: all 0.2s ease;
+    z-index: 10000; }
+    #bodyPortfolio .btn-open-modal:hover {
+      transform: scale(1.2);
+      cursor: pointer; }
   @media (max-width: 900px) {
     #bodyPortfolio .head-portfolio h1 {
-      font-size: 3vw;
+      font-size: 5vw;
       letter-spacing: 10px; }
       #bodyPortfolio .head-portfolio h1 .solid {
-        width: 40vw; }
+        width: 50vw; }
     #bodyPortfolio .column {
       flex: 50%;
       max-width: 50%; }
@@ -730,11 +760,25 @@
     #bodyPortfolio .next {
       right: 5px; }
     #bodyPortfolio .slideshow {
-      width: 95%; } }
+      width: 95%; }
+    #bodyPortfolio .btn-open-modal {
+      position: fixed;
+      bottom: 69px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+      font-size: 30px; } }
   @media (max-width: 600px) {
     #bodyPortfolio .column {
       flex: 100%;
-      max-width: 100%; } }
+      max-width: 100%; }
+    #bodyPortfolio .btn-open-modal {
+      position: fixed;
+      bottom: 69px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+      font-size: 30px; } }
 
 #bodyProjects {
   max-width: 100%;
@@ -808,3 +852,9 @@
         background-color: #4b2830;
         border: 2px solid #f4efe8;
         transition: all ease-in-out 250ms; } }
+  @media screen and (min-width: 768px) {
+    #bodyProjects h1 {
+      font-size: 5vw;
+      letter-spacing: 10px; }
+      #bodyProjects h1 .solid {
+        width: 50vw; } }
