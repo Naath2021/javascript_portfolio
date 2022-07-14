@@ -10,6 +10,7 @@
     width: $w50;
     margin: $h10 0;
     box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82);
+    border-radius: 1%;
   }
   .medium-centered-text {
     color: $fontColor;
@@ -26,9 +27,10 @@
   .subtitles {
     color: $fontColor;
     text-align: center;
-    width: $w3;
+    width: $w1*2;
     width: $w50 + $w10;
     margin: $h10 0 0;
+    font-size: $w5;
   }
   .medium-centered-text {
     font-size: $w4;
@@ -55,27 +57,28 @@
     opacity: 1;
     color: $fontColor;
     width: $w50;
-    margin-bottom: $h10;
+    margin-bottom: $h5;
   }
   .paragraphs {
     color: $fontColor;
     width: $w50 + $w20;
     text-align: left;
     margin-bottom: $h3;
-    font-size: $w3 + 0.5vw;
+    font-size: 2.5vw;
     letter-spacing: 1px;
   }
   .shadowed-img {
-    width: $w50 + $w40;
-    height: $h40;
+    width: $w50 + $w30;
+    height: $h20 + $h5;
     background-image: url(/images/musa-nath.png);
     @include bg-cover;
-    margin-bottom: $h10;
+    margin: 7vh 0 0;
     box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82);
+    border-radius: 1%;
   }
   .about-btn {
-    height: $h5 + $h3;
-    width: $w40;
+    height: $h5 + 2vh;
+    width: $w30;
     background-color: $footerBg;
     margin-bottom: $h10;
     a {
@@ -86,6 +89,9 @@
   }
 
   @media screen and (min-width: 768px) {
+    .head-pages{
+      font-size: $w5;
+    }
     .titles{
       margin-top: $h40;
       font-size: $w4;
@@ -99,7 +105,7 @@
         width: $w40;
       }
       .medium-centered-text {
-        width: $w30;
+        width: 35vw;
         font-size: 1.5vw;
         text-align: center;
         margin: 0 0 0 $w5;
@@ -110,11 +116,11 @@
     }
     .subtitles {
       margin-top: $h10;
-      font-size: $w3;
+      font-size: $w1*2;
     }
     .paragraphs {
       width: $w50;
-      font-size: 1.5vw;
+      font-size: $w1;
     }
     .shadowed-img {
       margin: $h10 0;
@@ -122,17 +128,18 @@
       width: $w50 + $w20;
     }
     .centered-text {
-      font-size: $w2;
+      font-size: 1.5vw;
       width: $w40;
-      color: $highlightColor
+      color: $highlightColor;
+      margin-top: $h20;
     }
     .thin-centered-text {
       width: $w30;
-      font-size: 1.5vw;
+      font-size: $w1;
     }
     .about-btn {
       width: $w10;
-      height: 8vh;
+      height: 7vh;
       transition: all 600ms;
       a {
         font-size: $w1;
