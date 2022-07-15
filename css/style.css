@@ -724,7 +724,11 @@
         left: 20px; }
       #bodyPortfolio .overlay .slideshow .next {
         right: 20px; }
-  #bodyPortfolio .btn-open-modal {
+      #bodyPortfolio .overlay .slideshow .btn {
+        position: relative;
+        margin: 0 20px;
+        top: -420px; }
+  #bodyPortfolio #crudCreate .btn-open-modal {
     position: fixed;
     bottom: 100px;
     right: 100px;
@@ -741,7 +745,7 @@
     opacity: 1;
     transition: all 0.2s ease;
     z-index: 10000; }
-    #bodyPortfolio .btn-open-modal:hover {
+    #bodyPortfolio #crudCreate .btn-open-modal:hover {
       transform: scale(1.2);
       cursor: pointer; }
   @media (max-width: 900px) {
