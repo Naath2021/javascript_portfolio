@@ -7,7 +7,8 @@
   list-style-type: none;
   font-family: 'Quicksand', sans-serif;
   box-sizing: border-box;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  scroll-behavior: smooth; }
 
 #bodyHome .t-d-none, #bodyPortfolio .t-d-none, #bodyProjects .t-d-none, #bodyAbout .t-d-none, #bodyContact .t-d-none {
   text-decoration: none;
@@ -744,6 +745,7 @@
     justify-content: center;
     opacity: 1;
     transition: all 0.2s ease;
+    outline: none;
     z-index: 10000; }
     #bodyPortfolio #crudCreate .btn-open-modal:hover {
       transform: scale(1.2);

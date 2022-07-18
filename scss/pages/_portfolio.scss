@@ -119,6 +119,7 @@
       justify-content: center;
       opacity: 1;
       transition: all 0.2s ease;
+      outline: none;
       z-index: 10000;
       &:hover {
         transform: scale(1.2);
