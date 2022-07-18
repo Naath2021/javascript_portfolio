@@ -4,7 +4,6 @@
 }
 .hr-solid {
   height: 3px;
-  width: $w50;
   vertical-align: middle;
   background-color: $bgAndFont;
   border: 1px solid $bgAndFont;
@@ -17,6 +16,7 @@
   font-size: 7vw;
   padding: 1vh 2vw;
   letter-spacing: 5px;
+  text-shadow: 4px 2px 7px rgba(0,0,0,0.58);
 }
 
 .regular-text {

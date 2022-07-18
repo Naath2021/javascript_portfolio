@@ -12,7 +12,7 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <meta name="keywords" content="">
     <link rel="icon" href="/images/logo.png">
-    <title>Nathaly Learmonth | Fotografía</title>
+    <title>Portafolio Fotográfico</title>
 </head>
 
 <body id="bodyPortfolio" class="body-bg-color body-viewport">
@@ -23,6 +23,7 @@
                 <a href="#bodyHome"><img src="/images/logo.png" alt=""></a>
             </div>
             <ul class="menu">
+                <li><a href="/index.html" class="t-d-none">Home</a></li>
                 <li><a href="/portfolio.html" class="t-d-none">Portafolio</a></li>
                 <li><a href="/projects.html" class="t-d-none">Proyectos</a></li>
                 <li><a href="/about.html" class="t-d-none">Acerca de</a></li>
@@ -94,7 +95,7 @@
 
     <div class="overlay">
         <div class="slideshow">
-            <span class="btn-close">&InvisibleTimes;</span>
+            <span class="btn-close ">&InvisibleTimes;</span>
             <div class="overlay-buttons previous">
                 <box-icon type='solid' name='chevrons-left' style="pointer-events: none;"></box-icon>
             </div>
@@ -102,10 +103,59 @@
             <div class="overlay-buttons next">
                 <box-icon type='solid' name='chevrons-right' style="pointer-events: none;"></box-icon>
             </div>
+
+            <div class="overlay-buttons crud-modal-buttons">
+                <button id="CRUDEditBtn" type="button" class="btn btn-secondary btn-edit">Editar</button>
+                <button id="deleteBtn" type="button" class="btn btn-danger btn-delete">Eliminar</button>
+            </div>
             <img src="" alt="" id="imgSlideshow">
         </div>
     </div>
-    <section class="gallery">
+
+    <!-- CRUD START -->
+
+    <!-- CREATE -->
+    <div id="crudCreate">
+        <!-- Button to open modal -->
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-open-modal"
+            id="openCRUDModal">&#43;</button>
+
+        <!-- Modal Creat Itself -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Crear foto.</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="crudName" class="col-form-label">Nombre</label>
+                                <input type="text" class="form-control" id="crudName">
+                            </div>
+                            <div class="mb-3">
+                                <label for="crudSize" class="col-form-label">Tamaño</label>
+                                <input type="number" class="form-control" id="crudSize">
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button id="savePhoto" type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CRUD MODAL -->
+
+    <section class="gallery" id="gallery">
         <div class="column">
             <img src="images/nature-costanera-butterfly.png" alt="" data-img-show="0">
             <img src="images/ba-recoleta.png" alt="" data-img-show="1">
@@ -155,6 +205,8 @@
         </div>
     </section>
 
+
+
     <!-- FOOTER -->
     <footer>
         <img src="/images/logo.png" alt="logo-brand" class="logo-nl">
@@ -184,12 +236,14 @@
 
 
     <!-- SCRIPTS -->
+    <script type="module" src="/scripts/CRUD.js"></script>
+    <script type="module" src="scripts/gallery.js"></script>
     <script src="https://kit.fontawesome.com/10e5852800.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
-    <script src="javascripts/gallery.js"></script>
 </body>
 
 </html>

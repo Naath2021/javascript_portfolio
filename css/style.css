@@ -7,7 +7,8 @@
   list-style-type: none;
   font-family: 'Quicksand', sans-serif;
   box-sizing: border-box;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  scroll-behavior: smooth; }
 
 #bodyHome .t-d-none, #bodyPortfolio .t-d-none, #bodyProjects .t-d-none, #bodyAbout .t-d-none, #bodyContact .t-d-none {
   text-decoration: none;
@@ -20,7 +21,6 @@
 
 .hr-solid {
   height: 3px;
-  width: 50vw;
   vertical-align: middle;
   background-color: #f4efe8;
   border: 1px solid #f4efe8;
@@ -32,7 +32,8 @@
   text-align: center;
   font-size: 7vw;
   padding: 1vh 2vw;
-  letter-spacing: 5px; }
+  letter-spacing: 5px;
+  text-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58); }
 
 .regular-text {
   color: #3d4726;
@@ -100,7 +101,7 @@
   #bodyHome footer, #bodyPortfolio footer, #bodyProjects footer, #bodyAbout footer, #bodyContact footer {
     height: 50vh; }
     #bodyHome footer .logo-nl, #bodyPortfolio footer .logo-nl, #bodyProjects footer .logo-nl, #bodyAbout footer .logo-nl, #bodyContact footer .logo-nl {
-      width: 10vw; }
+      width: 7vw; }
     #bodyHome footer .icons-rrss-container, #bodyPortfolio footer .icons-rrss-container, #bodyProjects footer .icons-rrss-container, #bodyAbout footer .icons-rrss-container, #bodyContact footer .icons-rrss-container {
       display: flex;
       flex-wrap: wrap;
@@ -116,7 +117,8 @@
           fill: #c9a803;
           transition: all 0.01s ease; }
     #bodyHome footer .copyright, #bodyPortfolio footer .copyright, #bodyProjects footer .copyright, #bodyAbout footer .copyright, #bodyContact footer .copyright {
-      font-size: 1.5vw; } }
+      font-size: 1vw;
+      text-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58); } }
 
 #bodyHome,
 #bodyPortfolio,
@@ -249,7 +251,8 @@
           #bodyAbout header .desktop-nav .menu li a,
           #bodyContact header .desktop-nav .menu li a {
             padding: 0 10px;
-            color: #f4efe8; }
+            color: #f4efe8;
+            text-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58); }
             #bodyHome header .desktop-nav .menu li a:hover,
             #bodyPortfolio header .desktop-nav .menu li a:hover,
             #bodyProjects header .desktop-nav .menu li a:hover,
@@ -327,7 +330,8 @@
 #bodyAbout .img-about {
   width: 50vw;
   margin: 10vh 0;
-  box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82); }
+  box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82);
+  border-radius: 1%; }
 
 #bodyAbout .medium-centered-text {
   color: #3d4726;
@@ -344,9 +348,10 @@
 #bodyAbout .subtitles {
   color: #3d4726;
   text-align: center;
-  width: 3vw;
+  width: 2vw;
   width: 60vw;
-  margin: 10vh 0 0; }
+  margin: 10vh 0 0;
+  font-size: 5vw; }
 
 #bodyAbout .medium-centered-text {
   font-size: 4vw;
@@ -373,29 +378,30 @@
   opacity: 1;
   color: #3d4726;
   width: 50vw;
-  margin-bottom: 10vh; }
+  margin-bottom: 5vh; }
 
 #bodyAbout .paragraphs {
   color: #3d4726;
   width: 70vw;
   text-align: left;
   margin-bottom: 3vh;
-  font-size: 3.5vw;
+  font-size: 2.5vw;
   letter-spacing: 1px; }
 
 #bodyAbout .shadowed-img {
-  width: 90vw;
-  height: 40vh;
+  width: 80vw;
+  height: 25vh;
   background-image: url(/images/musa-nath.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 10vh;
-  box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82); }
+  margin: 7vh 0 0;
+  box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82);
+  border-radius: 1%; }
 
 #bodyAbout .about-btn {
-  height: 8vh;
-  width: 40vw;
+  height: 7vh;
+  width: 30vw;
   background-color: #4b2830;
   margin-bottom: 10vh; }
   #bodyAbout .about-btn a {
@@ -406,6 +412,13 @@
     color: #f4efe8; }
 
 @media screen and (min-width: 768px) {
+  #bodyAbout .head-pages {
+    font-size: 5vw; }
+    #bodyAbout .head-pages h1 {
+      font-size: 5vw;
+      letter-spacing: 10px; }
+      #bodyAbout .head-pages h1 .solid {
+        width: 50vw; }
   #bodyAbout .titles {
     margin-top: 40vh;
     font-size: 4vw;
@@ -421,7 +434,7 @@
     #bodyAbout .img-description-container .img-about {
       width: 40vw; }
     #bodyAbout .img-description-container .medium-centered-text {
-      width: 30vw;
+      width: 35vw;
       font-size: 1.5vw;
       text-align: center;
       margin: 0 0 0 5vw; }
@@ -429,24 +442,25 @@
     width: 30vw; }
   #bodyAbout .subtitles {
     margin-top: 10vh;
-    font-size: 3vw; }
+    font-size: 2vw; }
   #bodyAbout .paragraphs {
     width: 50vw;
-    font-size: 1.5vw; }
+    font-size: 1vw; }
   #bodyAbout .shadowed-img {
     margin: 10vh 0;
     height: 70vh;
     width: 70vw; }
   #bodyAbout .centered-text {
-    font-size: 2vw;
+    font-size: 1.5vw;
     width: 40vw;
-    color: #c9a803; }
+    color: #c9a803;
+    margin-top: 20vh; }
   #bodyAbout .thin-centered-text {
     width: 30vw;
-    font-size: 1.5vw; }
+    font-size: 1vw; }
   #bodyAbout .about-btn {
     width: 10vw;
-    height: 8vh;
+    height: 7vh;
     transition: all 600ms; }
     #bodyAbout .about-btn a {
       font-size: 1vw;
@@ -566,7 +580,7 @@
       background-image: url(/images/menu-contact.png); }
   @media screen and (min-width: 768px) {
     #bodyHome .border {
-      width: 30vw;
+      width: 20vw;
       height: 50vh; }
       #bodyHome .border h1 {
         font-size: 3vw;
@@ -582,14 +596,18 @@
         background-position: bottom; }
         #bodyHome #menu .card-portfolio a {
           font-size: 4vw; }
-          #bodyHome #menu .card-portfolio a .solid {
+          #bodyHome #menu .card-portfolio a:hover {
+            color: #f4efe8; }
+          #bodyHome #menu .card-portfolio a .hr-solid {
             width: 30vw; }
       #bodyHome #menu .card-projects {
         background-position: bottom;
         background-size: cover; }
         #bodyHome #menu .card-projects a {
           font-size: 4vw; }
-          #bodyHome #menu .card-projects a .solid {
+          #bodyHome #menu .card-projects a:hover {
+            color: #f4efe8; }
+          #bodyHome #menu .card-projects a .hr-solid {
             width: 30vw; }
       #bodyHome #menu .card-about {
         background-image: url(/images/nature-leaves.png);
@@ -597,14 +615,18 @@
         background-size: cover; }
         #bodyHome #menu .card-about a {
           font-size: 4vw; }
-          #bodyHome #menu .card-about a .solid {
+          #bodyHome #menu .card-about a:hover {
+            color: #f4efe8; }
+          #bodyHome #menu .card-about a .hr-solid {
             width: 30vw; }
       #bodyHome #menu .card-contact {
         background-position: center;
         background-size: cover; }
         #bodyHome #menu .card-contact a {
           font-size: 4vw; }
-          #bodyHome #menu .card-contact a .solid {
+          #bodyHome #menu .card-contact a:hover {
+            color: #f4efe8; }
+          #bodyHome #menu .card-contact a .hr-solid {
             width: 30vw; } }
 
 #bodyPortfolio {
@@ -624,6 +646,11 @@
     background-position: center;
     color: #f4efe8;
     background-image: url(/images/head-portfolio.png); }
+    #bodyPortfolio .head-portfolio h1 {
+      font-size: 4vw;
+      letter-spacing: 10px; }
+      #bodyPortfolio .head-portfolio h1 .solid {
+        width: 50vw; }
   #bodyPortfolio .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -698,12 +725,37 @@
         left: 20px; }
       #bodyPortfolio .overlay .slideshow .next {
         right: 20px; }
+      #bodyPortfolio .overlay .slideshow .btn {
+        position: relative;
+        margin: 0 20px;
+        top: -420px; }
+  #bodyPortfolio #crudCreate .btn-open-modal {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    background-color: #f4efe8;
+    border: 1px solid #4b2830;
+    color: #4b2830;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: all 0.2s ease;
+    outline: none;
+    z-index: 10000; }
+    #bodyPortfolio #crudCreate .btn-open-modal:hover {
+      transform: scale(1.2);
+      cursor: pointer; }
   @media (max-width: 900px) {
     #bodyPortfolio .head-portfolio h1 {
-      font-size: 3vw;
+      font-size: 5vw;
       letter-spacing: 10px; }
       #bodyPortfolio .head-portfolio h1 .solid {
-        width: 40vw; }
+        width: 50vw; }
     #bodyPortfolio .column {
       flex: 50%;
       max-width: 50%; }
@@ -714,11 +766,25 @@
     #bodyPortfolio .next {
       right: 5px; }
     #bodyPortfolio .slideshow {
-      width: 95%; } }
+      width: 95%; }
+    #bodyPortfolio .btn-open-modal {
+      position: fixed;
+      bottom: 69px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+      font-size: 30px; } }
   @media (max-width: 600px) {
     #bodyPortfolio .column {
       flex: 100%;
-      max-width: 100%; } }
+      max-width: 100%; }
+    #bodyPortfolio .btn-open-modal {
+      position: fixed;
+      bottom: 69px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+      font-size: 30px; } }
 
 #bodyProjects {
   max-width: 100%;
@@ -792,3 +858,9 @@
         background-color: #4b2830;
         border: 2px solid #f4efe8;
         transition: all ease-in-out 250ms; } }
+  @media screen and (min-width: 768px) {
+    #bodyProjects h1 {
+      font-size: 5vw;
+      letter-spacing: 10px; }
+      #bodyProjects h1 .solid {
+        width: 50vw; } }

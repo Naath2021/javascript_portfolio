@@ -70,6 +70,7 @@
             a {
               padding: 0 10px;
               color: $bgAndFont;
+              text-shadow: 4px 2px 7px rgba(0,0,0,0.58);
               &:hover {
                 color: $highlightColor;
               }

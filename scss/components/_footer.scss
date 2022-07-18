@@ -30,7 +30,7 @@
       footer{
         height: $h50;
         .logo-nl{
-          width: $w10;
+          width: $w5 + $w2;
         }
         .icons-rrss-container{
           @include flexrow;
@@ -46,7 +46,8 @@
           }
         }
         .copyright{
-          font-size: 1.5vw;
+          font-size: $w1;
+          text-shadow: 4px 2px 7px rgba(0,0,0,0.58);
         }
       }
     }

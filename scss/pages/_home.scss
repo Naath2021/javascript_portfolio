@@ -58,7 +58,7 @@
 
     @media screen and (min-width: 768px){
         .border{
-            width: $w30;
+            width: $w20;
             height: $h50;
             h1{
                 font-size: $w3;
@@ -78,7 +78,10 @@
                 background-position: bottom;
                 a{
                     font-size: $w4;
-                    .solid{
+                    &:hover{
+                        color: $bgAndFont;
+                    }
+                    .hr-solid{
                         width: $w30;
                     }
                 }
@@ -88,7 +91,10 @@
                 background-size: cover;
                 a{
                     font-size: $w4;
-                    .solid{
+                    &:hover{
+                        color: $bgAndFont;
+                    }
+                    .hr-solid{
                         width: $w30;
                     }
                 }
@@ -99,7 +105,10 @@
                 background-size: cover;
                 a{
                     font-size: $w4;
-                    .solid{
+                    &:hover{
+                        color: $bgAndFont;
+                    }
+                    .hr-solid{
                         width: $w30;
                     }
                 }
@@ -109,7 +118,10 @@
                 background-size: cover;
                 a{
                     font-size: $w4;
-                    .solid{
+                    &:hover{
+                        color: $bgAndFont;
+                    }
+                    .hr-solid{
                         width: $w30;
                     }
                 }
