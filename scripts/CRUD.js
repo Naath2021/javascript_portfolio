@@ -3,18 +3,16 @@ import { images, imgSlideshow, selectedImg, imgGallery } from "./gallery.js";
 // VARIABLES
 let localStorageKey = "Image Gallery";
 let photoUploaded;
-const btnCRUDOpen = document.querySelector("#openCRUDModal");
 const savePhoto = document.getElementById("savePhoto")
 const modalCRUDCreate = new bootstrap.Modal('#openCRUDModal')
 const CRUDForm = document.querySelector("form")
-const CRUDName = document.getElementById("crudName")
-const CRUDSize = document.getElementById("crudSize")
+// const CRUDName = document.getElementById("crudName")
+// const CRUDSize = document.getElementById("crudSize")
 let inputFile = document.querySelector('input[type=file]');
-// const myBlob = inputFile.files[0];
 let photoId = images.length;
 let gallery = document.querySelector("#gallery")
 const slideshowImg = document.getElementById("imgSlideshow")
-
+let myB64;
 
 let results = ""
 let option = ""
@@ -40,37 +38,42 @@ let formatDate = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFu
 savePhoto.addEventListener("click", async () => {
   createPhoto()
   AddFile()
+
 })
 
 function createPhoto() {
   try {
-    photoUploaded = new Photos(CRUDName.value, CRUDSize.value, formatDate, photoId);
-    images.push(photoUploaded);
-
-    localStorage.setItem(localStorageKey, JSON.stringify(photoUploaded))
+    const myBlob = inputFile.files[0];
+    myB64 = blobToBase64(myBlob).then((base64) => {
+      photoUploaded = new Photos(myBlob.name, myBlob.size, formatDate, photoId, base64);
+      images.push(photoUploaded);
+      localStorage.setItem(localStorageKey, JSON.stringify(images))
+    });
   } catch (error) {
     console.log(error)
   }
 }
 
+
 function AddFile() {
   try {
     // let photoInfoRetrieved = JSON.stringify(localStorage.getItem(localStorageKey))
-    let imgContainer = document.createElement("div")
-    imgContainer.setAttribute("class", "column")
-    gallery.append(imgContainer)
-    console.log(imgContainer)
-
     const myBlob = inputFile.files[0];
-    const myB64 = blobToBase64(myBlob);
-    console.log(myB64)
-    let img = document.createElement("img")
-    img.src = `data:image/png;base64,${myB64} `
-    imgContainer.append(img)
-    console.log(myB64)
+    myB64 = blobToBase64(myBlob).then((base64) => {
+
+      let imgContainer = document.createElement("div")
+      imgContainer.setAttribute("class", "column")
+      imgContainer.innerHTML = `<img src="data:image/png;base64,${base64} " alt="${myBlob.name}" data-img-show="${photoId}">`
+    });
+
+
   } catch (error) {
     console.log(error)
   }
+}
+
+function prueba(img) {
+  return img
 }
 
 const blobToBase64 = (blob) => {
