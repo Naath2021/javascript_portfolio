@@ -49,6 +49,7 @@
         width: $w100;
         height: $h10;
         background: $headerBg;
+        z-index: 1000;
         .logo {
           display: block;
           width: $w4;
@@ -72,7 +73,8 @@
               color: $bgAndFont;
               text-shadow: 4px 2px 7px rgba(0,0,0,0.58);
               &:hover {
-                color: $highlightColor;
+                color: $footerBg;
+                font-weight: 800;
               }
             }
           }

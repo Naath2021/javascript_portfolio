@@ -1,17 +1,13 @@
-import { images, imgSlideshow, selectedImg, imgGallery } from "./gallery.js";
+import { images,  } from "./gallery.js";
 
 // VARIABLES
 let localStorageKey = "Image Gallery";
 let photoUploaded;
 const savePhoto = document.getElementById("savePhoto")
-const modalCRUDCreate = new bootstrap.Modal('#openCRUDModal')
-const CRUDForm = document.querySelector("form")
-// const CRUDName = document.getElementById("crudName")
-// const CRUDSize = document.getElementById("crudSize")
 let inputFile = document.querySelector('input[type=file]');
 let photoId = images.length;
 let gallery = document.querySelector("#gallery")
-const slideshowImg = document.getElementById("imgSlideshow")
+const modal1 = new bootstrap.Modal('#modal1')
 let myB64;
 
 let results = ""
@@ -32,15 +28,14 @@ class Photos {
 const date = new Date();
 let formatDate = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
 
-
 // EVENTS
-
-savePhoto.addEventListener("click", async () => {
+savePhoto.addEventListener("click", () => {
   createPhoto()
   AddFile()
-
 })
 
+
+// CRUD CREATE 
 function createPhoto() {
   try {
     const myBlob = inputFile.files[0];
@@ -54,7 +49,6 @@ function createPhoto() {
   }
 }
 
-
 function AddFile() {
   try {
     // let photoInfoRetrieved = JSON.stringify(localStorage.getItem(localStorageKey))
@@ -64,16 +58,13 @@ function AddFile() {
       let imgContainer = document.createElement("div")
       imgContainer.setAttribute("class", "column")
       imgContainer.innerHTML = `<img src="data:image/png;base64,${base64} " alt="${myBlob.name}" data-img-show="${photoId}">`
+      gallery.append(imgContainer)
     });
 
 
   } catch (error) {
     console.log(error)
   }
-}
-
-function prueba(img) {
-  return img
 }
 
 const blobToBase64 = (blob) => {
@@ -89,4 +80,4 @@ const blobToBase64 = (blob) => {
 
 
 
-export { }
+export {Photos, formatDate}
