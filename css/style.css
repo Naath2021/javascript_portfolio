@@ -15,6 +15,22 @@
   list-style-type: none;
   list-style: none; }
 
+#bodyHome .about-btn, #bodyHome .btn-submit, #bodyPortfolio .about-btn, #bodyPortfolio .btn-submit, #bodyProjects .about-btn, #bodyProjects .btn-submit, #bodyAbout .about-btn, #bodyAbout .btn-submit, #bodyContact .about-btn, #bodyContact .btn-submit {
+  width: 10vw;
+  height: 5vh;
+  color: #f4efe8;
+  margin-bottom: 20vw;
+  transition: all 600ms;
+  background-color: #4b2830; }
+  #bodyHome .about-btn a, #bodyHome .btn-submit a, #bodyPortfolio .about-btn a, #bodyPortfolio .btn-submit a, #bodyProjects .about-btn a, #bodyProjects .btn-submit a, #bodyAbout .about-btn a, #bodyAbout .btn-submit a, #bodyContact .about-btn a, #bodyContact .btn-submit a {
+    font-size: 1vw; }
+  #bodyHome .about-btn:hover, #bodyHome .btn-submit:hover, #bodyPortfolio .about-btn:hover, #bodyPortfolio .btn-submit:hover, #bodyProjects .about-btn:hover, #bodyProjects .btn-submit:hover, #bodyAbout .about-btn:hover, #bodyAbout .btn-submit:hover, #bodyContact .about-btn:hover, #bodyContact .btn-submit:hover {
+    border: 1px solid #4b2830;
+    background-color: #f4efe8;
+    transition: all 600ms; }
+    #bodyHome .about-btn:hover a, #bodyHome .btn-submit:hover a, #bodyPortfolio .about-btn:hover a, #bodyPortfolio .btn-submit:hover a, #bodyProjects .about-btn:hover a, #bodyProjects .btn-submit:hover a, #bodyAbout .about-btn:hover a, #bodyAbout .btn-submit:hover a, #bodyContact .about-btn:hover a, #bodyContact .btn-submit:hover a {
+      color: #4b2830; }
+
 .body-viewport {
   min-height: 100vh;
   max-width: 100%; }
@@ -282,40 +298,6 @@
           font-size: 1vw;
           fill: #f4efe8; } }
 
-.vertical-image-portfolio-extended {
-  width: 50vw;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.horizontal-image-portfolio-extended {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.tiny-image-portfolio-extended {
-  width: 50vw;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.row-w100-container-extended {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  place-items: center;
-  width: 100%; }
-
-.column-w100-container-extended {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  place-items: center;
-  width: 100%; }
-
 #bodyAbout .head-about {
   display: flex;
   flex-wrap: wrap;
@@ -419,8 +401,6 @@
     #bodyAbout .head-pages h1 {
       font-size: 5vw;
       letter-spacing: 10px; }
-      #bodyAbout .head-pages h1 .solid {
-        width: 50vw; }
   #bodyAbout .titles {
     margin-top: 40vh;
     font-size: 4vw;
@@ -459,20 +439,134 @@
     margin-top: 20vh; }
   #bodyAbout .thin-centered-text {
     width: 30vw;
+    font-size: 1vw; } }
+
+#bodyContact .head-contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #f4efe8;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(/images/ba-day-moon2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; }
+  #bodyContact .head-contact .hr-solid {
+    width: 50vw;
+    box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58); }
+
+#bodyContact .info-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  margin: 10vh 0; }
+  #bodyContact .info-container .contact-info {
+    font-size: 3vw;
+    color: #3d4726; }
+
+#bodyContact form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center; }
+  #bodyContact form input {
+    border: none;
+    outline: none;
+    border-radius: 0%;
+    border-bottom: #4b2830 thin solid;
+    font-size: 4vw;
+    height: 20px;
+    margin-bottom: 30px;
+    width: 80vw; }
+  #bodyContact form .form-label {
+    font-size: 3vw; }
+  #bodyContact form textarea {
+    border: none;
+    outline: none;
+    border-radius: 0%;
+    border-bottom: #4b2830 thin solid;
+    height: 30px;
+    width: 70vw;
+    margin-bottom: 50px; }
+  #bodyContact form .btn-submit {
+    background-color: #4b2830;
+    width: 25vw;
+    height: 5vh;
+    color: #f4efe8;
+    margin-bottom: 20vh;
+    border: none;
+    outline: none;
+    font-size: 3vw; }
+
+@media screen and (min-width: 768px) {
+  #bodyContact .head-pages {
+    font-size: 5vw; }
+    #bodyContact .head-pages h1 {
+      font-size: 5vw;
+      letter-spacing: 10px; }
+      #bodyContact .head-pages h1 hr {
+        width: 10px; }
+  #bodyContact .info-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    margin: 10vh 0; }
+    #bodyContact .info-container .contact-info {
+      font-size: 2vw; }
+  #bodyContact form input {
+    font-size: 4vw;
+    height: 50px;
+    margin-bottom: 100px;
+    width: 20vw; }
+  #bodyContact form .name-tel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center; }
+    #bodyContact form .name-tel .name-lastname,
+    #bodyContact form .name-tel .tel {
+      margin-right: 30px; }
+  #bodyContact form .form-label {
     font-size: 1vw; }
-  #bodyAbout .about-btn {
+  #bodyContact form .email {
+    width: 40vw; }
+  #bodyContact form textarea {
+    height: 50px;
+    width: 30vw;
+    margin-bottom: 20vh; }
+  #bodyContact form .btn-submit {
     width: 10vw;
-    height: 7vh;
-    transition: all 600ms; }
-    #bodyAbout .about-btn a {
-      font-size: 1vw;
-      padding: 0;
-      margin: 0; }
-    #bodyAbout .about-btn:hover {
+    height: 5vh;
+    color: #f4efe8;
+    margin-bottom: 20vw;
+    font-size: 1vw; }
+    #bodyContact form .btn-submit:hover {
+      border: 1px solid #4b2830;
       background-color: #f4efe8;
-      transition: all 600ms; }
-      #bodyAbout .about-btn:hover a {
-        color: #4b2830; } }
+      color: #4b2830;
+      transition: all 600ms; } }
 
 #bodyHome {
   background-color: #f4efe8;
@@ -873,9 +967,9 @@
     #bodyProjects .v-img {
       width: 30vw; }
     #bodyProjects .img-logo-musa {
-      width: 20vw; }
+      width: 10vw; }
     #bodyProjects .link-to-musa {
-      width: 50vw;
+      width: 30vw;
       transition: all ease-in-out 250ms; }
       #bodyProjects .link-to-musa:hover {
         color: #f4efe8;

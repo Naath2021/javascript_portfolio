@@ -1,0 +1,117 @@
+#bodyContact {
+  .head-contact {
+    @include head-page;
+    @include flexcolumn;
+    height: $h100;
+    width: $w100;
+    background-image: url(/images/ba-day-moon2.png);
+    @include bg-fixed;
+    background-position: center;
+    .hr-solid {
+      width: $w50;
+      box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58);
+    }
+  }
+  .info-container {
+    @include flexcolumn;
+    margin: $h10 0;
+    .contact-info {
+      font-size: $w3;
+      color: $fontColor;
+    }
+  }
+  form {
+    @include flexcolumn;
+    input {
+      border: none;
+      outline: none;
+      border-radius: 0%;
+      border-bottom: $footerBg thin solid;
+      font-size: $w4;
+      height: 20px;
+      margin-bottom: 30px;
+      width: $w50 + $w30;
+    }
+    .form-label {
+      font-size: $w3;
+    }
+    textarea {
+      border: none;
+      outline: none;
+      border-radius: 0%;
+      border-bottom: $footerBg thin solid;
+      height: 30px;
+      width: $w50 + $w20;
+      margin-bottom: 50px;
+    }
+    .btn-submit {
+      background-color: $footerBg;
+      width: $w30 - $w5;
+      height: 5vh;
+      color: $bgAndFont;
+      margin-bottom: 20vh;
+      border: none;
+      outline: none;
+      font-size: $w3;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .head-pages {
+      font-size: $w5;
+      h1 {
+        font-size: $w5;
+        letter-spacing: 10px;
+        hr{
+            width: 10px;
+        }
+      }
+    }
+    .info-container {
+      @include flexcolumn;
+      margin: $h10 0;
+      .contact-info {
+        font-size: $w2;
+      }
+    }
+    form {
+      input {
+        font-size: $w4;
+        height: 50px;
+        margin-bottom: 100px;
+        width: $w20;
+      }
+      .name-tel {
+        @include flexrow;
+        .name-lastname,
+        .tel {
+          margin-right: 30px;
+        }
+      }
+      .form-label {
+        font-size: $w1;
+      }
+      .email {
+        width: $w40;
+      }
+      textarea {
+        height: 50px;
+        width: $w30;
+        margin-bottom: $h20;
+      }
+      .btn-submit {
+        width: $w10;
+        height: 5vh;
+        color: $bgAndFont;
+        margin-bottom: $w20;
+        font-size: $w1;
+        &:hover {
+          border: 1px solid $footerBg;
+          background-color: $bgAndFont;
+          color: $footerBg;
+          transition: all 600ms;
+        }
+      }
+    }
+  }
+}

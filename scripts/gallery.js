@@ -1,5 +1,6 @@
 import { Photos, formatDate } from "./CRUD.js"
 
+// Array with all the images 
 let images = [
     {
         date: "08/06/2022",
@@ -271,7 +272,7 @@ let images = [
     },
 ]
 
-// VARS
+// Variables
 let counter = 0;
 const slideshowContainer = document.querySelector(".slideshow");
 const overlay = document.querySelector(".overlay");
@@ -284,7 +285,7 @@ const saveEditPhoto = document.querySelector("#saveEditPhoto")
 let selectedImg;
 
 
-// CRUD READ: Slideshow overlay with JS
+// CRUD READ: Slideshow overlay with pure JS
 slideshowContainer.addEventListener("click", function (event) {
     let previous = slideshowContainer.querySelector(".previous"),
         next = slideshowContainer.querySelector(".next"),
@@ -310,7 +311,7 @@ slideshowContainer.addEventListener("click", function (event) {
     }
 })
 
-// EVENT TO SHOW OVERLAY
+// Event to show overlay
 Array.from(imgGallery).forEach(img => {
     img.addEventListener("click", event => {
         selectedImg = +event.target.dataset.img
@@ -321,13 +322,13 @@ Array.from(imgGallery).forEach(img => {
     })
 })
 
-// EVENT TO HIDE OVERLAY
+// Event to hide overlay
 document.querySelector("span").addEventListener("click", () => {
     overlay.style.opacity = 0
     overlay.style.visibility = "hidden"
 })
 
-// EVENT TO UPDATE / EDIT
+// Event to update/edit
 editBtn.addEventListener("click", (e) => {
     overlay.style.opacity = 0
     overlay.style.visibility = "hidden"
@@ -341,7 +342,7 @@ editBtn.addEventListener("click", (e) => {
 
 })
 
-// EVENT TO SAVE UOPDATE CHANGES
+// Event to save changes 
 saveEditPhoto.addEventListener("click", () => {
     let photoUpdated = images.map((img) => {
         if (img.id === selectedImg) {
@@ -355,9 +356,9 @@ saveEditPhoto.addEventListener("click", () => {
     editName.value = ""
     editSize.value = ""
 
-    // for orientation
-    console.log(selectedImg) 
-    console.log(photoUpdated)
+    // for orientation:
+    console.log(selectedImg) // index of selected img
+    console.log(photoUpdated) // array with the changes
 })
 
 

@@ -1,19 +1,23 @@
 import { images,  } from "./gallery.js";
 
-// VARIABLES
+// CRUD stands for Create. Read. Update. Delete. Here you'll se the "C" part of it 
+
+
+// Variables
 let localStorageKey = "Image Gallery";
 let photoUploaded;
 const savePhoto = document.getElementById("savePhoto")
 let inputFile = document.querySelector('input[type=file]');
 let photoId = images.length;
 let gallery = document.querySelector("#gallery")
-const modal1 = new bootstrap.Modal('#modal1')
 let myB64;
 
-let results = ""
-let option = ""
+// DATE
+const date = new Date();
+let formatDate = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
 
-// Image object
+
+// Image constructor
 class Photos {
   constructor(name, size, date, id, img) {
     this.name = name;
@@ -24,18 +28,15 @@ class Photos {
   }
 }
 
-// DATE
-const date = new Date();
-let formatDate = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
 
-// EVENTS
+// Event that triggers the CREATE functions
 savePhoto.addEventListener("click", () => {
   createPhoto()
   AddFile()
-})
+})  
 
 
-// CRUD CREATE 
+// Create photo and added to localStorage
 function createPhoto() {
   try {
     const myBlob = inputFile.files[0];
@@ -49,6 +50,8 @@ function createPhoto() {
   }
 }
 
+
+// Add file to document
 function AddFile() {
   try {
     // let photoInfoRetrieved = JSON.stringify(localStorage.getItem(localStorageKey))
@@ -67,6 +70,8 @@ function AddFile() {
   }
 }
 
+
+// Convert Blob (img) to Base64
 const blobToBase64 = (blob) => {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();

@@ -27,7 +27,7 @@
   .subtitles {
     color: $fontColor;
     text-align: center;
-    width: $w1*2;
+    width: $w1 * 2;
     width: $w50 + $w10;
     margin: $h10 0 0;
     font-size: $w5;
@@ -89,17 +89,14 @@
   }
 
   @media screen and (min-width: 768px) {
-    .head-pages{
+    .head-pages {
       font-size: $w5;
       h1 {
         font-size: $w5;
         letter-spacing: 10px;
-        .solid {
-          width: $w50;
-        }
       }
     }
-    .titles{
+    .titles {
       margin-top: $h40;
       font-size: $w4;
       letter-spacing: 5px;
@@ -118,12 +115,12 @@
         margin: 0 0 0 $w5;
       }
     }
-    .hr-dark{
+    .hr-dark {
       width: $w30;
     }
     .subtitles {
       margin-top: $h10;
-      font-size: $w1*2;
+      font-size: $w1 * 2;
     }
     .paragraphs {
       width: $w50;
@@ -143,23 +140,6 @@
     .thin-centered-text {
       width: $w30;
       font-size: $w1;
-    }
-    .about-btn {
-      width: $w10;
-      height: 7vh;
-      transition: all 600ms;
-      a {
-        font-size: $w1;
-        padding: 0;
-        margin: 0;
-      }
-      &:hover {
-        background-color: $bgAndFont;
-        transition: all 600ms;
-        a {
-          color: $footerBg;
-        }
-      }
     }
   }
 }
