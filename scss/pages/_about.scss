@@ -5,6 +5,14 @@
     width: $w100;
     background-image: url(/images/nature-yellow-flower2.png);
     @include bg-fixed;
+    h1 {
+      font-size: $w5+$w2;
+      letter-spacing: 10px;
+      .solid {
+        width: $w50+$w20;
+        box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58);
+      }
+    }
   }
   .img-about {
     width: $w50;
@@ -89,11 +97,12 @@
   }
 
   @media screen and (min-width: 768px) {
-    .head-pages {
-      font-size: $w5;
+    .head-about {
       h1 {
-        font-size: $w5;
-        letter-spacing: 10px;
+        font-size: $w3;
+        .solid {
+          width: $w30;
+        }
       }
     }
     .titles {

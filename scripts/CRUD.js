@@ -1,21 +1,22 @@
-import { images,  } from "./gallery.js";
-
-// CRUD stands for Create. Read. Update. Delete. Here you'll se the "C" part of it 
+import { images, selectedImg, overlay } from "./gallery.js";
 
 
 // Variables
 let localStorageKey = "Image Gallery";
 let photoUploaded;
-const savePhoto = document.getElementById("savePhoto")
-let inputFile = document.querySelector('input[type=file]');
-let photoId = images.length;
-let gallery = document.querySelector("#gallery")
+const savePhoto = document.getElementById("savePhoto");
+const inputFile = document.querySelector('input[type=file]');
+const photoId = images.length;
+let gallery = document.querySelector("#gallery");
+let deleteBtn = document.querySelector("#deleteBtn");
+let img = document.getElementsByClassName("img")
 let myB64;
 
 // DATE
 const date = new Date();
 let formatDate = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
 
+localStorage.setItem(localStorageKey, JSON.stringify(images))
 
 // Image constructor
 class Photos {
@@ -33,8 +34,13 @@ class Photos {
 savePhoto.addEventListener("click", () => {
   createPhoto()
   AddFile()
-})  
+})
 
+// Event Delete image
+deleteBtn.addEventListener("click", () => {
+  deleteFromDOM()
+  deleteFromStorage(localStorageKey, selectedImg)
+})
 
 // Create photo and added to localStorage
 function createPhoto() {
@@ -54,7 +60,6 @@ function createPhoto() {
 // Add file to document
 function AddFile() {
   try {
-    // let photoInfoRetrieved = JSON.stringify(localStorage.getItem(localStorageKey))
     const myBlob = inputFile.files[0];
     myB64 = blobToBase64(myBlob).then((base64) => {
 
@@ -70,6 +75,55 @@ function AddFile() {
   }
 }
 
+// Delete Image From Node Parent "div" 
+function deleteFromDOM() {
+  try {
+    let imgToDelete = images.find(photo => {
+      return photo.id == selectedImg
+    })
+    if (imgToDelete.id === selectedImg) {
+      overlay.style.opacity = 0
+      overlay.style.visibility = "hidden"
+      img[imgToDelete.id].remove()
+    }
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+
+// Get and parse object saved in localStorage
+function getFromLocalStorage(key) {
+  let convertJSONToObj = localStorage.getItem(key)
+  return JSON.parse(convertJSONToObj)
+}
+
+// Delete img from storage
+function deleteFromStorage(key, index) {
+  try {
+    localStorage.removeItem(index)
+    images.splice(index, 1) 
+    console.log(images)
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+
+// Sweet Alert2
+// const sweetAlertSimple = (title, text, icon) => {
+//   Swal.fire({
+//     title: title,
+//     text: text,
+//     icon: icon,
+//     showClass: {
+//       popup: 'animate__animated animate__zoomIn'
+//     },
+//     hideClass: {
+//       popup: 'animate__animated animate__lightSpeedOutRight'
+//     }
+//   })
+// }
 
 // Convert Blob (img) to Base64
 const blobToBase64 = (blob) => {
@@ -85,4 +139,4 @@ const blobToBase64 = (blob) => {
 
 
 
-export {Photos, formatDate}
+export { Photos, formatDate, localStorageKey }

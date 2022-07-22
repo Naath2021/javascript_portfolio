@@ -17,7 +17,7 @@
 
 #bodyHome .about-btn, #bodyHome .btn-submit, #bodyPortfolio .about-btn, #bodyPortfolio .btn-submit, #bodyProjects .about-btn, #bodyProjects .btn-submit, #bodyAbout .about-btn, #bodyAbout .btn-submit, #bodyContact .about-btn, #bodyContact .btn-submit {
   width: 10vw;
-  height: 5vh;
+  height: 5vw;
   color: #f4efe8;
   margin-bottom: 20vw;
   transition: all 600ms;
@@ -310,6 +310,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
+  #bodyAbout .head-about h1 {
+    font-size: 7vw;
+    letter-spacing: 10px; }
+    #bodyAbout .head-about h1 .solid {
+      width: 70vw;
+      box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58); }
 
 #bodyAbout .img-about {
   width: 50vw;
@@ -396,11 +402,10 @@
     color: #f4efe8; }
 
 @media screen and (min-width: 768px) {
-  #bodyAbout .head-pages {
-    font-size: 5vw; }
-    #bodyAbout .head-pages h1 {
-      font-size: 5vw;
-      letter-spacing: 10px; }
+  #bodyAbout .head-about h1 {
+    font-size: 3vw; }
+    #bodyAbout .head-about h1 .solid {
+      width: 30vw; }
   #bodyAbout .titles {
     margin-top: 40vh;
     font-size: 4vw;
@@ -467,9 +472,12 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center; }
-  #bodyContact .head-contact .hr-solid {
-    width: 50vw;
-    box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58); }
+  #bodyContact .head-contact h1 {
+    font-size: 7vw;
+    letter-spacing: 10px; }
+    #bodyContact .head-contact h1 .solid {
+      width: 70vw;
+      box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58); }
 
 #bodyContact .info-container {
   display: flex;
@@ -518,13 +526,10 @@
     font-size: 3vw; }
 
 @media screen and (min-width: 768px) {
-  #bodyContact .head-pages {
-    font-size: 5vw; }
-    #bodyContact .head-pages h1 {
-      font-size: 5vw;
-      letter-spacing: 10px; }
-      #bodyContact .head-pages h1 hr {
-        width: 10px; }
+  #bodyContact .head-contact h1 {
+    font-size: 3vw; }
+    #bodyContact .head-contact h1 .solid {
+      width: 30vw; }
   #bodyContact .info-container {
     display: flex;
     flex-wrap: wrap;
@@ -536,7 +541,7 @@
       font-size: 2vw; }
   #bodyContact form input {
     font-size: 4vw;
-    height: 50px;
+    height: 30px;
     margin-bottom: 100px;
     width: 20vw; }
   #bodyContact form .name-tel {
@@ -597,23 +602,25 @@
     place-items: center;
     justify-content: space-evenly;
     width: 40vw;
-    height: 40vh;
-    border: 5px solid #f4efe8;
+    height: 30vh;
+    border: 8px solid #f4efe8;
     border-radius: 5px;
     padding: 50px; }
     #bodyHome .border h1 {
-      font-family: 'Nunito', sans-serif;
+      font-family: "Nunito", sans-serif;
       font-size: 5vw;
       color: #f4efe8;
       text-align: center;
       font-weight: 200;
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      text-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58); }
     #bodyHome .border h2 {
-      font-family: 'Quicksand', sans-serif;
+      font-family: "Quicksand", sans-serif;
       color: #f4efe8;
       font-size: 3vw;
       text-align: center;
-      font-weight: 200; }
+      font-weight: 200;
+      text-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58); }
   #bodyHome #menu {
     display: flex;
     flex-wrap: wrap;
@@ -635,6 +642,8 @@
       width: 100%;
       height: 100vh;
       background-image: url(/images/menu-portfolio.png); }
+      #bodyHome #menu .card-portfolio .hr-solid {
+        width: 60vw; }
     #bodyHome #menu .card-projects {
       display: flex;
       flex-wrap: wrap;
@@ -648,6 +657,8 @@
       width: 100%;
       height: 100vh;
       background-image: url(/images/menu-projects.png); }
+      #bodyHome #menu .card-projects .hr-solid {
+        width: 60vw; }
     #bodyHome #menu .card-about {
       display: flex;
       flex-wrap: wrap;
@@ -661,6 +672,8 @@
       width: 100%;
       height: 100vh;
       background-image: url(/images/menu-about.png); }
+      #bodyHome #menu .card-about .hr-solid {
+        width: 60vw; }
     #bodyHome #menu .card-contact {
       display: flex;
       flex-wrap: wrap;
@@ -674,10 +687,12 @@
       width: 100%;
       height: 100vh;
       background-image: url(/images/menu-contact.png); }
+      #bodyHome #menu .card-contact .hr-solid {
+        width: 60vw; }
   @media screen and (min-width: 768px) {
     #bodyHome .border {
       width: 20vw;
-      height: 50vh; }
+      height: 40vh; }
       #bodyHome .border h1 {
         font-size: 3vw;
         font-weight: 100; }
@@ -743,10 +758,11 @@
     color: #f4efe8;
     background-image: url(/images/head-portfolio.png); }
     #bodyPortfolio .head-portfolio h1 {
-      font-size: 4vw;
+      font-size: 3vw;
       letter-spacing: 10px; }
       #bodyPortfolio .head-portfolio h1 .solid {
-        width: 50vw; }
+        width: 30vw;
+        box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58); }
   #bodyPortfolio .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -860,18 +876,19 @@
       cursor: pointer; }
   @media (max-width: 900px) {
     #bodyPortfolio .head-portfolio h1 {
-      font-size: 5vw;
-      letter-spacing: 10px; }
+      font-size: 4vw; }
       #bodyPortfolio .head-portfolio h1 .solid {
-        width: 50vw; }
+        width: 35vw; }
     #bodyPortfolio .column {
       flex: 50%;
       max-width: 50%; }
-    #bodyPortfolio .overlay-buttons, #bodyPortfolio .crud-modal-buttons {
+    #bodyPortfolio .overlay-buttons,
+    #bodyPortfolio .crud-modal-buttons {
       width: 100px;
       height: 100px; }
       #bodyPortfolio .overlay-buttons .btn-delete,
-      #bodyPortfolio .overlay-buttons .btn-edit, #bodyPortfolio .crud-modal-buttons .btn-delete,
+      #bodyPortfolio .overlay-buttons .btn-edit,
+      #bodyPortfolio .crud-modal-buttons .btn-delete,
       #bodyPortfolio .crud-modal-buttons .btn-edit {
         position: relative;
         margin: 20px 0;
@@ -893,6 +910,10 @@
       height: 40px;
       font-size: 30px; } }
   @media (max-width: 600px) {
+    #bodyPortfolio .head-portfolio h1 {
+      font-size: 7vw; }
+      #bodyPortfolio .head-portfolio h1 .solid {
+        width: 70vw; }
     #bodyPortfolio .column {
       flex: 100%;
       max-width: 100%; }
@@ -923,6 +944,12 @@
     background-position: center;
     color: #f4efe8;
     background-image: url(/images/musa-cayena-model.png); }
+    #bodyProjects .head-projects h1 {
+      font-size: 7vw;
+      letter-spacing: 10px; }
+      #bodyProjects .head-projects h1 .solid {
+        width: 70vw;
+        box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58); }
   #bodyProjects .musa-header {
     width: 100%;
     margin: 10vh 0; }
@@ -952,6 +979,10 @@
     margin-bottom: 10vh;
     color: #4b2830; }
   @media screen and (min-width: 768px) {
+    #bodyProjects .head-projects h1 {
+      font-size: 3vw; }
+      #bodyProjects .head-projects h1 .solid {
+        width: 30vw; }
     #bodyProjects .musa-header {
       width: 70vw; }
     #bodyProjects .projects-text {
@@ -976,9 +1007,3 @@
         background-color: #4b2830;
         border: 2px solid #f4efe8;
         transition: all ease-in-out 250ms; } }
-  @media screen and (min-width: 768px) {
-    #bodyProjects h1 {
-      font-size: 5vw;
-      letter-spacing: 10px; }
-      #bodyProjects h1 .solid {
-        width: 50vw; } }

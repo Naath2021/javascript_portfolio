@@ -1,4 +1,4 @@
-import { Photos, formatDate } from "./CRUD.js"
+import { localStorageKey, formatDate } from "./CRUD.js"
 
 // Array with all the images 
 let images = [
@@ -285,6 +285,7 @@ const saveEditPhoto = document.querySelector("#saveEditPhoto")
 let selectedImg;
 
 
+
 // CRUD READ: Slideshow overlay with pure JS
 slideshowContainer.addEventListener("click", function (event) {
     let previous = slideshowContainer.querySelector(".previous"),
@@ -328,7 +329,7 @@ document.querySelector("span").addEventListener("click", () => {
     overlay.style.visibility = "hidden"
 })
 
-// Event to update/edit
+// Event to update/edit image
 editBtn.addEventListener("click", (e) => {
     overlay.style.opacity = 0
     overlay.style.visibility = "hidden"
@@ -342,17 +343,19 @@ editBtn.addEventListener("click", (e) => {
 
 })
 
-// Event to save changes 
+// Event to save changes on image
 saveEditPhoto.addEventListener("click", () => {
     let photoUpdated = images.map((img) => {
         if (img.id === selectedImg) {
             img.name = editName.value
             img.size = editSize.value
+            img.date = formatDate
             editName.setAttribute("placeholder", `${img.name}`)
             editSize.setAttribute("placeholder", `${img.size}`)
         }
         return img;
     })
+    localStorage.setItem(localStorageKey, JSON.stringify(photoUpdated))
     editName.value = ""
     editSize.value = ""
 
@@ -363,4 +366,4 @@ saveEditPhoto.addEventListener("click", () => {
 
 
 
-export { images }
+export { images, selectedImg, overlay }

@@ -4,10 +4,11 @@
     @include head-page;
     background-image: url(/images/head-portfolio.png);
     h1 {
-      font-size: $w5 - $w1;
+      font-size: $w3;
       letter-spacing: 10px;
       .solid {
-        width: $w50;
+        width: $w30;
+        box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58);
       }
     }
   }
@@ -141,10 +142,9 @@
   @media (max-width: 900px) {
     .head-portfolio {
       h1 {
-        font-size: $w5;
-        letter-spacing: 10px;
+        font-size: $w4;
         .solid {
-          width: $w50;
+          width: $w30 + $w5;
         }
       }
     }
@@ -152,7 +152,8 @@
       flex: 50%;
       max-width: 50%;
     }
-    .overlay-buttons, .crud-modal-buttons {
+    .overlay-buttons,
+    .crud-modal-buttons {
       width: 100px;
       height: 100px;
       .btn-delete,
@@ -184,6 +185,14 @@
     }
   }
   @media (max-width: 600px) {
+    .head-portfolio {
+      h1 {
+        font-size: $w5 + $w2;
+        .solid {
+          width: $w50+$w20;
+        }
+      }
+    }
     .column {
       flex: 100%;
       max-width: 100%;

@@ -1,89 +1,95 @@
-#bodyProjects{
-    max-width: $w100;
-    background-color: $bgAndFont;
-    max-width: $w100;
-    .head-projects{
-        @include head-page;
-        background-image: url(/images/musa-cayena-model.png);
-    }
-    .musa-header{
-        width: $w100;
-        margin: $h10 0;
-    }
-    .highlighted-text {
-        font-size: $w4;
-        color: $highlightColor;
-        font-weight: 600;
-        text-align: center;
-        width: $w40;
-    }
-    .medium-text{
-        width: $w40;
-        font-size: $w3 + 0.5vw;
-        text-align: center;
-        margin-top: $h3;
-    }
-    .projects-text{
-        margin: $h10 0;
-        text-align: center;
-        width: $w50 + $w30;
-        font-size: $w4;
-    }
-    .img-logo-musa{
-        margin: $h10 0;
-        width: $w20;
-    }
-    .link-to-musa{
-        width: $w50 + $w30;
-        background-color: $bgAndFont;
-        border: 2px solid $footerBg;
-        margin-bottom: $h10;
-        color: $footerBg;
-    }
-
-    @media screen and (min-width: 768px){
-        .musa-header{
-            width: $w50 + $w20;
-        }
-        .projects-text{
-            font-size: $w2;
-        }
-        .highlighted-text{
-            width: $w40;
-            font-size: $w3;
-        }
-        .medium-text{
-            width: $w40;
-            font-size: $w3;  
-        }
-        .h-img{
-            width: $w50;
-        }
-        .v-img{
-            width: $w30;
-        }
-        .img-logo-musa{
-            width: $w10;
-        }
-        .link-to-musa{
-            width: $w30;
-            transition: all ease-in-out 250ms;
-            &:hover{
-                color: $bgAndFont;
-                background-color: $footerBg;
-                border: 2px solid $bgAndFont;
-                transition: all ease-in-out 250ms;
-            }
-        }
-    }
-
-    @media screen and (min-width: 768px){
+#bodyProjects {
+  max-width: $w100;
+  background-color: $bgAndFont;
+  max-width: $w100;
+  .head-projects {
+    @include head-page;
+    background-image: url(/images/musa-cayena-model.png);
     h1 {
-        font-size: $w5;
-        letter-spacing: 10px;
+      font-size: $w5 + $w2;
+      letter-spacing: 10px;
+      .solid {
+        width: $w50 + $w20;
+        box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58);
+      }
+    }
+  }
+  .musa-header {
+    width: $w100;
+    margin: $h10 0;
+  }
+  .highlighted-text {
+    font-size: $w4;
+    color: $highlightColor;
+    font-weight: 600;
+    text-align: center;
+    width: $w40;
+  }
+  .medium-text {
+    width: $w40;
+    font-size: $w3 + 0.5vw;
+    text-align: center;
+    margin-top: $h3;
+  }
+  .projects-text {
+    margin: $h10 0;
+    text-align: center;
+    width: $w50 + $w30;
+    font-size: $w4;
+  }
+  .img-logo-musa {
+    margin: $h10 0;
+    width: $w20;
+  }
+  .link-to-musa {
+    width: $w50 + $w30;
+    background-color: $bgAndFont;
+    border: 2px solid $footerBg;
+    margin-bottom: $h10;
+    color: $footerBg;
+  }
+
+  @media screen and (min-width: 768px) {
+    .head-projects {
+      h1 {
+        font-size: $w3;
         .solid {
-          width: $w50;
+          width: $w30;
         }
       }
     }
+    .musa-header {
+      width: $w50 + $w20;
+    }
+    .projects-text {
+      font-size: $w2;
+    }
+    .highlighted-text {
+      width: $w40;
+      font-size: $w3;
+    }
+    .medium-text {
+      width: $w40;
+      font-size: $w3;
+    }
+    .h-img {
+      width: $w50;
+    }
+    .v-img {
+      width: $w30;
+    }
+    .img-logo-musa {
+      width: $w10;
+    }
+    .link-to-musa {
+      width: $w30;
+      transition: all ease-in-out 250ms;
+      &:hover {
+        color: $bgAndFont;
+        background-color: $footerBg;
+        border: 2px solid $bgAndFont;
+        transition: all ease-in-out 250ms;
+      }
+    }
+  }
 }
