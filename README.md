@@ -11,7 +11,7 @@ READ:
 Se crea un modal overlay donde se puede observar y navegar por las imágenes en tamaño grande.
 
 UPDATE:
-Dentro de dicho modal, el botón "editar" va a permitir cambiar el tamaño y nombre de la imágen seleccionada en caso de ser necesario, reemplazando sus valores originales (mostrado en un console.log).
+Dentro de dicho modal, el botón "editar" va a permitir cambiar el tamaño y nombre de la imágen seleccionada en caso de ser necesario, reemplazando sus valores originales (mostrado el original en el placeholder y el nuevo dato en un console.log).
 
 DELETE:
 Igualmente en el modal, el botón "eliminar" permitirá eliminar la imágen seleccionada del DOM.
