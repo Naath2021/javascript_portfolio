@@ -4,15 +4,18 @@
 #bodyAbout,
 #bodyContact {
   .about-btn,
-  .btn-submit {
-    width: $w10;
-    height: $h5;
-    color: $bgAndFont;
-    margin-bottom: $w20;
-    transition: all 600ms;
+  .btn-submit, .link-to-musa {
+    @include flexcolumn;
     background-color: $footerBg;
+    width: $w20 + $w5;
+    height: $h5;
+    margin-bottom: 20vh;
+    border: none;
+    outline: none;
+    font-size: $w3;
     a {
-      font-size: $w1;
+      font-size: $w3;
+      color: $bgAndFont;
     }
     &:hover {
       border: 1px solid $footerBg;
@@ -26,7 +29,7 @@
 
   @media screen and (min-width: 768px) {
     .about-btn,
-    .btn-submit {
+    .btn-submit, .link-to-musa {
       width: $w5;
       transition: all 600ms;
       background-color: $footerBg;

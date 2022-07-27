@@ -97,6 +97,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        align-content: center;
         position: absolute;
         top: 50%;
         cursor: pointer;
@@ -202,12 +203,16 @@
     }
     .overlay {
       .btn-delete {
+        font-size: 10px;
+        width: $w20 - $w3;
         left: 10%;
-        top: 85%;
+        bottom: 90%;
       }
       .btn-edit {
+        font-size: 10px;
+        width: $w20 - $w3;
         right: 10%;
-        top: 85%;
+        bottom: 90%;
       }
       .slideshow {
         width: 95%;
@@ -220,7 +225,7 @@
       }
     }
     .btn-open-modal {
-      position: fixed;
+      position:z fixed;
       bottom: 69px;
       right: 10px;
       width: 35px;

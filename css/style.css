@@ -11,81 +11,112 @@
   scroll-behavior: smooth; }
 
 #bodyHome .about-btn,
-#bodyHome .btn-submit,
+#bodyHome .btn-submit, #bodyHome .link-to-musa,
 #bodyPortfolio .about-btn,
 #bodyPortfolio .btn-submit,
+#bodyPortfolio .link-to-musa,
 #bodyProjects .about-btn,
 #bodyProjects .btn-submit,
+#bodyProjects .link-to-musa,
 #bodyAbout .about-btn,
 #bodyAbout .btn-submit,
+#bodyAbout .link-to-musa,
 #bodyContact .about-btn,
-#bodyContact .btn-submit {
-  width: 10vw;
+#bodyContact .btn-submit,
+#bodyContact .link-to-musa {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  background-color: #4b2830;
+  width: 25vw;
   height: 5vh;
-  color: #f4efe8;
-  margin-bottom: 20vw;
-  transition: all 600ms;
-  background-color: #4b2830; }
+  margin-bottom: 20vh;
+  border: none;
+  outline: none;
+  font-size: 3vw; }
   #bodyHome .about-btn a,
-  #bodyHome .btn-submit a,
+  #bodyHome .btn-submit a, #bodyHome .link-to-musa a,
   #bodyPortfolio .about-btn a,
   #bodyPortfolio .btn-submit a,
+  #bodyPortfolio .link-to-musa a,
   #bodyProjects .about-btn a,
   #bodyProjects .btn-submit a,
+  #bodyProjects .link-to-musa a,
   #bodyAbout .about-btn a,
   #bodyAbout .btn-submit a,
+  #bodyAbout .link-to-musa a,
   #bodyContact .about-btn a,
-  #bodyContact .btn-submit a {
-    font-size: 1vw; }
+  #bodyContact .btn-submit a,
+  #bodyContact .link-to-musa a {
+    font-size: 3vw;
+    color: #f4efe8; }
   #bodyHome .about-btn:hover,
-  #bodyHome .btn-submit:hover,
+  #bodyHome .btn-submit:hover, #bodyHome .link-to-musa:hover,
   #bodyPortfolio .about-btn:hover,
   #bodyPortfolio .btn-submit:hover,
+  #bodyPortfolio .link-to-musa:hover,
   #bodyProjects .about-btn:hover,
   #bodyProjects .btn-submit:hover,
+  #bodyProjects .link-to-musa:hover,
   #bodyAbout .about-btn:hover,
   #bodyAbout .btn-submit:hover,
+  #bodyAbout .link-to-musa:hover,
   #bodyContact .about-btn:hover,
-  #bodyContact .btn-submit:hover {
+  #bodyContact .btn-submit:hover,
+  #bodyContact .link-to-musa:hover {
     border: 1px solid #4b2830;
     background-color: #f4efe8;
     transition: all 600ms; }
     #bodyHome .about-btn:hover a,
-    #bodyHome .btn-submit:hover a,
+    #bodyHome .btn-submit:hover a, #bodyHome .link-to-musa:hover a,
     #bodyPortfolio .about-btn:hover a,
     #bodyPortfolio .btn-submit:hover a,
+    #bodyPortfolio .link-to-musa:hover a,
     #bodyProjects .about-btn:hover a,
     #bodyProjects .btn-submit:hover a,
+    #bodyProjects .link-to-musa:hover a,
     #bodyAbout .about-btn:hover a,
     #bodyAbout .btn-submit:hover a,
+    #bodyAbout .link-to-musa:hover a,
     #bodyContact .about-btn:hover a,
-    #bodyContact .btn-submit:hover a {
+    #bodyContact .btn-submit:hover a,
+    #bodyContact .link-to-musa:hover a {
       color: #4b2830; }
 
 @media screen and (min-width: 768px) {
   #bodyHome .about-btn,
-  #bodyHome .btn-submit,
+  #bodyHome .btn-submit, #bodyHome .link-to-musa,
   #bodyPortfolio .about-btn,
   #bodyPortfolio .btn-submit,
+  #bodyPortfolio .link-to-musa,
   #bodyProjects .about-btn,
   #bodyProjects .btn-submit,
+  #bodyProjects .link-to-musa,
   #bodyAbout .about-btn,
   #bodyAbout .btn-submit,
+  #bodyAbout .link-to-musa,
   #bodyContact .about-btn,
-  #bodyContact .btn-submit {
+  #bodyContact .btn-submit,
+  #bodyContact .link-to-musa {
     width: 5vw;
     transition: all 600ms;
     background-color: #4b2830; }
     #bodyHome .about-btn a,
-    #bodyHome .btn-submit a,
+    #bodyHome .btn-submit a, #bodyHome .link-to-musa a,
     #bodyPortfolio .about-btn a,
     #bodyPortfolio .btn-submit a,
+    #bodyPortfolio .link-to-musa a,
     #bodyProjects .about-btn a,
     #bodyProjects .btn-submit a,
+    #bodyProjects .link-to-musa a,
     #bodyAbout .about-btn a,
     #bodyAbout .btn-submit a,
+    #bodyAbout .link-to-musa a,
     #bodyContact .about-btn a,
-    #bodyContact .btn-submit a {
+    #bodyContact .btn-submit a,
+    #bodyContact .link-to-musa a {
       font-size: 1vw; } }
 
 .body-viewport {
@@ -145,10 +176,7 @@
   border-radius: 5px; }
 
 .mobile-icon-fill {
-  fill: #4b2830; }
-
-.img-shadow {
-  box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82); }
+  fill: #3d4726; }
 
 .t-d-none {
   text-decoration: none;
@@ -389,8 +417,7 @@
 
 #bodyAbout .img-about {
   width: 50vw;
-  margin: 10vh 0;
-  box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82); }
+  margin: 10vh 0; }
 
 #bodyAbout .medium-centered-text {
   color: #3d4726;
@@ -415,7 +442,7 @@
 #bodyAbout .medium-centered-text {
   font-size: 4vw;
   color: #3d4726;
-  margin: 10vh 0 0;
+  margin: 5vh 0 0;
   text-align: center;
   width: 70vw; }
 
@@ -454,8 +481,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 7vh 0 0;
-  box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82);
+  margin: 3vh 0 0 0;
   border-radius: 1%; }
 
 #bodyAbout .about-btn {
@@ -889,22 +915,26 @@
     visibility: hidden; }
     #bodyPortfolio .overlay .btn-delete {
       position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      place-items: center;
       width: 80px;
       height: 30px;
       font-size: 15px;
-      border-radius: 10%;
-      display: flex;
-      place-items: center;
       left: 10%;
       top: 50%; }
     #bodyPortfolio .overlay .btn-edit {
       position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      place-items: center;
       width: 80px;
       height: 30px;
       font-size: 15px;
-      border-radius: 10%;
-      display: flex;
-      place-items: center;
       right: 10%;
       top: 50%; }
     #bodyPortfolio .overlay .slideshow {
@@ -944,6 +974,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        align-content: center;
         position: absolute;
         top: 50%;
         cursor: pointer;
@@ -1013,11 +1044,15 @@
       flex: 100%;
       max-width: 100%; }
     #bodyPortfolio .overlay .btn-delete {
+      font-size: 10px;
+      width: 17vw;
       left: 10%;
-      top: 85%; }
+      bottom: 90%; }
     #bodyPortfolio .overlay .btn-edit {
+      font-size: 10px;
+      width: 17vw;
       right: 10%;
-      top: 85%; }
+      bottom: 90%; }
     #bodyPortfolio .overlay .slideshow {
       width: 95%; }
       #bodyPortfolio .overlay .slideshow .previous {
@@ -1025,7 +1060,7 @@
       #bodyPortfolio .overlay .slideshow .next {
         fill: #f4efe8; }
     #bodyPortfolio .btn-open-modal {
-      position: fixed;
+      position: z fixed;
       bottom: 69px;
       right: 10px;
       width: 35px;
@@ -1079,12 +1114,6 @@
   #bodyProjects .img-logo-musa {
     margin: 10vh 0;
     width: 20vw; }
-  #bodyProjects .link-to-musa {
-    width: 80vw;
-    background-color: #f4efe8;
-    border: 2px solid #4b2830;
-    margin-bottom: 10vh;
-    color: #4b2830; }
   @media screen and (min-width: 768px) {
     #bodyProjects .head-projects h1 {
       font-size: 3vw; }
@@ -1108,11 +1137,4 @@
     #bodyProjects .v-img {
       width: 30vw; }
     #bodyProjects .img-logo-musa {
-      width: 10vw; }
-    #bodyProjects .link-to-musa {
-      width: 30vw;
-      transition: all ease-in-out 250ms; }
-      #bodyProjects .link-to-musa:hover {
-        color: #f4efe8;
-        background-color: #4b2830;
-        transition: all ease-in-out 250ms; } }
+      width: 10vw; } }

@@ -66,7 +66,7 @@ function AddFile() {
 
       let imgContainer = document.createElement("div")
       imgContainer.setAttribute("class", "column")
-      imgContainer.innerHTML = `<img src="data:image/png;base64,${base64} " alt="${myBlob.name}" data-img-show="${photoId}">`
+      imgContainer.innerHTML = `<img class="img border-radius-5px" src="data:image/png;base64,${base64} " alt="${myBlob.name}" data-img-show="${photoId}">`
       gallery.append(imgContainer)
     });
 
