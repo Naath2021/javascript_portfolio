@@ -4,10 +4,11 @@
     @include head-page;
     background-image: url(/images/head-portfolio.png);
     h1 {
-      font-size: $w5 - $w1;
+      font-size: $w3;
       letter-spacing: 10px;
       .solid {
-        width: $w50;
+        width: $w30;
+        box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58);
       }
     }
   }
@@ -44,6 +45,18 @@
     transition: all 0.7s ease;
     opacity: 0;
     visibility: hidden;
+    .btn-delete {
+      position: absolute;
+      @include btn-crud-modal-style;
+      left: 10%;
+      top: 50%;
+    }
+    .btn-edit {
+      position: absolute;
+      @include btn-crud-modal-style;
+      right: 10%;
+      top: 50%;
+    }
     .slideshow {
       width: 90%;
       height: 90%;
@@ -84,10 +97,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 100px;
         position: absolute;
         top: 50%;
         cursor: pointer;
+        fill: $fontColor;
       }
       .previous {
         left: 20px;
@@ -95,23 +108,17 @@
       .next {
         right: 20px;
       }
-      .btn {
-        position: relative;
-        margin: 0 20px;
-        top: -420px;
-      }
     }
   }
   #crudCreate {
     .btn-open-modal {
       position: fixed;
-      bottom: 100px;
-      right: 100px;
-      width: 50px;
-      height: 50px;
-      font-size: 40px;
+      bottom: 20px;
+      right: 20px;
+      width: 35px;
+      height: 35px;
+      font-size: 30px;
       background-color: #f4efe8;
-      border: 1px solid $footerBg;
       color: $footerBg;
       border-radius: 50%;
       display: flex;
@@ -120,7 +127,7 @@
       opacity: 1;
       transition: all 0.2s ease;
       outline: none;
-      z-index: 10000;
+      z-index: 100;
       &:hover {
         transform: scale(1.2);
         cursor: pointer;
@@ -128,13 +135,25 @@
     }
   }
 
+  @media (max-width: 1600px) {
+    .overlay {
+      .btn-delete {
+        left: 10%;
+        top: 90%;
+      }
+      .btn-edit {
+        right: 10%;
+        top: 90%;
+      }
+    }
+  }
+
   @media (max-width: 900px) {
     .head-portfolio {
       h1 {
-        font-size: $w5;
-        letter-spacing: 10px;
+        font-size: $w4;
         .solid {
-          width: $w50;
+          width: $w30 + $w5;
         }
       }
     }
@@ -142,38 +161,70 @@
       flex: 50%;
       max-width: 50%;
     }
+    .overlay {
+      .btn-delete {
+        left: 10%;
+        top: 93%;
+      }
+      .btn-edit {
+        right: 10%;
+        top: 93%;
+      }
+      .slideshow {
+        width: 95%;
+      }
+    }
     .overlay-buttons {
-      font-size: 55px;
+      width: 100px;
+      height: 100px;
     }
     .previous {
       left: 50px;
+      fill: $footerBg;
     }
     .next {
       right: 5px;
-    }
-    .slideshow {
-      width: 95%;
-    }
-    .btn-open-modal {
-      position: fixed;
-      bottom: 69px;
-      right: 10px;
-      width: 40px;
-      height: 40px;
-      font-size: 30px;
+      fill: $footerBg;
     }
   }
   @media (max-width: 600px) {
+    .head-portfolio {
+      h1 {
+        font-size: $w5 + $w2;
+        .solid {
+          width: $w50 + $w20;
+        }
+      }
+    }
     .column {
       flex: 100%;
       max-width: 100%;
     }
+    .overlay {
+      .btn-delete {
+        left: 10%;
+        top: 85%;
+      }
+      .btn-edit {
+        right: 10%;
+        top: 85%;
+      }
+      .slideshow {
+        width: 95%;
+        .previous {
+          fill: $bgAndFont;
+        }
+        .next {
+          fill: $bgAndFont;
+        }
+      }
+    }
     .btn-open-modal {
       position: fixed;
       bottom: 69px;
       right: 10px;
-      width: 40px;
-      height: 40px;
+      width: 35px;
+      height: 35px;
       font-size: 30px;
     }
   }

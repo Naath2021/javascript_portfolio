@@ -1,7 +1,38 @@
-#bodyHome, #bodyPortfolio, #bodyProjects, #bodyAbout, #bodyContact{
-    .t-d-none{
-        text-decoration: none;
-        list-style-type: none;
-        list-style: none;
+#bodyHome,
+#bodyPortfolio,
+#bodyProjects,
+#bodyAbout,
+#bodyContact {
+  .about-btn,
+  .btn-submit {
+    width: $w10;
+    height: $h5;
+    color: $bgAndFont;
+    margin-bottom: $w20;
+    transition: all 600ms;
+    background-color: $footerBg;
+    a {
+      font-size: $w1;
     }
+    &:hover {
+      border: 1px solid $footerBg;
+      background-color: $bgAndFont;
+      transition: all 600ms;
+      a {
+        color: $footerBg;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .about-btn,
+    .btn-submit {
+      width: $w5;
+      transition: all 600ms;
+      background-color: $footerBg;
+      a {
+        font-size: $w1;
+      }
+    }
+  }
 }

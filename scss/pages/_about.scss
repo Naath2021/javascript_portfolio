@@ -5,12 +5,19 @@
     width: $w100;
     background-image: url(/images/nature-yellow-flower2.png);
     @include bg-fixed;
+    h1 {
+      font-size: $w5+$w2;
+      letter-spacing: 10px;
+      .solid {
+        width: $w50+$w20;
+        box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58);
+      }
+    }
   }
   .img-about {
     width: $w50;
     margin: $h10 0;
     box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82);
-    border-radius: 1%;
   }
   .medium-centered-text {
     color: $fontColor;
@@ -21,13 +28,13 @@
   .titles {
     color: $fontColor;
     text-align: center;
-    font-size: $w5 + $w2;
+    font-size: $w10;
     margin: $h10 0 0;
   }
   .subtitles {
     color: $fontColor;
     text-align: center;
-    width: $w1*2;
+    width: $w1 * 2;
     width: $w50 + $w10;
     margin: $h10 0 0;
     font-size: $w5;
@@ -89,17 +96,15 @@
   }
 
   @media screen and (min-width: 768px) {
-    .head-pages{
-      font-size: $w5;
+    .head-about {
       h1 {
-        font-size: $w5;
-        letter-spacing: 10px;
+        font-size: $w3;
         .solid {
-          width: $w50;
+          width: $w30;
         }
       }
     }
-    .titles{
+    .titles {
       margin-top: $h40;
       font-size: $w4;
       letter-spacing: 5px;
@@ -113,21 +118,21 @@
       }
       .medium-centered-text {
         width: 35vw;
-        font-size: 1.5vw;
+        font-size: $w1_5;
         text-align: center;
         margin: 0 0 0 $w5;
       }
     }
-    .hr-dark{
+    .hr-dark {
       width: $w30;
     }
     .subtitles {
       margin-top: $h10;
-      font-size: $w1*2;
+      font-size: $w1 * 2;
     }
     .paragraphs {
       width: $w50;
-      font-size: $w1;
+      font-size: $w1_5;
     }
     .shadowed-img {
       margin: $h10 0;
@@ -135,30 +140,28 @@
       width: $w50 + $w20;
     }
     .centered-text {
-      font-size: 1.5vw;
+      font-size: $w1_5;
       width: $w40;
       color: $highlightColor;
       margin-top: $h20;
     }
     .thin-centered-text {
       width: $w30;
-      font-size: $w1;
+      font-size: $w1_5;
     }
     .about-btn {
       width: $w10;
-      height: 7vh;
-      transition: all 600ms;
-      a {
-        font-size: $w1;
-        padding: 0;
-        margin: 0;
+      height: $h5;
+      color: $bgAndFont;
+      margin-bottom: $w20;
+      a{
+      font-size: $w1;
       }
       &:hover {
+        border: 1px solid $footerBg;
         background-color: $bgAndFont;
+        color: $footerBg;
         transition: all 600ms;
-        a {
-          color: $footerBg;
-        }
       }
     }
   }

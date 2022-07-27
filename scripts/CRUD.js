@@ -1,23 +1,26 @@
-import { images, imgSlideshow, selectedImg, imgGallery } from "./gallery.js";
+import { images, selectedImg, overlay, imgGallery } from "./gallery.js";
 
-// VARIABLES
+
+// Variables
 let localStorageKey = "Image Gallery";
 let photoUploaded;
-const savePhoto = document.getElementById("savePhoto")
-const modalCRUDCreate = new bootstrap.Modal('#openCRUDModal')
-const CRUDForm = document.querySelector("form")
-// const CRUDName = document.getElementById("crudName")
-// const CRUDSize = document.getElementById("crudSize")
-let inputFile = document.querySelector('input[type=file]');
-let photoId = images.length;
-let gallery = document.querySelector("#gallery")
-const slideshowImg = document.getElementById("imgSlideshow")
+const savePhoto = document.getElementById("savePhoto");
+const inputFile = document.querySelector('input[type=file]');
+const photoId = images.length;
+let gallery = document.querySelector("#gallery");
+let deleteBtn = document.querySelector("#deleteBtn");
+let img = gallery.querySelectorAll(".img");
+const modalEdit = new bootstrap.Modal(document.getElementById('modalEdit'))
+const modalCreate = new bootstrap.Modal(document.getElementById('modalCreate'))
 let myB64;
 
-let results = ""
-let option = ""
+// DATE
+const date = new Date();
+let formatDate = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
 
-// Image object
+localStorage.setItem(localStorageKey, JSON.stringify(images))
+
+// Image constructor
 class Photos {
   constructor(name, size, date, id, img) {
     this.name = name;
@@ -28,19 +31,19 @@ class Photos {
   }
 }
 
-// DATE
-const date = new Date();
-let formatDate = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
 
-
-// EVENTS
-
-savePhoto.addEventListener("click", async () => {
+// Event that triggers the CREATE functions
+savePhoto.addEventListener("click", () => {
   createPhoto()
   AddFile()
-
 })
 
+// Event Delete image
+deleteBtn.addEventListener("click", () => {
+  deleteFromDOM()
+})
+
+// Create photo and added to localStorage
 function createPhoto() {
   try {
     const myBlob = inputFile.files[0];
@@ -55,27 +58,57 @@ function createPhoto() {
 }
 
 
+// Add file to document
 function AddFile() {
   try {
-    // let photoInfoRetrieved = JSON.stringify(localStorage.getItem(localStorageKey))
     const myBlob = inputFile.files[0];
     myB64 = blobToBase64(myBlob).then((base64) => {
 
       let imgContainer = document.createElement("div")
       imgContainer.setAttribute("class", "column")
       imgContainer.innerHTML = `<img src="data:image/png;base64,${base64} " alt="${myBlob.name}" data-img-show="${photoId}">`
+      gallery.append(imgContainer)
     });
-
 
   } catch (error) {
     console.log(error)
   }
 }
 
-function prueba(img) {
-  return img
+
+// Delete Image From Node Parent "div" 
+function deleteFromDOM() {
+  try {
+    overlay.style.opacity = 0
+    overlay.style.visibility = "hidden"
+
+    img[selectedImg].remove()
+
+  } catch (error) {
+    console.log(error)
+  }
 }
 
+// Get and parse object saved in localStorage
+function getFromLocalStorage(key) {
+  let convertJSONToObj = localStorage.getItem(key)
+  return JSON.parse(convertJSONToObj)
+}
+
+// Delete img from storage
+function deleteFromStorage(key, index) {
+  try {
+    localStorage.removeItem(index)
+    images.splice(index, 1)
+    console.log(images)
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+
+
+// Convert Blob (img) to Base64
 const blobToBase64 = (blob) => {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
@@ -89,4 +122,4 @@ const blobToBase64 = (blob) => {
 
 
 
-export { }
+export { Photos, formatDate, localStorageKey }

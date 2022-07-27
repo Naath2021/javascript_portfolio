@@ -10,9 +10,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="keywords" content="">
-    <link rel="icon" href="/images/logo.png">
-    <title>Nathaly Learmonth | Fotografía</title>
+    <link rel="icon" href="/images/logo-simbolo-color.png">
+    <title>Contáctame</title>
 </head>
 
 <body id="bodyContact">
@@ -20,7 +21,7 @@
         <!-- DESKTOP MENU -->
         <nav class="desktop-nav">
             <div class="logo">
-                <a href="#bodyHome"><img src="/images/logo.png" alt=""></a>
+                <a href="index.html"><img src="/images/logo-nathy-blanco.png" alt="personal-logo"></a>
             </div>
             <ul class="menu">
                 <li><a href="/index.html" class="t-d-none">Home</a></li>
@@ -82,16 +83,52 @@
         </div>
     </header>
 
-    <section>
-        <h2>E-mail: learmonth.nathaly@gmail.com
-            <hr> Nro. Telefónico: +54 9 11 7636 7650
-        </h2>
 
+    <section class="head-contact">
+        <h1 class="head-pages" data-aos="zoom-in" data-aos-duration="800">Contacto
+            <hr class="hr-solid solid" data-aos="zoom-in" data-aos-duration="800">
+        </h1>
     </section>
+
+    <div class="info-container">
+        <h2 class="contact-info" data-aos="fade-up" data-aos-duration="2000">E-mail: learmonth.nathaly@gmail.com</h2>
+        <h2 class="contact-info" data-aos="fade-up" data-aos-duration="2000">Nro. Telefónico: +54 9 11 7636 7650</h2>
+    </div>
+
+    <section>
+        <form class="column g-3 d-flex flex-column align-items-center" id="contactForm">
+            <div class="name-tel">
+                <div class="col-md-6" data-aos="flip-up" data-aos-delay="100" data-aos-duration="1000">
+                    <label for="inputNameAndLastName" class="form-label">Nombre y apellido</label>
+                    <input type="text" class="form-control name-lastname" id="inputNameAndLastname">
+                </div>
+                <div class="col-md-6 " data-aos="flip-up" data-aos-delay="200" data-aos-duration="1000">
+                    <label for="inputTel" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control tel" id="inputTel">
+                </div>
+            </div>
+            <div class="column mb-3" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000">
+                <label for="inputEmail" class="col-sm-2 col-form-label form-label">Correo electrónico</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control email" id="inputEmail">
+                </div>
+            </div>
+            <div class="mb-3" data-aos="flip-up" data-aos-delay="400" data-aos-duration="1000">
+                <label for="textArea" class="form-label message">Mensaje:</label>
+                <textarea class="form-control" id="inputtextArea" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit" data-aos="flip-up" data-aos-delay="400"
+                data-aos-duration="1000">Enviar</button>
+        </form>
+    </section>
+
+
+
     <!-- FOOTER -->
     <footer>
-        <img src="/images/logo.png" alt="logo-brand" class="logo-nl">
-        <div class="icons-rrss-container">
+        <img src="/images/logo-nathy-blanco.png" alt="personal-logo" class="logo-nl" data-aos="zoom-in-down"
+            data-aos-duration="600" data-aos-delay="200">
+        <div class="icons-rrss-container" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
             <a class="footer-icon" target="_blank" href="https://www.linkedin.com/in/nathaly-learmonth-briceno/">
                 <box-icon name='linkedin-square' type='logo' animation='tada-hover'></box-icon>
             </a>
@@ -111,13 +148,14 @@
                 <box-icon name='twitter' type='logo' animation='tada-hover'></box-icon>
             </a>
         </div>
-        <span class="copyright">&copy; Buenos Aires - Argentina 2022. | Todos los derechos reservados</span>
+        <span class="copyright">&copy; Buenos Aires - Argentina 2022. | Todos los derechos reservados.</span>
     </footer>
 
 
 
     <!-- SCRIPTS -->
     <!-- <script src="/js/site.js"></script> -->
+    <script src="./scripts/contact_form.js"></script>
     <script src="https://kit.fontawesome.com/10e5852800.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -126,6 +164,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

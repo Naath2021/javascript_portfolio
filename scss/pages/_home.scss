@@ -1,131 +1,163 @@
-#bodyHome{
-    background-color: $bgAndFont;
+#bodyHome {
+  background-color: $bgAndFont;
+  @include flexrow;
+  width: $w100;
+  .home {
     @include flexrow;
+    justify-content: center;
     width: $w100;
-    .home{
-        @include flexrow;
-        justify-content: center;
-        width: $w100;
-        height: $h100;
-        background-image: url(/images/home-red-flower.png);
-        @include bg-fixed;
+    height: $h100;
+    background-image: url(/images/home-red-flower.png);
+    @include bg-fixed;
+  }
+  .border {
+    @include flexrow;
+    justify-content: space-evenly;
+    width: $w40 + $w5;
+    height: $h40;
+    border: 10px solid $bgAndFont;
+    border-radius: 5px;
+    padding: 50px;
+    img{
+      width: $w20;
+      margin-bottom: $h3;
     }
-    .border{
-        @include flexrow;
-        justify-content: space-evenly;
-        width: $w40;
-        height: $h40;
-        border: 5px solid $bgAndFont;
-        border-radius: 5px;
-        padding: 50px;
-        h1{
-            font-family: 'Nunito', sans-serif;
-            font-size: $w5;
-            color: $bgAndFont;
-            text-align: center;
-            font-weight: 200;
-            letter-spacing: 2px;
-        }
-        h2{
-            font-family: 'Quicksand', sans-serif;
-            color: $bgAndFont;
-            font-size: $w3;
-            text-align: center;
-            font-weight: 200;
-        }
+    h1 {
+      font-family: "Nunito", sans-serif;
+      font-size: $w5;
+      color: $bgAndFont;
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58);
     }
-    #menu{
-        @include flexcolumn;
-        align-items: stretch;
-        width: $w100;
-        .card-portfolio{
-            @include menuStyle;
-            background-image: url(/images/menu-portfolio.png);
-        }
-        .card-projects{
-            @include menuStyle;
-            background-image: url(/images/menu-projects.png);
-        }
-        .card-about{
-            @include menuStyle;
-            background-image: url(/images/menu-about.png);
-        }
-        .card-contact{
-            @include menuStyle;
-            background-image: url(/images/menu-contact.png);
-        }
+    h2{
+      font-family: "Nunito", sans-serif;
+      font-size: $w5;
+      color: $bgAndFont;
+      font-weight: 100;
+      letter-spacing: 2px;
+      text-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58);
+      margin-bottom: $h3;
     }
+    h3 {
+      font-family: "Quicksand", sans-serif;
+      color: $bgAndFont;
+      font-size: $w3;
+      text-align: center;
+      font-weight: 200;
+      text-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58);
+    }
+  }
+  #menu {
+    @include flexcolumn;
+    align-items: stretch;
+    width: $w100;
+    .card-portfolio {
+      @include menuStyle;
+      background-image: url(/images/menu-portfolio.png);
+      .hr-solid {
+        width: $w50 + $w10;
+      }
+    }
+    .card-projects {
+      @include menuStyle;
+      background-image: url(/images/menu-projects.png);
+      .hr-solid {
+        width: $w50 + $w10;
+      }
+    }
+    .card-about {
+      @include menuStyle;
+      background-image: url(/images/menu-about.png);
+      .hr-solid {
+        width: $w50 + $w10;
+      }
+    }
+    .card-contact {
+      @include menuStyle;
+      background-image: url(/images/menu-contact.png);
+      .hr-solid {
+        width: $w50 + $w10;
+      }
+    }
+  }
 
-    @media screen and (min-width: 768px){
-        .border{
-            width: $w20;
-            height: $h50;
-            h1{
-                font-size: $w3;
-                font-weight: 100;
-            }
-            h2{
-                font-size: $w2;
-                font-weight: 100;
-            }
-            .btn-down{
-                font-size: $w2;
-            }
-        }
-        #menu{
-            flex-flow: column wrap;
-            .card-portfolio{
-                background-position: bottom;
-                a{
-                    font-size: $w4;
-                    &:hover{
-                        color: $bgAndFont;
-                    }
-                    .hr-solid{
-                        width: $w30;
-                    }
-                }
-            }
-            .card-projects{
-                background-position: bottom;
-                background-size: cover;
-                a{
-                    font-size: $w4;
-                    &:hover{
-                        color: $bgAndFont;
-                    }
-                    .hr-solid{
-                        width: $w30;
-                    }
-                }
-            }
-            .card-about{
-                background-image: url(/images/nature-leaves.png);
-                background-position: bottom;
-                background-size: cover;
-                a{
-                    font-size: $w4;
-                    &:hover{
-                        color: $bgAndFont;
-                    }
-                    .hr-solid{
-                        width: $w30;
-                    }
-                }
-            }
-            .card-contact{
-                background-position: center;
-                background-size: cover;
-                a{
-                    font-size: $w4;
-                    &:hover{
-                        color: $bgAndFont;
-                    }
-                    .hr-solid{
-                        width: $w30;
-                    }
-                }
-            }
-        }
+  @media screen and (min-width: 768px) {
+    .border {
+      width: $w30;
+      height: $h50 + $h10;
+      img{
+        width: $w10;
+        margin: 0 $w3 $h3 $w3;
+      }
+      h1 {
+        font-size: $w3;
+      }
+      h2{
+        font-size: $w3;
+      }
+      h3 {
+        font-size: $w2;
+      }
+      .btn-down {
+        font-size: $w2;
+      }
     }
+    #menu {
+      flex-flow: column wrap;
+      .card-portfolio {
+        background-position: bottom;
+        a {
+          font-size: $w4;
+          &:hover {
+            color: $bgAndFont;
+          }
+          .hr-solid {
+            width: $w30;
+          }
+        }
+      }
+      .card-projects {
+        background-position: bottom;
+        background-size: cover;
+        a {
+          font-size: $w4;
+          &:hover {
+            color: $bgAndFont;
+          }
+          .hr-solid {
+            width: $w30;
+          }
+        }
+      }
+      .card-about {
+        background-image: url(/images/nature-leaves.png);
+        background-position: bottom;
+        background-size: cover;
+        a {
+          font-size: $w4;
+          &:hover {
+            color: $bgAndFont;
+          }
+          .hr-solid {
+            width: $w30;
+          }
+        }
+      }
+      .card-contact {
+        background-position: center;
+        background-size: cover;
+        a {
+          font-size: $w4;
+          &:hover {
+            color: $bgAndFont;
+          }
+          .hr-solid {
+            width: $w30;
+          }
+        }
+      }
+    }
+  }
 }
