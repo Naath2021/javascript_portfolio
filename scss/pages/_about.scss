@@ -17,7 +17,6 @@
   .img-about {
     width: $w50;
     margin: $h10 0;
-    box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82);
   }
   .medium-centered-text {
     color: $fontColor;
@@ -42,7 +41,7 @@
   .medium-centered-text {
     font-size: $w4;
     color: $fontColor;
-    margin: $h10 0 0;
+    margin: $h5 0 0;
     text-align: center;
     width: $w50 + $w20;
   }
@@ -79,8 +78,7 @@
     height: $h20 + $h5;
     background-image: url(/images/musa-nath.png);
     @include bg-cover;
-    margin: 7vh 0 0;
-    box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82);
+    margin: $h3 0 0 0;
     border-radius: 1%;
   }
   .about-btn {

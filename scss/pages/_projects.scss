@@ -41,13 +41,6 @@
     margin: $h10 0;
     width: $w20;
   }
-  .link-to-musa {
-    width: $w50 + $w30;
-    background-color: $bgAndFont;
-    border: 2px solid $footerBg;
-    margin-bottom: $h10;
-    color: $footerBg;
-  }
 
   @media screen and (min-width: 768px) {
     .head-projects {
@@ -83,15 +76,6 @@
     }
     .img-logo-musa {
       width: $w10;
-    }
-    .link-to-musa {
-      width: $w30;
-      transition: all ease-in-out 250ms;
-      &:hover {
-        color: $bgAndFont;
-        background-color: $footerBg;
-        transition: all ease-in-out 250ms;
-      }
     }
   }
 }
