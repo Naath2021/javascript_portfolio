@@ -1,4 +1,4 @@
-import { images, selectedImg, overlay } from "./gallery.js";
+import { images, selectedImg, overlay, imgGallery } from "./gallery.js";
 
 
 // Variables
@@ -9,7 +9,9 @@ const inputFile = document.querySelector('input[type=file]');
 const photoId = images.length;
 let gallery = document.querySelector("#gallery");
 let deleteBtn = document.querySelector("#deleteBtn");
-let img = document.getElementsByClassName("img")
+let img = gallery.querySelectorAll(".img");
+const modalEdit = new bootstrap.Modal(document.getElementById('modalEdit'))
+const modalCreate = new bootstrap.Modal(document.getElementById('modalCreate'))
 let myB64;
 
 // DATE
@@ -39,7 +41,6 @@ savePhoto.addEventListener("click", () => {
 // Event Delete image
 deleteBtn.addEventListener("click", () => {
   deleteFromDOM()
-  deleteFromStorage(localStorageKey, selectedImg)
 })
 
 // Create photo and added to localStorage
@@ -69,28 +70,24 @@ function AddFile() {
       gallery.append(imgContainer)
     });
 
-
   } catch (error) {
     console.log(error)
   }
 }
+
 
 // Delete Image From Node Parent "div" 
 function deleteFromDOM() {
   try {
-    let imgToDelete = images.find(photo => {
-      return photo.id == selectedImg
-    })
-    if (imgToDelete.id === selectedImg) {
-      overlay.style.opacity = 0
-      overlay.style.visibility = "hidden"
-      img[imgToDelete.id].remove()
-    }
+    overlay.style.opacity = 0
+    overlay.style.visibility = "hidden"
+
+    img[selectedImg].remove()
+
   } catch (error) {
     console.log(error)
   }
 }
-
 
 // Get and parse object saved in localStorage
 function getFromLocalStorage(key) {
@@ -102,7 +99,7 @@ function getFromLocalStorage(key) {
 function deleteFromStorage(key, index) {
   try {
     localStorage.removeItem(index)
-    images.splice(index, 1) 
+    images.splice(index, 1)
     console.log(images)
   } catch (error) {
     console.log(error)
@@ -110,20 +107,6 @@ function deleteFromStorage(key, index) {
 }
 
 
-// Sweet Alert2
-// const sweetAlertSimple = (title, text, icon) => {
-//   Swal.fire({
-//     title: title,
-//     text: text,
-//     icon: icon,
-//     showClass: {
-//       popup: 'animate__animated animate__zoomIn'
-//     },
-//     hideClass: {
-//       popup: 'animate__animated animate__lightSpeedOutRight'
-//     }
-//   })
-// }
 
 // Convert Blob (img) to Base64
 const blobToBase64 = (blob) => {

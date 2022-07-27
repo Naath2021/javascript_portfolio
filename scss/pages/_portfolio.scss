@@ -45,6 +45,18 @@
     transition: all 0.7s ease;
     opacity: 0;
     visibility: hidden;
+    .btn-delete {
+      position: absolute;
+      @include btn-crud-modal-style;
+      left: 10%;
+      top: 50%;
+    }
+    .btn-edit {
+      position: absolute;
+      @include btn-crud-modal-style;
+      right: 10%;
+      top: 50%;
+    }
     .slideshow {
       width: 90%;
       height: 90%;
@@ -79,32 +91,16 @@
           cursor: pointer;
         }
       }
-      .overlay-buttons,
-      .crud-modal-buttons {
+      .overlay-buttons {
         width: 50px;
         height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 100px;
         position: absolute;
         top: 50%;
         cursor: pointer;
-        fill: $bgAndFont;
-        .btn-delete,
-        .btn-edit {
-          position: relative;
-          margin: 0 10px;
-          top: -290px;
-          left: 8px;
-          width: 50px;
-          height: 30px;
-          font-size: 10px;
-          border-radius: 10%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
+        fill: $fontColor;
       }
       .previous {
         left: 20px;
@@ -117,11 +113,11 @@
   #crudCreate {
     .btn-open-modal {
       position: fixed;
-      bottom: 100px;
-      right: 100px;
-      width: 50px;
-      height: 50px;
-      font-size: 40px;
+      bottom: 20px;
+      right: 20px;
+      width: 35px;
+      height: 35px;
+      font-size: 30px;
       background-color: #f4efe8;
       color: $footerBg;
       border-radius: 50%;
@@ -131,10 +127,23 @@
       opacity: 1;
       transition: all 0.2s ease;
       outline: none;
-      z-index: 10000;
+      z-index: 100;
       &:hover {
         transform: scale(1.2);
         cursor: pointer;
+      }
+    }
+  }
+
+  @media (max-width: 1600px) {
+    .overlay {
+      .btn-delete {
+        left: 10%;
+        top: 90%;
+      }
+      .btn-edit {
+        right: 10%;
+        top: 90%;
       }
     }
   }
@@ -152,36 +161,30 @@
       flex: 50%;
       max-width: 50%;
     }
-    .overlay-buttons,
-    .crud-modal-buttons {
+    .overlay {
+      .btn-delete {
+        left: 10%;
+        top: 93%;
+      }
+      .btn-edit {
+        right: 10%;
+        top: 93%;
+      }
+      .slideshow {
+        width: 95%;
+      }
+    }
+    .overlay-buttons {
       width: 100px;
       height: 100px;
-      .btn-delete,
-      .btn-edit {
-        position: relative;
-        margin: 20px 0;
-        top: -390px;
-        left: 8px;
-        width: 70px;
-        height: 30px;
-      }
     }
     .previous {
       left: 50px;
+      fill: $footerBg;
     }
     .next {
       right: 5px;
-    }
-    .slideshow {
-      width: 95%;
-    }
-    .btn-open-modal {
-      position: fixed;
-      bottom: 69px;
-      right: 10px;
-      width: 40px;
-      height: 40px;
-      font-size: 30px;
+      fill: $footerBg;
     }
   }
   @media (max-width: 600px) {
@@ -189,7 +192,7 @@
       h1 {
         font-size: $w5 + $w2;
         .solid {
-          width: $w50+$w20;
+          width: $w50 + $w20;
         }
       }
     }
@@ -197,12 +200,31 @@
       flex: 100%;
       max-width: 100%;
     }
+    .overlay {
+      .btn-delete {
+        left: 10%;
+        top: 85%;
+      }
+      .btn-edit {
+        right: 10%;
+        top: 85%;
+      }
+      .slideshow {
+        width: 95%;
+        .previous {
+          fill: $bgAndFont;
+        }
+        .next {
+          fill: $bgAndFont;
+        }
+      }
+    }
     .btn-open-modal {
       position: fixed;
       bottom: 69px;
       right: 10px;
-      width: 40px;
-      height: 40px;
+      width: 35px;
+      height: 35px;
       font-size: 30px;
     }
   }

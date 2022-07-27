@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <meta name="description" content="">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <meta name="keywords" content="">
-    <link rel="icon" href="/images/logo.png">
+    <link rel="icon" href="/images/logo-simbolo-color.png">
     <title>Nathaly Learmonth | Fotografía</title>
 </head>
 
@@ -20,7 +21,7 @@
         <!-- DESKTOP MENU -->
         <nav class="desktop-nav">
             <div class="logo">
-                <a href="#bodyHome"><img src="/images/logo.png" alt=""></a>
+                <a href="index.html"><img src="/images/logo-nathy-blanco.png" alt="personal-logo"></a>
             </div>
             <ul class="menu">
                 <li><a href="/index.html" class="t-d-none">Home</a></li>
@@ -46,22 +47,25 @@
         <div class="mobile-icons-container">
             <button id="mobileBtn" class="bg-transparent" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                <box-icon name='menu' animation='burst-hover'></box-icon>
+                <box-icon name='menu' animation='burst-hover' class="mobile-icon-fill"></box-icon>
             </button>
             <div class="mobile-icons">
                 <div>
                     <a target="_blank" href="mailto:learmonthpro@gmail.com">
-                        <box-icon name='gmail' type='logo' animation='tada-hover'></box-icon>
+                        <box-icon name='gmail' type='logo' animation='tada-hover' class="mobile-icon-fill"></box-icon>
                     </a>
                 </div>
                 <div>
                     <a target="_blank" href="https://www.instagram.com/learmonth.studio/">
-                        <box-icon name='instagram' type='logo' animation='tada-hover'></box-icon>
+                        <box-icon name='instagram' type='logo' animation='tada-hover' class="mobile-icon-fill">
+                        </box-icon>
                     </a>
                 </div>
                 <div>
-                    <a target="_blank" href="https://www.linkedin.com/in/nathaly-learmonth-briceno/">
-                        <box-icon name='linkedin-square' type='logo' animation='tada-hover'></box-icon>
+                    <a target="_blank" href="https://www.linkedin.com/in/nathaly-learmonth-briceno/"
+                        class="mobile-icon-fill">
+                        <box-icon name='linkedin-square' type='logo' animation='tada-hover' class="mobile-icon-fill">
+                        </box-icon>
                     </a>
                 </div>
             </div>
@@ -84,17 +88,19 @@
 
     <!-- BODY START -->
     <section class="head-about">
-        <h1 class="head-pages">Acerca de
-            <hr class="hr-solid solid">
+        <h1 class="head-pages" data-aos="zoom-in" data-aos-duration="800">Acerca de
+            <hr class="hr-solid solid" data-aos="zoom-in" data-aos-duration="800">
         </h1>
     </section>
+
     <section>
         <div class="column-section-align">
-            <h2 class="titles">¡Hola!</h2>
-            <h2 class="subtitles">Soy Nathaly Learmonth</h2>
+            <h2 class="titles" data-aos="zoom-in-down" data-aos-duration="600">¡Hola!</h2>
             <div class="column-section-align img-description-container">
-                <img class="img-about v-img-wide" src="/images/about-me.png" alt="mujer-en-un-parque">
-                <h3 class="medium-centered-text">Soy desarrolladora web y Front-End Developer en curso, emprendedora y
+                <img class="img-about v-img-wide border-radius-5px" src="/images/about-me.png" alt="me-in-a-park"
+                    data-aos="flip-left" data-aos-duration="800">
+                <h3 class="medium-centered-text" data-aos="flip-right" data-aos-duration="800">Mi nombre es Nathaly. Soy
+                    desarrolladora web y Front-End Developer en curso, emprendedora y
                     aficionada de la fotografía y la
                     cocina.</h3>
             </div>
@@ -102,48 +108,60 @@
     </section>
 
     <section class="column-section-align">
-        <h2 class="subtitles">Un poco de historia </h2>
-        <hr class="hr-dark">
-        <h3 class="paragraphs">Mi amor hacia la fotografía empezó en mi país natal, Venezuela, mientras veía programas y
-            documentales de vida salvaje en televisión. Admiraba la valentía y el deseo de aventura y exploración de todos los camarógrafos, estar
+        <h2 class="subtitles" data-aos="fade-up" data-aos-duration="1000">Un poco de historia </h2>
+        <hr class="hr-dark" data-aos="fade-up" data-aos-duration="1000">
+        <h3 class="paragraphs" data-aos="fade-up" data-aos-duration="800">Mi amor hacia la fotografía empezó en mi país
+            natal, Venezuela, mientras veía programas y
+            documentales de vida salvaje en televisión. Admiraba la valentía y el deseo de aventura y exploración de
+            todos los camarógrafos, estar
             lo más cerca de la tierra y poder presenciar su sabiduría.
         </h3>
-        <h3 class="paragraphs">En 2017, cuando me mudé a Argentina, tuve la oportunidad de explorar más mis alrededores y
+        <h3 class="paragraphs" data-aos="fade-up" data-aos-duration="900">En 2017, cuando me mudé a Argentina, tuve la
+            oportunidad de explorar más mis alrededores
+            y
             de enamorarme
             por completo de la ciudad, estaba sumergida en un contraste perfecto entre modernismo y ecología.</h3>
-        <h3 class="paragraphs">Una vez tuve mi cámara pude seguir experimentando con todo tipo de situaciones, espacios
+        <h3 class="paragraphs" data-aos="fade-up" data-aos-duration="1000">Una vez tuve mi cámara pude seguir
+            experimentando con todo tipo de situaciones, espacios
             y momentos, lo que fue construyendo en mí un profundo cariño por la fotografía.</h3>
     </section>
 
     <section class="column-section-align">
-        <div class="shadowed-img"></div>
-        <h2 class="subtitles">Sobre mi arte</h2>
-        <hr class="hr-dark">
-        <h3 class="paragraphs">Actualmente mi atracción principal son los objetos, animales y plantas pequeñas, todo eso que está a
+        <div class="shadowed-img border-radius-5px" data-aos="flip-left" data-aos-duration="800"></div>
+        <h2 class="subtitles" data-aos="fade-up" data-aos-duration="1000">Sobre mi arte</h2>
+        <hr class="hr-dark" data-aos="fade-up" data-aos-duration="1000">
+        <h3 class="paragraphs" data-aos="fade-up" data-aos-duration="900">Actualmente mi atracción principal son los
+            objetos, animales y plantas pequeñas, todo eso
+            que está a
             simple vista y existe sin ser observado. Sin embargo, eso no me impide explorar todas las opciones que tenga
             a mi alcance. Mi meta es volverme una con mi cámara, salir a explorar el mundo y mantenerme en contacto con
             la naturaleza mientras encuentro el estilo que sea perfecto para mí.
         </h3>
-        <h3 class="paragraphs">En este portafolio encontrarás distintos contrastes, que van desde modelaje, naturaleza y
+        <h3 class="paragraphs" data-aos="fade-up" data-aos-duration="1000">En este portafolio encontrarás distintos
+            contrastes, que van desde modelaje, naturaleza y
             arquitectura,
             hasta fotografía micro. Sólo una probadita del mundo a través de mis ojos y de mi lente.
         </h3>
 
-        <h2 class="centered-text">Espero que disfrutes de lo que ves, y si te gusta, no dudes en contactarme. Me encanta
+        <h2 class="centered-text" data-aos="zoom-in" data-aos-duration="700">Espero que disfrutes de lo que ves, y si te
+            gusta, no dudes en contactarme. Me encanta
             colaborar y trabajar
             en proyectos.</h2>
-        <h2 class="thin-centered-text">¡Es un placer compartir este momento contigo!</h2>
+        <h2 class="thin-centered-text" data-aos="zoom-in" data-aos-duration="1000">¡Es un placer compartir este momento
+            contigo!</h2>
     </section>
     <div>
-        <button type="button" class="btn about-btn buttons"><a href="contact.html">Contáctame</a></button>
+        <button type="button" class="btn about-btn" data-aos="flip-up" data-aos-delay="400" data-aos-duration="1000"><a
+                href="contact.html">Contáctame</a></button>
     </div>
 
 
 
     <!-- FOOTER -->
     <footer>
-        <img src="/images/logo.png" alt="logo-brand" class="logo-nl">
-        <div class="icons-rrss-container">
+        <img src="/images/logo-nathy-blanco.png" alt="personal-logo" class="logo-nl" data-aos="zoom-in-down"
+            data-aos-duration="600" data-aos-delay="200">
+        <div class="icons-rrss-container" data-aos="flip-left" data-aos-duration="1000">
             <a class="footer-icon" target="_blank" href="https://www.linkedin.com/in/nathaly-learmonth-briceno/">
                 <box-icon name='linkedin-square' type='logo' animation='tada-hover'></box-icon>
             </a>
@@ -163,7 +181,7 @@
                 <box-icon name='twitter' type='logo' animation='tada-hover'></box-icon>
             </a>
         </div>
-        <span class="copyright">&copy; Buenos Aires - Argentina 2022. | Todos los derechos reservados..</span>
+        <span class="copyright">&copy; Buenos Aires - Argentina 2022. | Todos los derechos reservados.</span>
     </footer>
 
 
@@ -178,6 +196,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

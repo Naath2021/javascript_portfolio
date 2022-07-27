@@ -18,7 +18,6 @@
     width: $w50;
     margin: $h10 0;
     box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82);
-    border-radius: 1%;
   }
   .medium-centered-text {
     color: $fontColor;
@@ -29,7 +28,7 @@
   .titles {
     color: $fontColor;
     text-align: center;
-    font-size: $w5 + $w2;
+    font-size: $w10;
     margin: $h10 0 0;
   }
   .subtitles {
@@ -119,7 +118,7 @@
       }
       .medium-centered-text {
         width: 35vw;
-        font-size: 1.5vw;
+        font-size: $w1_5;
         text-align: center;
         margin: 0 0 0 $w5;
       }
@@ -133,7 +132,7 @@
     }
     .paragraphs {
       width: $w50;
-      font-size: $w1;
+      font-size: $w1_5;
     }
     .shadowed-img {
       margin: $h10 0;
@@ -141,14 +140,29 @@
       width: $w50 + $w20;
     }
     .centered-text {
-      font-size: 1.5vw;
+      font-size: $w1_5;
       width: $w40;
       color: $highlightColor;
       margin-top: $h20;
     }
     .thin-centered-text {
       width: $w30;
+      font-size: $w1_5;
+    }
+    .about-btn {
+      width: $w10;
+      height: $h5;
+      color: $bgAndFont;
+      margin-bottom: $w20;
+      a{
       font-size: $w1;
+      }
+      &:hover {
+        border: 1px solid $footerBg;
+        background-color: $bgAndFont;
+        color: $footerBg;
+        transition: all 600ms;
+      }
     }
   }
 }

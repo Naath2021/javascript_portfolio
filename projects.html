@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <meta name="description" content="">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <meta name="keywords" content="">
-    <link rel="icon" href="/images/shutter.png">
+    <link rel="icon" href="/images/logo-simbolo-color.png">
     <title>Nathaly Learmonth | Fotografía</title>
 </head>
 
@@ -21,7 +22,7 @@
         <!-- DESKTOP MENU -->
         <nav class="desktop-nav">
             <div class="logo">
-                <a href="#bodyHome"><img src="/images/logo.png" alt=""></a>
+                <a href="index.html"><img src="/images/logo-nathy-blanco.png" alt="personal-logo"></a>
             </div>
             <ul class="menu">
                 <li><a href="/index.html" class="t-d-none">Home</a></li>
@@ -47,22 +48,24 @@
         <div class="mobile-icons-container">
             <button id="mobileBtn" class="bg-transparent" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                <box-icon name='menu' animation='burst-hover'></box-icon>
+                <box-icon name='menu' animation='burst-hover' class="mobile-icon-fill"></box-icon>
             </button>
             <div class="mobile-icons">
                 <div>
                     <a target="_blank" href="mailto:learmonthpro@gmail.com">
-                        <box-icon name='gmail' type='logo' animation='tada-hover'></box-icon>
+                        <box-icon name='gmail' type='logo' animation='tada-hover' class="mobile-icon-fill"></box-icon>
                     </a>
                 </div>
                 <div>
                     <a target="_blank" href="https://www.instagram.com/learmonth.studio/">
-                        <box-icon name='instagram' type='logo' animation='tada-hover'></box-icon>
+                        <box-icon name='instagram' type='logo' animation='tada-hover' class="mobile-icon-fill">
+                        </box-icon>
                     </a>
                 </div>
                 <div>
                     <a target="_blank" href="https://www.linkedin.com/in/nathaly-learmonth-briceno/">
-                        <box-icon name='linkedin-square' type='logo' animation='tada-hover'></box-icon>
+                        <box-icon name='linkedin-square' type='logo' animation='tada-hover' class="mobile-icon-fill">
+                        </box-icon>
                     </a>
                 </div>
             </div>
@@ -86,70 +89,93 @@
     <!-- BODY START -->
 
     <section class="head-projects">
-        <h1 class="head-pages">Proyectos
-            <hr class="hr-solid solid">
+        <h1 class="head-pages" data-aos="zoom-in" data-aos-duration="800">Proyectos
+            <hr class="hr-solid solid" data-aos="zoom-in" data-aos-duration="800">
         </h1>
     </section>
+
     <section>
         <div class="column-section-align">
-            <img class="musa-header" src="/images/header-musa-blanco.png" alt="">
+            <img class="musa-header border-radius-5px img-shadow" src="/images/header-musa-blanco.png"
+                alt="smoothies-brand-header" data-aos="flip-up" data-aos-duration="800">
             <h2 class="regular-text projects-text">Musa Batidos es un emprendimiento de jugos tropicales que busca
                 evocar los placeres
                 del caribe a través de los sabores refrescantes de sus frutas tropicales. </h2>
-            <img class="h-img" src="/images/musa-costanera-rio.png" alt="">
-            <img class="h-img" src="/images/musa-bosques-closeup.png" alt="">
-            <img class="h-img" src="/images/musa-bosques1.png" alt="">
+            <img class="h-img border-radius-5px img-shadow" src="/images/musa-costanera-rio.png"
+                alt="tropical-smoothies" data-aos="zoom-in-up">
+            <img class="h-img border-radius-5px img-shadow" src="/images/musa-bosques-closeup.png"
+                alt="tropical-smoothies" data-aos="zoom-in-up">
+            <img class="h-img border-radius-5px img-shadow" src="/images/musa-bosques1.png" alt="tropical-smoothies"
+                data-aos="zoom-in-up">
         </div>
     </section>
 
     <section>
         <div class="row-section-align">
             <div class="row-section-align">
-                <img class="v-img" src="/images/musa-mini.png" alt="">
-                <div class="column-section-align">
+                <img class="v-img border-radius-5px img-shadow" src="/images/musa-mini.png" alt="tropical-smoothies"
+                    data-aos="flip-left" data-aos-duration="1000">
+                <div class="column-section-align" data-aos="flip-right" data-aos-duration="800">
                     <h2 class="highlighted-text"> Hecho con mucha pulpa de fruta 100% natural y orgánica.</h2>
                     <h2 class="medium-text"> Tiene una personalidad sensual, amigable, optimista y veraniega. </h2>
                 </div>
             </div>
             <div class="row-section-align">
-                <img class="v-img" src="/images/musa-model-3.png" alt="">
-                <img class="v-img" src="/images/musa-ella.png" alt="">
+                <img class="v-img border-radius-5px img-shadow" src="/images/musa-model-3.png"
+                    alt="girl-taking-a-selfie-drinking-tropical-smoothies" data-aos="zoom-in-up">
+                <img class="v-img border-radius-5px img-shadow" src="/images/musa-ella.png"
+                    alt="dog-next-to-a-tropical-smoothie" data-aos="zoom-in-up">
             </div>
         </div>
     </section>
+
     <section>
         <div class="column-section-align">
-            <img class="h-img" src="/images/musa-araya.JPG" alt="">
-            <img class="h-img" src="/images/musa-mini-chica.png" alt="">
+            <img class="h-img border-radius-5px img-shadow" src="/images/musa-araya.JPG" alt="tropical-smoothies"
+                data-aos="zoom-in-up">
+            <img class="h-img border-radius-5px img-shadow" src="/images/musa-mini-chica.png"
+                alt="girl-holding-a-mini-tropical-smoothie" data-aos="zoom-in-up">
             <h2 class="regular-text projects-text">En este proyecto se intenta expresar la frescura y sabor de sus
                 productos partiendo
                 desde sus colores, en distintas locaciones y estados de ánimo, queriendo vender una experiencia
                 especial, junto
                 con un alimento saludable y en contacto con la naturaleza.</h2>
-            <img class="h-img" src="/images/musa-model-pool.png" alt="">
-            <img class="h-img" src="/images/musa-memory.JPG" alt="">
-            <img class="h-img" src="/images/musa-mini-chico1.png" alt="">
-            <img class="h-img" src="/images/musa-model-view.png" alt="">
-            <img class="h-img" src="/images/musa-splash.png" alt="">
-            <img class="h-img" src="/images/musa-model.sky.png" alt="">
-            <img class="h-img" src="/images/musa-mini-chico2.png" alt="">
-            <img class="h-img" src="/images/musa-bosques-mano.png" alt="">
-            <img class="h-img" src="/images/musa-bayana-grass.png" alt="">
-            <img class="h-img" src="/images/musa-cayena-model.png" alt="">
+            <img class="h-img border-radius-5px img-shadow" src="/images/musa-model-pool.png"
+                alt="summer-pool-model-photography" data-aos="zoom-in-up">
+            <img class="h-img border-radius-5px img-shadow" src="/images/musa-memory.JPG"
+                alt="tropical-smoothies-on-a-park" data-aos="zoom-in-up">
+            <img class="h-img border-radius-5px img-shadow" src="/images/musa-mini-chico1.png"
+                alt="boy-holding-a-mini-tropical-smoothie" data-aos="zoom-in-up">
+            <img class="h-img border-radius-5px img-shadow" src="/images/musa-model-view.png" alt="tropical-smoothies"
+                data-aos="zoom-in-up">
+            <img class="h-img border-radius-5px img-shadow" src="/images/musa-splash.png" alt="tropical-smoothies"
+                data-aos="zoom-in-up">
+            <img class="h-img border-radius-5px img-shadow" src="/images/musa-model.sky.png"
+                alt="modeling-photogtaphy-tropical-smoothies" data-aos="zoom-in-up">
+            <img class="h-img border-radius-5px img-shadow" src="/images/musa-mini-chico2.png" alt="tropical-smoothies"
+                data-aos="zoom-in-up">
+            <img class="h-img border-radius-5px img-shadow" src="/images/musa-bosques-mano.png" alt="tropical-smoothies"
+                data-aos="zoom-in-up">
+            <img class="h-img border-radius-5px img-shadow" src="/images/musa-bayana-grass.png" alt="tropical-smoothies"
+                data-aos="zoom-in-up">
+            <img class="h-img border-radius-5px img-shadow" src="/images/musa-cayena-model.png" alt="tropical-smoothies"
+                data-aos="zoom-in-up">
         </div>
     </section>
+
     <div class="column-section-align">
-        <img class="img-logo-musa" src="/images/logo.png" alt="">
+        <img class="img-logo-musa" src="/images/logo.png" alt="" data-aos="zoom-out">
         <div>
-            <a class="link-to-musa btn btn-primary" role="button" target="_blank"
-                href="https://musabatidos.netlify.app/index.html">Ir a página web</a>
+            <a class="link-to-musa btn btn-primary img-shadow" role="button" target="_blank"
+                href="https://musabatidos.netlify.app/index.html" data-aos="zoom-out">Ir a página web</a>
         </div>
     </div>
     </section>
     <!-- FOOTER -->
     <footer>
-        <img src="/images/logo.png" alt="logo-brand" class="logo-nl">
-        <div class="icons-rrss-container">
+        <img src="/images/logo-nathy-blanco.png" alt="personal-logo" class="logo-nl" data-aos="zoom-in-down"
+            data-aos-duration="600" data-aos-delay="200">
+        <div class="icons-rrss-container" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
             <a class="footer-icon" target="_blank" href="https://www.linkedin.com/in/nathaly-learmonth-briceno/">
                 <box-icon name='linkedin-square' type='logo' animation='tada-hover'></box-icon>
             </a>
@@ -184,6 +210,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

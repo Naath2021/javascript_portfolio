@@ -13,21 +13,34 @@
   .border {
     @include flexrow;
     justify-content: space-evenly;
-    width: $w40;
-    height: $h30;
-    border: 8px solid $bgAndFont;
+    width: $w40 + $w5;
+    height: $h40;
+    border: 10px solid $bgAndFont;
     border-radius: 5px;
     padding: 50px;
+    img{
+      width: $w20;
+      margin-bottom: $h3;
+    }
     h1 {
       font-family: "Nunito", sans-serif;
       font-size: $w5;
       color: $bgAndFont;
       text-align: center;
-      font-weight: 200;
+      font-weight: 600;
       letter-spacing: 2px;
       text-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58);
     }
-    h2 {
+    h2{
+      font-family: "Nunito", sans-serif;
+      font-size: $w5;
+      color: $bgAndFont;
+      font-weight: 100;
+      letter-spacing: 2px;
+      text-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58);
+      margin-bottom: $h3;
+    }
+    h3 {
       font-family: "Quicksand", sans-serif;
       color: $bgAndFont;
       font-size: $w3;
@@ -72,15 +85,20 @@
 
   @media screen and (min-width: 768px) {
     .border {
-      width: $w20;
-      height: $h40;
+      width: $w30;
+      height: $h50 + $h10;
+      img{
+        width: $w10;
+        margin: 0 $w3 $h3 $w3;
+      }
       h1 {
         font-size: $w3;
-        font-weight: 100;
       }
-      h2 {
+      h2{
+        font-size: $w3;
+      }
+      h3 {
         font-size: $w2;
-        font-weight: 100;
       }
       .btn-down {
         font-size: $w2;

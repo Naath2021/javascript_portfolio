@@ -9,6 +9,7 @@
   border: 1px solid $bgAndFont;
   margin: 5px 0;
   opacity: 1;
+  box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.92);
 }
 .head-pages {
   color: $bgAndFont;
@@ -16,7 +17,7 @@
   font-size: 7vw;
   padding: 1vh 2vw;
   letter-spacing: 5px;
-  text-shadow: 4px 2px 7px rgba(0, 0, 0, 0.58);
+  text-shadow: 4px 1px 4px rgba(0, 0, 0, 0.92);
 }
 
 .regular-text {
@@ -48,3 +49,20 @@
   align-content: center;
 }
 
+.border-radius-5px {
+  border-radius: 5px;
+}
+
+.mobile-icon-fill {
+  fill: $footerBg;
+}
+
+.img-shadow {
+  box-shadow: 8px 7px 14px 2px rgba(148, 124, 124, 0.82)
+}
+
+.t-d-none {
+  text-decoration: none;
+  list-style-type: none;
+  list-style: none;
+}

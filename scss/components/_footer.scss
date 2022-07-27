@@ -6,7 +6,7 @@
     width: $w100;
     background-color: $footerBg;
     .logo-nl{
-      width: $w10 + $w5;
+      width: $w40;
     }
     .icons-rrss-container{
       @include flexrow;
@@ -14,10 +14,6 @@
       width: $w40;
         a{
           fill: $bgAndFont;
-          &:hover{
-            fill: $highlightColor;
-            transition: all 0.01s ease;
-          }
         }
       }
     }
@@ -30,7 +26,7 @@
       footer{
         height: $h50;
         .logo-nl{
-          width: $w5 + $w2;
+          width: $w20 + $w5;
         }
         .icons-rrss-container{
           @include flexrow;

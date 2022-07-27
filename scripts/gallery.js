@@ -316,7 +316,10 @@ slideshowContainer.addEventListener("click", function (event) {
 Array.from(imgGallery).forEach(img => {
     img.addEventListener("click", event => {
         selectedImg = +event.target.dataset.img
-        imgSlideshow.src = images[selectedImg].img
+        let photo = images.find(photo => {
+            return photo.id == selectedImg 
+        })
+        imgSlideshow.src = photo.img
         counter = selectedImg
         overlay.style.opacity = 1
         overlay.style.visibility = "visible"
@@ -360,10 +363,10 @@ saveEditPhoto.addEventListener("click", () => {
     editSize.value = ""
 
     // for orientation:
-    console.log(selectedImg) // index of selected img
+    console.log("Para orientación, el index de la imagen es: " + selectedImg) // index of selected img
     console.log(photoUpdated) // array with the changes
 })
 
 
 
-export { images, selectedImg, overlay }
+export { images, selectedImg, overlay, imgGallery }

@@ -63,14 +63,17 @@
     }
     .projects-text {
       font-size: $w2;
+      width: $w50 + $w10;
     }
     .highlighted-text {
-      width: $w40;
-      font-size: $w3;
+      width: $w30;
+      font-size: $w2;
+      margin-left: $w3;
     }
     .medium-text {
-      width: $w40;
-      font-size: $w3;
+      width: $w30;
+      font-size: $w2;
+      margin-left: $w3;
     }
     .h-img {
       width: $w50;
@@ -87,7 +90,6 @@
       &:hover {
         color: $bgAndFont;
         background-color: $footerBg;
-        border: 2px solid $bgAndFont;
         transition: all ease-in-out 250ms;
       }
     }

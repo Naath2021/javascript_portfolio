@@ -14,6 +14,7 @@
       position: fixed;
       top: 80px;
       right: 30px;
+      z-index: 1000;
       a {
         fill: $bgAndFont;
       }
@@ -24,6 +25,7 @@
       right: 30px;
       border: none;
       fill: $bgAndFont;
+      z-index: 1000;
     }
     .menu-title,
     .nav-link {
@@ -52,10 +54,9 @@
         z-index: 1000;
         .logo {
           display: block;
-          width: $w4;
         }
         img {
-          width: $w3 * 2;
+          width: $w20 - $w5;
           height: auto;
           padding: 0 $w1;
         }

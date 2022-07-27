@@ -12,7 +12,7 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="keywords" content="">
-    <link rel="icon" href="/images/logo.png">
+    <link rel="icon" href="/images/logo-simbolo-color.png">
     <title>Portafolio Fotográfico</title>
 </head>
 
@@ -21,7 +21,7 @@
         <!-- DESKTOP MENU -->
         <nav class="desktop-nav">
             <div class="logo">
-                <a href="#bodyHome"><img src="/images/logo.png" alt=""></a>
+                <a href="index.html"><img src="/images/logo-nathy-blanco.png" alt="personal-logo"></a>
             </div>
             <ul class="menu">
                 <li><a href="/index.html" class="t-d-none">Home</a></li>
@@ -84,14 +84,12 @@
     </header>
 
 
-
-
     <!-- BODY START -->
     <section>
         <div class="head-portfolio">
-            <h1 class="head-pages">
+            <h1 class="head-pages" data-aos="zoom-in" data-aos-duration="800">
                 Portafolio
-                <hr class="hr-solid solid">
+                <hr class="hr-solid solid" data-aos="zoom-in" data-aos-duration="800">
             </h1>
         </div>
     </section>
@@ -105,15 +103,13 @@
             <div class="overlay-buttons previous">
                 <box-icon type='solid' name='chevrons-left' style="pointer-events: none;"></box-icon>
             </div>
+            <button id="deleteBtn" type="button" class="btn btn-danger btn-delete">Eliminar</button>
 
             <div class="overlay-buttons next">
                 <box-icon type='solid' name='chevrons-right' style="pointer-events: none;"></box-icon>
             </div>
-
-            <div class="overlay-buttons crud-modal-buttons">
-                <button id="editBtn" type="button" class="btn btn-secondary btn-edit" data-bs-toggle="modal" data-bs-target="#modal1">Editar</button>
-                <button id="deleteBtn" type="button" class="btn btn-danger btn-delete">Eliminar</button>
-            </div>
+            <button id="editBtn" type="button" class="btn btn-secondary btn-edit" data-bs-toggle="modal"
+                data-bs-target="#modalEdit">Editar</button>
             <img src="" alt="" id="imgSlideshow">
         </div>
     </div>
@@ -123,11 +119,11 @@
     <!-- CRUD CREATE -->
     <div id="crudCreate">
 
-        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-open-modal"
+        <button type="button" data-bs-toggle="modal" data-bs-target="#modalCreate" class="btn btn-open-modal"
             id="openCRUDModal">&#43;</button>
 
-        
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <div class="modal fade" id="modalCreate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -153,11 +149,12 @@
 
 
     <!-- CRUD EDIT  -->
-    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalEdit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">¡Hola! Selecciona la foto que desees Editar.</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Edita el nombre y tamaño de la imágen que
+                        seleccionaste.</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -182,56 +179,95 @@
 
 
 
-    <!-- CRUD UPDATE -->
-
-
     <section class="gallery" id="gallery">
-        <div class="column" id="imgContainer">
-            <img class="img" class src="images/nature-costanera-butterfly.png" alt="" data-img="0" data-aos="fade-up" data-aos-delay="50">
-            <img class="img" src="images/ba-recoleta.png" alt="" data-img="1" data-aos="fade-up" data-aos-delay="50">
-            <img class="img"src="images/ba-fac.png" alt="" data-img="2" data-aos="fade-up" data-aos-delay="50">
-            <img class="img"src="images/delta-cayena.png" alt="" data-img="3" data-aos="fade-up" data-aos-delay="150">
-            <img class="img"src="images/nature-yellow-flower3.png" alt="" data-img="4" data-aos="fade-up" data-aos-delay="150">
-            <img class="img"src="images/ba-sky.png" alt="" data-img="5" data-aos="fade-up" data-aos-delay="300">
-            <img class="img"src="images/nature-purple-flower.png" alt="" data-img="6" data-aos="fade-up" data-aos-delay="300">
-            <img class="img"src="images/nature-mush.png" alt="" data-img="7" data-aos="fade-up" data-aos-delay="300">
+        <div class="column imgContainer">
+            <img class="img border-radius-5px" class src="images/nature-costanera-butterfly.png"
+                alt="buenos-aires-costanera-butterfly" data-img="0" data-aos="fade-up" data-aos-delay="50">
+            <img class="img border-radius-5px" src="images/ba-recoleta.png" alt="buenos-aires-recoleta" data-img="1"
+                data-aos="fade-up" data-aos-delay="50">
+            <img class="img border-radius-5px" src="images/ba-fac.png" alt="buenos-aires-university" data-img="2"
+                data-aos="fade-up" data-aos-delay="50">
+            <img class="img border-radius-5px" src="images/delta-cayena.png" alt="buenos-aires-delta-flower-cayena"
+                data-img="3" data-aos="fade-up" data-aos-delay="150">
+            <img class="img border-radius-5px" src="images/nature-yellow-flower3.png"
+                alt="buenos-aires-bush-yellow-flowers" data-img="4" data-aos="fade-up" data-aos-delay="150">
+            <img class="img border-radius-5px" src="images/ba-sky.png" alt="buenos-aires-sky-sunset" data-img="5"
+                data-aos="fade-up" data-aos-delay="300">
+            <img class="img border-radius-5px" src="images/nature-purple-flower.png"
+                alt="buenos-aires-nature-purple-flower" data-img="6" data-aos="fade-up" data-aos-delay="300">
+            <img class="img border-radius-5px" src="images/nature-mush.png" alt="nature-mushroom-inside-a-tree"
+                data-img="7" data-aos="fade-up" data-aos-delay="300">
         </div>
-        <div class="column" id="imgContainer">
-            <img class="img"src="images/nature-si-orange-flower.png" alt="" data-img="8" data-aos="fade-up" data-aos-delay="50">
-            <img class="img"src="/images/ba-flores.png" alt="" data-img="9" data-aos="fade-up" data-aos-delay="50">
-            <img class="img"src="images/ba-memory-fadu.png" alt="" data-img="10" data-aos="fade-up" data-aos-delay="50">
-            <img class="img"src="images/delta-purple.png" alt="" data-img="11" data-aos="fade-up" data-aos-delay="150">
-            <img class="img"src="images/delta-ship-inside.png" alt="" data-img="12" data-aos="fade-up" data-aos-delay="150">
-            <img class="img"src="images/nature-si-purple-white.png" alt="" data-img="13" data-aos="fade-up" data-aos-delay="150">
-            <img class="img"src="images/ba-day-moon.png" alt="" data-img="14" data-aos="fade-up" data-aos-delay="250">
-            <img class="img"src="/images/ba-pink-sunset.png" alt="" data-img="15" data-aos="fade-up" data-aos-delay="250">
-            <img class="img"src="images/delta-little-bridge.png" alt="" data-img="16" data-aos="fade-up" data-aos-delay="250">
-            <img class="img"src="images/delta-cheiru.png" alt="" data-img="17" data-aos="fade-up" data-aos-delay="300">
-            <img class="img"src="images/delta-red-flowers.png" alt="" data-img="18" data-aos="fade-up" data-aos-delay="300">
+
+        <div class="column imgContainer">
+            <img class="img border-radius-5px" src="images/nature-si-orange-flower.png"
+                alt="buenos-aires-nature-orange-flower" data-img="8" data-aos="fade-up" data-aos-delay="50">
+            <img class="img border-radius-5px" src="/images/ba-flores.png" alt="buenos-aires-buildings" data-img="9"
+                data-aos="fade-up" data-aos-delay="50">
+            <img class="img border-radius-5px" src="images/ba-memory-fadu.png" alt="buenos-aires-university"
+                data-img="10" data-aos="fade-up" data-aos-delay="50">
+            <img class="img border-radius-5px" src="images/delta-purple.png" alt="buenos-aires-nature-purple-flower"
+                data-img="11" data-aos="fade-up" data-aos-delay="150">
+            <img class="img border-radius-5px" src="images/delta-ship-inside.png"
+                alt="inside-a-boat-in-delta-buenos-aires" data-img="12" data-aos="fade-up" data-aos-delay="150">
+            <img class="img border-radius-5px" src="images/nature-si-purple-white.png"
+                alt="buenos-aires-purple-and-white-flowers" data-img="13" data-aos="fade-up" data-aos-delay="150">
+            <img class="img border-radius-5px" src="images/ba-day-moon.png" alt="buenos-aires-day-moon" data-img="14"
+                data-aos="fade-up" data-aos-delay="250">
+            <img class="img border-radius-5px" src="/images/ba-pink-sunset.png" alt="buenos-aires-pink-sunset-sky"
+                data-img="15" data-aos="fade-up" data-aos-delay="250">
+            <img class="img border-radius-5px" src="images/delta-little-bridge.png"
+                alt="buenos-aires-delta-little-bridge" data-img="16" data-aos="fade-up" data-aos-delay="250">
+            <img class="img border-radius-5px" src="images/delta-cheiru.png" alt="buenos-aires-delta-cabin"
+                data-img="17" data-aos="fade-up" data-aos-delay="300">
+            <img class="img border-radius-5px" src="images/delta-red-flowers.png" alt="buenos-aires-delta-red-flowers"
+                data-img="18" data-aos="fade-up" data-aos-delay="300">
         </div>
-        <div class="column" id="imgContainer">
-            <img class="img"src="images/nature-dragonfly.png" alt="" data-img="19" data-aos="fade-up" data-aos-delay="50">
-            <img class="img"src="images/nature-leaves.png" alt="" data-img="20" data-aos="fade-up" data-aos-delay="50">
-            <img class="img"src="images/delta-hidden-house.png" alt="" data-img="21" data-aos="fade-up" data-aos-delay="50">
-            <img class="img"src="images/ba-memory.png" alt="" data-img="22" data-aos="fade-up" data-aos-delay="150">
-            <img class="img"src="images/delta-ship-window.png" alt="" data-img="23" data-aos="fade-up" data-aos-delay="150">
-            <img class="img"src="images/nature-costanera-flower.png" alt="" data-img="24" data-aos="fade-up" data-aos-delay="150">
-            <img class="img"src="images/menu-about.png" alt="" data-img="25" data-aos="fade-up" data-aos-delay="250">
-            <img class="img"src="images/home-red-flower.png" alt="" data-img="26" data-aos="fade-up" data-aos-delay="250">
-            <img class="img"src="images/nature-costanera-fruit.png" alt="" data-img="27" data-aos="fade-up" data-aos-delay="300">
-            <img class="img"src="images/menu-contact.png" alt="" data-img="28" data-aos="fade-up" data-aos-delay="300">
+
+        <div class="column imgContainer">
+            <img class="img border-radius-5px" src="images/nature-dragonfly.png" alt="buenos-aires-nature-dragonfly"
+                data-img="19" data-aos="fade-up" data-aos-delay="50">
+            <img class="img border-radius-5px" src="images/nature-leaves.png" alt="buenos-aires-tree-leaves"
+                data-img="20" data-aos="fade-up" data-aos-delay="50">
+            <img class="img border-radius-5px" src="images/delta-hidden-house.png" alt="buenos-aires-delta-hidden-house"
+                data-img="21" data-aos="fade-up" data-aos-delay="50">
+            <img class="img border-radius-5px" src="images/ba-memory.png" alt="buenos-aires-memory-park" data-img="22"
+                data-aos="fade-up" data-aos-delay="150">
+            <img class="img border-radius-5px" src="images/delta-ship-window.png" alt="buenos-aires-delta-inside-a-boat"
+                data-img="23" data-aos="fade-up" data-aos-delay="150">
+            <img class="img border-radius-5px" src="images/nature-costanera-flower.png"
+                alt="buenos-aires-nature-costanera-flower" data-img="24" data-aos="fade-up" data-aos-delay="150">
+            <img class="img border-radius-5px" src="images/menu-about.png" alt="buenos-aires-palm-tree" data-img="25"
+                data-aos="fade-up" data-aos-delay="250">
+            <img class="img border-radius-5px" src="images/home-red-flower.png" alt="buenos-aires-red-flower"
+                data-img="26" data-aos="fade-up" data-aos-delay="250">
+            <img class="img border-radius-5px" src="images/nature-costanera-fruit.png"
+                alt="buenos-aires-nature-costanera-fruit" data-img="27" data-aos="fade-up" data-aos-delay="300">
+            <img class="img border-radius-5px" src="images/menu-contact.png" alt="buenos-aires-sunset-trees"
+                data-img="28" data-aos="fade-up" data-aos-delay="300">
         </div>
-        <div class="column" id="imgContainer">
-            <img class="img"src="images/menu-portfolio.png" alt="" data-img="29" data-aos="fade-up" data-aos-delay="50">
-            <img class="img"src="images/delta-musgo.png" alt="" data-img="30" data-aos="fade-up" data-aos-delay="50">
-            <img class="img"src="images/nature-delta-pink-flower.png" alt="" data-img="31" data-aos="fade-up" data-aos-delay="50">
-            <img class="img"src="images/nature-yellow-flower2.png" alt="" data-img="32" data-aos="fade-up" data-aos-delay="50">
-            <img class="img"src="images/ba-si-bird.png" alt="" data-img="33" data-aos="fade-up" data-aos-delay="150">
-            <img class="img"src="images/ba-day-moon2.png" alt="" data-img="34" data-aos="fade-up" data-aos-delay="150">
-            <img class="img"src="images/head-portfolio.png" alt="" data-img="35" data-aos="fade-up" data-aos-delay="150">
-            <img class="img"src="images/delta-tree.png" alt="" data-img="36" data-aos="fade-up" data-aos-delay="250">
-            <img class="img"src="images/delta-away.png" alt="" data-img="37" data-aos="fade-up" data-aos-delay="300">
-            <img class="img"src="images/delta-tiny-flowers.png" alt="" data-img="38" data-aos="fade-up" data-aos-delay="300">
+
+        <div class="column imgContainer">
+            <img class="img border-radius-5px" src="images/menu-portfolio.png" alt="buenos-aires-beans" data-img="29"
+                data-aos="fade-up" data-aos-delay="50">
+            <img class="img border-radius-5px" src="images/delta-musgo.png" alt="buenos-aires-tree-fungi" data-img="30"
+                data-aos="fade-up" data-aos-delay="50">
+            <img class="img border-radius-5px" src="images/nature-delta-pink-flower.png" alt="nature-delta-pink-flower"
+                data-img="31" data-aos="fade-up" data-aos-delay="50">
+            <img class="img border-radius-5px" src="images/nature-yellow-flower2.png" alt="nature-yellow-flower"
+                data-img="32" data-aos="fade-up" data-aos-delay="50">
+            <img class="img border-radius-5px" src="images/ba-si-bird.png" alt="birds" data-img="33" data-aos="fade-up"
+                data-aos-delay="150">
+            <img class="img border-radius-5px" src="images/ba-day-moon2.png" alt="buenos-aires-day-moon" data-img="34"
+                data-aos="fade-up" data-aos-delay="150">
+            <img class="img border-radius-5px" src="images/head-portfolio.png" alt="tiny-flowers" data-img="35"
+                data-aos="fade-up" data-aos-delay="150">
+            <img class="img border-radius-5px" src="images/delta-tree.png" alt="palm-tree" data-img="36"
+                data-aos="fade-up" data-aos-delay="250">
+            <img class="img border-radius-5px" src="images/delta-away.png" alt="nature-trees" data-img="37"
+                data-aos="fade-up" data-aos-delay="300">
+            <img class="img border-radius-5px" src="images/delta-tiny-flowers.png" alt="tiny-flowers" data-img="38"
+                data-aos="fade-up" data-aos-delay="300">
         </div>
     </section>
 
@@ -239,8 +275,9 @@
 
     <!-- FOOTER -->
     <footer>
-        <img src="/images/logo.png" alt="logo-brand" class="logo-nl">
-        <div class="icons-rrss-container">
+        <img src="/images/logo-nathy-blanco.png" alt="personal-logo" class="logo-nl" data-aos="zoom-in-down"
+            data-aos-duration="600" data-aos-delay="200">
+        <div class="icons-rrss-container" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
             <a class="footer-icon" target="_blank" href="https://www.linkedin.com/in/nathaly-learmonth-briceno/">
                 <box-icon name='linkedin-square' type='logo' animation='tada-hover'></box-icon>
             </a>
@@ -277,7 +314,7 @@
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
 </body>
 

@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/Naath2021/javascript_portfolio#readme",
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.19"
   }
 }
